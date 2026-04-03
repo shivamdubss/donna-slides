@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — The Billable Hour Is Bleeding Out</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+
+<!-- ============================================================
+     01 — TITLE / HERO
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-hero">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">01</span>
+
+  <p class="ll-eyebrow crisis">Lunch &amp; Learn</p>
+  <h1 class="ll-hero-headline">The Billable Hour<br>Is Bleeding Out.</h1>
+  <p class="ll-hero-sub">Time Tracking, AI, and the Pricing Crisis in Legal</p>
+  <div class="ll-hero-badges">
+    <span class="ll-hero-badge">For Legal Teams</span>
+    <span class="ll-hero-badge">12 Slides</span>
+    <span class="ll-hero-badge">donnaanswers.com</span>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     02 — PROMISE VS. REALITY
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-waffle">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">02</span>
+
+  <div class="waffle-left">
+    <p class="ll-eyebrow crisis">The Reality</p>
+    <div class="waffle-stat">3.0h</div>
+    <p class="waffle-stat-label">captured out of an 8-hour workday</p>
+    <p class="waffle-body">Lawyers reach only a 38% utilization rate. The remaining 5 hours disappear into a mix of admin, context-switching, and billable work that simply never gets recorded — not because it wasn't done, but because no one wrote it down.</p>
+    <p class="waffle-source">Source: Clio 2025 KPI Benchmarks</p>
+  </div>
+
+  <div class="waffle-right">
+    <p class="waffle-chart-label">8 hours in a workday</p>
+    <div class="waffle-chart">
+      <div class="waffle-block">
+        <div class="waffle-block-bar captured"></div>
+        <span class="waffle-block-aside">1h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar captured"></div>
+        <span class="waffle-block-aside">2h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar captured"></div>
+        <span class="waffle-block-aside">3h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar admin"></div>
+        <span class="waffle-block-aside">4h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar admin"></div>
+        <span class="waffle-block-aside">5h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar admin"></div>
+        <span class="waffle-block-aside">6h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar admin"></div>
+        <span class="waffle-block-aside">7h</span>
+      </div>
+      <div class="waffle-block">
+        <div class="waffle-block-bar unbilled"></div>
+        <span class="waffle-block-aside">8h</span>
+      </div>
+    </div>
+    <div class="waffle-legend">
+      <div class="waffle-legend-item">
+        <div class="wl-swatch captured"></div>
+        <span>Billable time captured (3.0h)</span>
+      </div>
+      <div class="waffle-legend-item">
+        <div class="wl-swatch admin"></div>
+        <span>Admin overhead (~3.8h)</span>
+      </div>
+      <div class="waffle-legend-item">
+        <div class="wl-swatch unbilled"></div>
+        <span>Billable — never logged (~1.2h)</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     03 — THE LEAKY FUNNEL
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-funnel">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">03</span>
+
+  <div class="funnel-top">
+    <p class="ll-eyebrow crisis">Revenue Leakage</p>
+    <h2 class="funnel-headline">Every stage of billing leaks revenue.</h2>
+  </div>
+
+  <div class="funnel-body-wrap">
+    <!-- Tier 1: Hours Worked -->
+    <div class="funnel-stage">
+      <div class="funnel-stage-meta">
+        <span class="funnel-stage-name">Hours Worked</span>
+        <span class="funnel-stage-value">100% baseline</span>
+      </div>
+      <div class="funnel-bar-outer">
+        <div class="funnel-bar t1" style="--fw: 100%;"></div>
+      </div>
+    </div>
+
+    <div class="funnel-drop-row">
+      <div class="funnel-drop-line"></div>
+      <span class="funnel-drop-text">−62% never logged · utilization loss</span>
+      <div class="funnel-drop-line"></div>
+    </div>
+
+    <!-- Tier 2: Hours Recorded -->
+    <div class="funnel-stage">
+      <div class="funnel-stage-meta">
+        <span class="funnel-stage-name">Hours Recorded</span>
+        <span class="funnel-stage-value">38% capture rate · only 3.0h out of 8</span>
+      </div>
+      <div class="funnel-bar-outer">
+        <div class="funnel-bar t2" style="--fw: 55%;"></div>
+      </div>
+    </div>
+
+    <div class="funnel-drop-row">
+      <div class="funnel-drop-line"></div>
+      <span class="funnel-drop-text">−12% written off · realization loss</span>
+      <div class="funnel-drop-line"></div>
+    </div>
+
+    <!-- Tier 3: Hours Billed -->
+    <div class="funnel-stage">
+      <div class="funnel-stage-meta">
+        <span class="funnel-stage-name">Hours Billed</span>
+        <span class="funnel-stage-value">88% of recorded hours invoiced</span>
+      </div>
+      <div class="funnel-bar-outer">
+        <div class="funnel-bar t3" style="--fw: 48%;"></div>
+      </div>
+    </div>
+
+    <div class="funnel-drop-row">
+      <div class="funnel-drop-line"></div>
+      <span class="funnel-drop-text">−9% uncollected · collection loss</span>
+      <div class="funnel-drop-line"></div>
+    </div>
+
+    <!-- Tier 4: Hours Collected -->
+    <div class="funnel-stage">
+      <div class="funnel-stage-meta">
+        <span class="funnel-stage-name">Hours Collected</span>
+        <span class="funnel-stage-value">91% of billed hours paid · ~$0.91 per $1.00 earned</span>
+      </div>
+      <div class="funnel-bar-outer">
+        <div class="funnel-bar t4" style="--fw: 44%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="funnel-source-row">
+    <span class="funnel-source">Source: Clio 2025 KPI Benchmarks · Clio 2022 Legal Trends Report</span>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     04 — WHY TIME GOES UNRECORDED
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-why">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">04</span>
+
+  <div class="why-top">
+    <p class="ll-eyebrow crisis">The Behavioral Problem</p>
+    <h2 class="why-headline">Why time goes unrecorded.</h2>
+  </div>
+
+  <div class="why-cards">
+    <div class="why-card">
+      <span class="why-card-num">01</span>
+      <div class="why-card-icon">
+        <span class="why-icon-glyph">?</span>
+      </div>
+      <h3 class="why-card-title">Memory Decay</h3>
+      <p class="why-card-body">Reconstructing a full day of work at 7pm from a foggy recollection. What was that Westlaw search? How long was the Morrison call?</p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-card-num">02</span>
+      <div class="why-card-icon">
+        <span class="why-icon-glyph">#</span>
+      </div>
+      <h3 class="why-card-title">Context-Switching</h3>
+      <p class="why-card-body">Juggling 5-10+ matters per day means losing track of where time went. Attention fractures across clients, tasks, and tools all day long.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-card-num">03</span>
+      <div class="why-card-icon">
+        <span class="why-icon-glyph">0.1</span>
+      </div>
+      <h3 class="why-card-title">Rounding Friction</h3>
+      <p class="why-card-body">Six-minute billing increments don't map neatly to actual work. A 4-minute email rounds to zero and gets lost. A 7-minute call rounds to 0.1 — maybe.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-card-num">04</span>
+      <div class="why-card-icon">
+        <span class="why-icon-glyph">x</span>
+      </div>
+      <h3 class="why-card-title">Admin Interruptions</h3>
+      <p class="why-card-body">Non-billable tasks fracture focus and disrupt the rhythm of recording. Every interruption resets the clock on what came before it.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-card-num">05</span>
+      <div class="why-card-icon">
+        <span class="why-icon-glyph">—</span>
+      </div>
+      <h3 class="why-card-title">Avoidance</h3>
+      <p class="why-card-body">Time entry is tedious and unpopular. It gets deferred, then skipped entirely. The longer it waits, the less accurate it becomes.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     05 — AI COMPRESSES BILLABLE WORK
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-ai">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">05</span>
+
+  <div class="ai-left">
+    <p class="ll-eyebrow market">The AI Disruption</p>
+    <div class="ai-stat">74%</div>
+    <p class="ai-stat-label">of hourly billable work faces automation risk from generative AI</p>
+    <p class="ai-body">The highest-risk tasks — documenting, researching, and analyzing — make up the bulk of what lawyers bill for today. AI doesn't just create opportunity. It creates a fundamental threat to the hourly model.</p>
+    <p class="ai-source">Source: Clio 2024 Legal Trends Report (O*NET methodology)</p>
+  </div>
+
+  <div class="ai-right">
+    <p class="ai-chart-header">Billable task categories by automation risk</p>
+
+    <div class="ai-bar-row">
+      <div class="ai-bar-meta">
+        <span class="ai-bar-label">Getting information &amp; research</span>
+        <span class="ai-bar-risk high">High risk</span>
+      </div>
+      <div class="ai-bar-track">
+        <div class="ai-bar-fill high" style="width: 24%;">
+          <span class="ai-bar-fill-pct">24%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-bar-row">
+      <div class="ai-bar-meta">
+        <span class="ai-bar-label">Documenting &amp; recording information</span>
+        <span class="ai-bar-risk high">High risk</span>
+      </div>
+      <div class="ai-bar-track">
+        <div class="ai-bar-fill high" style="width: 22%;">
+          <span class="ai-bar-fill-pct">22%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-bar-row">
+      <div class="ai-bar-meta">
+        <span class="ai-bar-label">Processing &amp; analyzing data</span>
+        <span class="ai-bar-risk high">High risk</span>
+      </div>
+      <div class="ai-bar-track">
+        <div class="ai-bar-fill high" style="width: 20%;">
+          <span class="ai-bar-fill-pct">20%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-bar-row">
+      <div class="ai-bar-meta">
+        <span class="ai-bar-label">Writing, reviewing &amp; editing documents</span>
+        <span class="ai-bar-risk medium">Medium risk</span>
+      </div>
+      <div class="ai-bar-track">
+        <div class="ai-bar-fill medium" style="width: 18%;">
+          <span class="ai-bar-fill-pct">18%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-bar-row">
+      <div class="ai-bar-meta">
+        <span class="ai-bar-label">Advising &amp; counseling clients</span>
+        <span class="ai-bar-risk low">Low risk</span>
+      </div>
+      <div class="ai-bar-track">
+        <div class="ai-bar-fill low" style="width: 10%;">
+          <span class="ai-bar-fill-pct">10%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-bar-row">
+      <div class="ai-bar-meta">
+        <span class="ai-bar-label">Court appearances &amp; litigation</span>
+        <span class="ai-bar-risk low">Low risk</span>
+      </div>
+      <div class="ai-bar-track">
+        <div class="ai-bar-fill low" style="width: 6%;">
+          <span class="ai-bar-fill-pct">6%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-chart-legend">
+      <div class="ai-legend-item">
+        <div class="ai-legend-swatch high"></div>
+        <span>High automation risk</span>
+      </div>
+      <div class="ai-legend-item">
+        <div class="ai-legend-swatch medium"></div>
+        <span>Medium risk</span>
+      </div>
+      <div class="ai-legend-item">
+        <div class="ai-legend-swatch low"></div>
+        <span>Low risk</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     06 — THE BILLABLE HOUR PARADOX
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-paradox">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">06</span>
+
+  <div class="paradox-left">
+    <p class="ll-eyebrow market">The Paradox</p>
+    <div class="paradox-fraction">
+      <span class="paradox-num">1</span>
+      <div class="paradox-in-wrap">
+        <span class="paradox-in">in</span>
+        <span class="paradox-denom">5</span>
+      </div>
+    </div>
+    <div class="paradox-circles">
+      <div class="paradox-circle filled"></div>
+      <div class="paradox-circle empty"></div>
+      <div class="paradox-circle empty"></div>
+      <div class="paradox-circle empty"></div>
+      <div class="paradox-circle empty"></div>
+    </div>
+    <p class="paradox-caption">firms where AI is already challenging their ability to meet billable hour targets</p>
+  </div>
+
+  <div class="paradox-right">
+    <p class="ll-eyebrow market">The shift is already happening</p>
+
+    <div class="paradox-stat-grid">
+      <div class="paradox-stat-card">
+        <div class="psc-value">45%</div>
+        <div class="psc-label">of firms have adjusted their pricing because of AI</div>
+      </div>
+      <div class="paradox-stat-card">
+        <div class="psc-value">59%</div>
+        <div class="psc-label">of firms now offer flat fees in addition to or instead of hourly billing</div>
+      </div>
+    </div>
+
+    <div class="paradox-model-section">
+      <p class="paradox-model-caption">Billing model split across the industry</p>
+      <div class="billing-model-bar">
+        <div class="bm-seg hourly" style="width: 41%;">Hourly only — 41%</div>
+        <div class="bm-seg flat" style="width: 59%;">Flat fee / mixed — 59%</div>
+      </div>
+      <div class="billing-model-legend">
+        <div class="bml-item">
+          <div class="bml-swatch hourly"></div>
+          <span>Hourly only</span>
+        </div>
+        <div class="bml-item">
+          <div class="bml-swatch flat"></div>
+          <span>Flat fee or mixed model</span>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); letter-spacing: 0.06em; text-transform: uppercase;">Source: Clio 2024 Legal Trends Report</p>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     07 — THE CLIENT SIDE
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-client">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">07</span>
+
+  <div style="margin-bottom: 28px;">
+    <p class="ll-eyebrow market">Client Demand</p>
+    <h2 style="font-family: var(--font-display); font-size: 60px; font-weight: 700; line-height: 1.07; letter-spacing: -0.026em; color: var(--text-primary);">Clients don't love the billable hour either.</h2>
+  </div>
+
+  <div class="client-top-cards">
+    <div class="client-stat-card">
+      <div class="client-big-pct">71%</div>
+      <p class="client-pct-label">of clients would prefer to pay a flat fee for their entire case</p>
+      <p class="client-source">Clio 2024 Legal Trends Report (n=1,003 U.S. adults)</p>
+    </div>
+    <div class="client-stat-card">
+      <div class="client-big-pct">51%</div>
+      <p class="client-pct-label">would prefer flat fees for individual activities within a case</p>
+      <p class="client-source">Clio 2024 Legal Trends Report (n=1,003 U.S. adults)</p>
+    </div>
+  </div>
+
+  <div class="client-bottom">
+    <p class="client-bottom-label">Time to payment — flat fee vs. hourly</p>
+    <div class="payment-comparison">
+      <div class="payment-row">
+        <span class="payment-model-label">Flat fee</span>
+        <div class="payment-bar-track">
+          <div class="payment-bar-fill flat">
+            <span class="payment-bar-text">Near-immediate</span>
+          </div>
+        </div>
+        <span class="payment-bar-aside">1× baseline</span>
+      </div>
+      <div class="payment-row">
+        <span class="payment-model-label">Hourly</span>
+        <div class="payment-bar-track">
+          <div class="payment-bar-fill hourly">
+            <span class="payment-bar-text">2.6× longer to close</span>
+          </div>
+        </div>
+        <span class="payment-bar-aside">Hourly matters take 2.6× longer</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     08 — EMERGING PRICING MODELS
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-models">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">08</span>
+
+  <div class="models-top">
+    <p class="ll-eyebrow market">Pricing Innovation</p>
+    <h2 class="models-headline">The spectrum of what firms are experimenting with.</h2>
+  </div>
+
+  <div class="spectrum-section">
+    <div class="spectrum-ends">
+      <span class="spectrum-end-label">Traditional</span>
+      <span class="spectrum-end-label">Value-Based</span>
+    </div>
+    <div class="spectrum-track">
+      <div class="spectrum-stops">
+        <div class="spectrum-stop">
+          <div class="spectrum-node"></div>
+          <span class="spectrum-stop-title">Hourly</span>
+          <span class="spectrum-stop-sub">Time × rate</span>
+        </div>
+        <div class="spectrum-stop">
+          <div class="spectrum-node"></div>
+          <span class="spectrum-stop-title">Flat Fee / Matter</span>
+          <span class="spectrum-stop-sub">Fixed per case</span>
+        </div>
+        <div class="spectrum-stop">
+          <div class="spectrum-node"></div>
+          <span class="spectrum-stop-title">Flat Fee / Activity</span>
+          <span class="spectrum-stop-sub">Fixed per task</span>
+        </div>
+        <div class="spectrum-stop">
+          <div class="spectrum-node"></div>
+          <span class="spectrum-stop-title">Subscription</span>
+          <span class="spectrum-stop-sub">Monthly retainer</span>
+        </div>
+        <div class="spectrum-stop">
+          <div class="spectrum-node"></div>
+          <span class="spectrum-stop-title">Hybrid</span>
+          <span class="spectrum-stop-sub">Hourly with cap</span>
+        </div>
+        <div class="spectrum-stop">
+          <div class="spectrum-node"></div>
+          <span class="spectrum-stop-title">Value-Based</span>
+          <span class="spectrum-stop-sub">Outcome pricing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="models-stats">
+    <div class="models-stat-card">
+      <span class="msc-label">Adoption since 2016</span>
+      <div class="msc-value">+34%</div>
+      <p class="msc-desc">More cases billed on a flat-fee basis since 2016. The shift is already underway — and accelerating.</p>
+      <p class="msc-source">Source: Clio 2024 Legal Trends Report</p>
+    </div>
+    <div class="models-stat-card">
+      <span class="msc-label">Pricing since 2016</span>
+      <div class="msc-value">+20%</div>
+      <p class="msc-desc">Higher rates charged on flat-fee cases. Flat fees are not a race to the bottom — firms doing it well are charging more.</p>
+      <p class="msc-source">Source: Clio 2024 Legal Trends Report</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     09 — THE DATA FOUNDATION PROBLEM
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-data">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">09</span>
+
+  <div class="data-top">
+    <p class="ll-eyebrow neutral">The Bridge</p>
+    <h2 class="data-headline">You can't price on value if you<br>don't understand your cost of delivery.</h2>
+    <p class="data-sub">Knowledge work represents over 50% of global GDP, yet the "supply chain" of that work has never been properly measured. Most firms can't tell you the true cost of a divorce, a custody dispute, or a real estate closing.</p>
+  </div>
+
+  <div class="data-gap-table">
+    <div class="data-col know">
+      <div class="data-col-header">What Firms Know</div>
+      <div class="data-item">
+        <div class="data-item-mark">&#10003;</div>
+        <span class="data-item-text">Hours billed</span>
+      </div>
+      <div class="data-item">
+        <div class="data-item-mark">&#10003;</div>
+        <span class="data-item-text">Revenue collected</span>
+      </div>
+      <div class="data-item">
+        <div class="data-item-mark">&#10003;</div>
+        <span class="data-item-text">Hourly rate</span>
+      </div>
+      <div class="data-item">
+        <div class="data-item-mark">&#10003;</div>
+        <span class="data-item-text">Headcount</span>
+      </div>
+    </div>
+
+    <div class="data-divider">
+      <div class="data-divider-line"></div>
+      <span class="data-divider-glyph">GAP</span>
+      <div class="data-divider-line"></div>
+    </div>
+
+    <div class="data-col dont-know">
+      <div class="data-col-header">What Firms Don't Know</div>
+      <div class="data-item">
+        <div class="data-item-mark">?</div>
+        <span class="data-item-text">True cost per matter type</span>
+      </div>
+      <div class="data-item">
+        <div class="data-item-mark">?</div>
+        <span class="data-item-text">High-leverage vs. low-leverage tasks</span>
+      </div>
+      <div class="data-item">
+        <div class="data-item-mark">?</div>
+        <span class="data-item-text">Where AI saves the most time and money</span>
+      </div>
+      <div class="data-item">
+        <div class="data-item-mark">?</div>
+        <span class="data-item-text">Optimal staffing mix per case type</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="data-bottom-quote">The gap between these two columns is the opportunity.</p>
+</section>
+</div>
+
+<!-- ============================================================
+     10 — DONNA
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-donna">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">10</span>
+
+  <div class="donna-left">
+    <p class="ll-eyebrow solution">The Solution</p>
+    <h2 class="donna-headline">What if you never had to think about time entry again?</h2>
+    <p class="donna-body">Donna passively captures everything — email, documents, meetings, calls, research — and turns it into billing-ready narratives with AI. You review and confirm in minutes, not hours.</p>
+    <ul class="donna-bullets">
+      <li>Passive capture across all computer activity</li>
+      <li>AI-generated billing narratives, ready to submit</li>
+      <li>Automatic matter and client assignment</li>
+      <li>Daily review — confirm in minutes, not from memory</li>
+    </ul>
+    <div class="donna-recovery-stat">
+      <div class="drs-value">+28 min / day</div>
+      <div class="drs-label">recovered per professional — 10%+ immediate revenue lift</div>
+    </div>
+  </div>
+
+  <div class="donna-right">
+    <div class="before-after-card">
+      <div class="ba-header">Daily billable time captured</div>
+      <div class="ba-row">
+        <div class="ba-row-label">
+          <span class="ba-row-name">Before Donna</span>
+          <span class="ba-row-val">3.0h</span>
+        </div>
+        <div class="ba-track">
+          <div class="ba-fill-base" style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-row-label">
+          <span class="ba-row-name">After Donna</span>
+          <span class="ba-row-val">3.47h</span>
+        </div>
+        <div class="ba-track">
+          <div class="ba-fill-base" style="width: 75%;"></div>
+          <div class="ba-fill-extra" style="width: 12%;">
+            <span class="ba-fill-extra-label">+28 min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="donna-formula-card">
+      <div class="donna-formula-header">Run the math for your firm</div>
+      <div class="donna-formula-eq">
+        <span class="eq-highlight">28 min/day</span>
+        &times; [your billing rate]
+        &times; [# of timekeepers]
+        &times; 250 days
+        = <span class="eq-result">Annual revenue recovered</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     11 — DISCUSSION
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-discussion">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">11</span>
+
+  <p class="ll-eyebrow neutral">Open Discussion</p>
+  <h2 class="discussion-headline">Let's talk.</h2>
+
+  <div class="discussion-questions">
+    <div class="discussion-q">
+      <span class="discussion-q-num">01</span>
+      <p class="discussion-q-text">If you knew the true cost of every matter type you handle, how would that change what you charge?</p>
+    </div>
+    <div class="discussion-q">
+      <span class="discussion-q-num">02</span>
+      <p class="discussion-q-text">What would you do with an extra 28 minutes of billable time every day?</p>
+    </div>
+    <div class="discussion-q">
+      <span class="discussion-q-num">03</span>
+      <p class="discussion-q-text">Is your current pricing model sustainable if AI cuts task time in half?</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     12 — SOURCES
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-ll-sources">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">12</span>
+
+  <p class="ll-eyebrow neutral">Further Reading</p>
+  <h2 class="sources-headline">Sources &amp; Further Reading</h2>
+
+  <div class="sources-grid">
+    <div class="source-item">
+      <span class="source-num">01</span>
+      <div class="source-title">Clio 2024 Legal Trends Report</div>
+      <div class="source-url">clio.com/resources/legal-trends/2024-report/</div>
+    </div>
+    <div class="source-item">
+      <span class="source-num">02</span>
+      <div class="source-title">Clio 2025 KPI Benchmarks</div>
+      <div class="source-url">clio.com/resources/legal-trends/benchmarks/</div>
+    </div>
+    <div class="source-item">
+      <span class="source-num">03</span>
+      <div class="source-title">Clio 2024 Solo &amp; Small Law Firms Report</div>
+      <div class="source-url">clio.com/blog/solo-small-law-firms-2024-legal-trends/</div>
+    </div>
+    <div class="source-item">
+      <span class="source-num">04</span>
+      <div class="source-title">ABA / Law Technology Today: AI Time Tracking for Lawyers</div>
+      <div class="source-url">americanbar.org/groups/law_practice/resources/law-technology-today/2025/ai-time-tracking-for-lawyers/</div>
+    </div>
+    <div class="source-item">
+      <span class="source-num">05</span>
+      <div class="source-title">Clio 2022 Legal Trends Report</div>
+      <div class="source-url">clio.com/resources/legal-trends/2022-report/read-online/</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- PDF Download Button -->
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  function scaleSlides() {
+    const s = Math.min((window.innerWidth - 80) / 1920, 1);
+    document.documentElement.style.setProperty('--slide-scale', s);
+  }
+  window.addEventListener('resize', scaleSlides);
+  scaleSlides();
+</script>
+</body>
+</html>

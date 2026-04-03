@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - paragraph [ref=e3]: donna
+    - heading "Slide Decks" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Select a deck to view or export as PDF.
+  - main [ref=e6]:
+    - paragraph [ref=e7]: Available
+    - generic [ref=e8]:
+      - link "Product Docketing Product demo deck — AI time tracking for attorneys. Passive capture, billing narratives, privacy-first architecture. 10 slides →" [ref=e9] [cursor=pointer]:
+        - /url: /decks/product/
+        - generic [ref=e10]: Product
+        - generic [ref=e11]: Docketing
+        - paragraph [ref=e12]: Product demo deck — AI time tracking for attorneys. Passive capture, billing narratives, privacy-first architecture.
+        - generic [ref=e13]:
+          - generic [ref=e14]: 10 slides
+          - generic [ref=e15]: →
+      - link "Lunch & Learn The Billable Hour Is Bleeding Out Time tracking, AI, and the pricing crisis in legal. The case for why the hourly model is under pressure — and what comes next. 12 slides →" [ref=e16] [cursor=pointer]:
+        - /url: /decks/lunch-and-learn/
+        - generic [ref=e17]: Lunch & Learn
+        - generic [ref=e18]: The Billable Hour Is Bleeding Out
+        - paragraph [ref=e19]: Time tracking, AI, and the pricing crisis in legal. The case for why the hourly model is under pressure — and what comes next.
+        - generic [ref=e20]:
+          - generic [ref=e21]: 12 slides
+          - generic [ref=e22]: →
+      - generic:
+        - generic: Coming soon
+        - generic: Investor Pitch
+        - paragraph: Fundraising deck for angels and VCs. Market size, traction, team, and ask.
+        - generic:
+          - generic: — slides
+          - generic: →

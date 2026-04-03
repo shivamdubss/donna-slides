@@ -3,128 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimeTrack — Slides</title>
-
-  <!-- Fonts -->
+  <title>Donna Slides</title>
   <link rel="preconnect" href="https://fonts.bunny.net">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <link rel="stylesheet" href="styles.css">
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: #FAFAFA;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 64px 80px 48px;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    .site-wordmark {
+      font-family: 'Geist Mono', monospace;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: #A3A3A3;
+      text-transform: lowercase;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-family: 'Satoshi', system-ui, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #0A0A0A;
+      margin-bottom: 10px;
+    }
+
+    .header-sub {
+      font-size: 18px;
+      color: #737373;
+      font-weight: 400;
+    }
+
+    main {
+      padding: 48px 80px 80px;
+      flex: 1;
+    }
+
+    .section-label {
+      font-family: 'Geist Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #A3A3A3;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .deck-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+    }
+
+    .deck-card {
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      border: 1px solid #E5E5E5;
+      border-radius: 12px;
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 100ms ease, box-shadow 100ms ease;
+    }
+
+    .deck-card:hover {
+      border-color: #C0C0C0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    }
+
+    .deck-tag {
+      font-family: 'Geist Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #A3A3A3;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .deck-title {
+      font-family: 'Satoshi', system-ui, sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: #0A0A0A;
+      margin-bottom: 10px;
+    }
+
+    .deck-desc {
+      font-size: 15px;
+      color: #737373;
+      line-height: 1.5;
+      flex: 1;
+      margin-bottom: 28px;
+    }
+
+    .deck-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .deck-slides {
+      font-family: 'Geist Mono', monospace;
+      font-size: 12px;
+      color: #A3A3A3;
+    }
+
+    .deck-arrow {
+      font-size: 18px;
+      color: #171717;
+    }
+
+    .deck-card.coming-soon {
+      opacity: 0.45;
+      pointer-events: none;
+      cursor: default;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <p class="site-wordmark">donna</p>
+    <h1>Slide Decks</h1>
+    <p class="header-sub">Select a deck to view or export as PDF.</p>
+  </header>
 
-  <!-- ======================================================
-       Slide 01 — Hero
-       ====================================================== -->
-  <div class="slide-wrapper">
-    <section class="slide slide-hero">
-      <span class="slide-wordmark">TimeTrack</span>
-      <span class="slide-number">01</span>
+  <main>
+    <p class="section-label">Available</p>
+    <div class="deck-grid">
 
-      <p class="hero-eyebrow">Introducing TimeTrack</p>
+      <a href="/decks/product/" class="deck-card">
+        <span class="deck-tag">Product</span>
+        <div class="deck-title">Docketing</div>
+        <p class="deck-desc">Product demo deck — AI time tracking for attorneys. Passive capture, billing narratives, privacy-first architecture.</p>
+        <div class="deck-footer">
+          <span class="deck-slides">10 slides</span>
+          <span class="deck-arrow">→</span>
+        </div>
+      </a>
 
-      <h1 class="hero-headline">Know exactly where<br>your time goes.</h1>
+      <a href="/decks/lunch-and-learn/" class="deck-card">
+        <span class="deck-tag">Lunch &amp; Learn</span>
+        <div class="deck-title">The Billable Hour Is Bleeding Out</div>
+        <p class="deck-desc">Time tracking, AI, and the pricing crisis in legal. The case for why the hourly model is under pressure — and what comes next.</p>
+        <div class="deck-footer">
+          <span class="deck-slides">12 slides</span>
+          <span class="deck-arrow">→</span>
+        </div>
+      </a>
 
-      <p class="hero-sub">
-        Automatic, private time tracking for macOS —<br>
-        powered by Claude AI.
-      </p>
-
-      <div class="hero-ctas">
-        <span class="btn btn-primary">Download for macOS</span>
-        <span class="btn btn-ghost">Watch demo ↗</span>
-      </div>
-    </section>
-  </div>
-
-  <!-- ======================================================
-       Slide 02 — The Problem
-       ====================================================== -->
-  <div class="slide-wrapper">
-    <section class="slide slide-problem">
-      <span class="slide-wordmark">TimeTrack</span>
-      <span class="slide-number">02</span>
-
-      <div class="prob-left">
-        <p class="prob-eyebrow">The Problem</p>
-
-        <h2 class="prob-headline">Time tracking is painful enough that most people just skip it.</h2>
-
-        <ul class="prob-bullets">
-          <li>
-            <span class="bullet-dot"></span>
-            Timers you forget to start — and forget to stop
-          </li>
-          <li>
-            <span class="bullet-dot"></span>
-            Retroactive guessing at the end of the week
-          </li>
-          <li>
-            <span class="bullet-dot"></span>
-            Friction that turns into abandoned projects
-          </li>
-        </ul>
-      </div>
-
-      <div class="prob-right">
-        <!-- Fake manual timer app mockup -->
-        <div class="timer-mockup">
-          <div class="mockup-header">
-            <span class="mockup-title">My Timers</span>
-            <span class="mockup-new-btn">+ New</span>
-          </div>
-
-          <div class="timer-rows">
-            <div class="timer-row">
-              <span class="row-indicator running"></span>
-              <span class="row-project">Client Project — Feature Build</span>
-              <span class="row-time">2:14:07</span>
-              <span class="row-stop"><span class="row-stop-icon"></span></span>
-            </div>
-            <div class="timer-row">
-              <span class="row-indicator paused"></span>
-              <span class="row-project">Weekly Report</span>
-              <span class="row-time">0:47:22</span>
-              <span class="row-stop"><span class="row-stop-icon"></span></span>
-            </div>
-            <div class="timer-row uncertain">
-              <span class="row-indicator paused"></span>
-              <span class="row-project">Emails &amp; Admin</span>
-              <span class="row-time">??:??</span>
-              <span class="row-stop"><span class="row-stop-icon"></span></span>
-            </div>
-            <div class="timer-row uncertain">
-              <span class="row-indicator paused"></span>
-              <span class="row-project">Research</span>
-              <span class="row-time">??:??</span>
-              <span class="row-stop"><span class="row-stop-icon"></span></span>
-            </div>
-          </div>
-
-          <div class="mockup-footer">
-            <span class="footer-dot"></span>
-            Last synced 3 days ago
-          </div>
+      <div class="deck-card coming-soon">
+        <span class="deck-tag">Coming soon</span>
+        <div class="deck-title">Investor Pitch</div>
+        <p class="deck-desc">Fundraising deck for angels and VCs. Market size, traction, team, and ask.</p>
+        <div class="deck-footer">
+          <span class="deck-slides">— slides</span>
+          <span class="deck-arrow">→</span>
         </div>
       </div>
-    </section>
-  </div>
 
-  <!-- PDF Download Button -->
-  <button class="download-btn" onclick="window.print()">Download PDF</button>
-
-  <script>
-    function scaleSlides() {
-      const vw = window.innerWidth;
-      // Leave some breathing room for the body padding
-      const scale = Math.min((vw - 80) / 1920, 1);
-      document.documentElement.style.setProperty('--slide-scale', scale);
-    }
-    window.addEventListener('resize', scaleSlides);
-    scaleSlides();
-  </script>
+    </div>
+  </main>
 </body>
 </html>

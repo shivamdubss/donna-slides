@@ -1,8 +1,7 @@
 /* ============================================================
-   TimeTrack Slides — Design System
+   Donna Slides — Shared Design System
    ============================================================ */
 
-/* Design Tokens */
 :root {
   --bg-page: #FAFAFA;
   --bg-surface: #FFFFFF;
@@ -17,66 +16,40 @@
   --text-faint: #A3A3A3;
   --accent-primary: #171717;
   --accent-link: #2563EB;
-
-  /* Category Colors */
-  --cat-coding: #0F766E;       --cat-coding-bg: #F0FDFA;
-  --cat-comm: #C2410C;         --cat-comm-bg: #FFF7ED;
-  --cat-research: #4F46E5;     --cat-research-bg: #EEF2FF;
-  --cat-meetings: #BE123C;     --cat-meetings-bg: #FFF1F2;
-  --cat-browsing: #475569;     --cat-browsing-bg: #F8FAFC;
-
-  /* Border Radius */
   --r-sm: 6px;
   --r-md: 10px;
   --r-lg: 14px;
   --r-full: 9999px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
-
-  /* Fonts */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
   --font-display: 'Satoshi', 'Inter', system-ui, sans-serif;
   --font-body: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
   --font-mono: 'Geist Mono', 'Fira Code', ui-monospace, monospace;
 }
 
-/* ============================================================
-   Reset + Base
-   ============================================================ */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  background: #E8E8E8;
-}
+html { background: #E0E0E0; }
 
 body {
   font-family: var(--font-body);
-  background: #E8E8E8;
+  background: #E0E0E0;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
-/* ============================================================
-   Slide Scaling Architecture
-   ============================================================ */
-
-/* Each slide is authored at 1920×1080 and scaled to fit the viewport */
+/* ---- Slide scaling ---- */
 .slide-wrapper {
   width: calc(1920px * var(--slide-scale, 0.667));
   height: calc(1080px * var(--slide-scale, 0.667));
   position: relative;
   overflow: hidden;
   border-radius: var(--r-md);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.06);
   flex-shrink: 0;
 }
 
@@ -92,36 +65,31 @@ body {
   overflow: hidden;
 }
 
-/* ============================================================
-   Slide Chrome (persistent elements on every slide)
-   ============================================================ */
+/* ---- Persistent chrome ---- */
 .slide-wordmark {
   position: absolute;
-  top: 48px;
-  left: 64px;
+  top: 44px;
+  left: 60px;
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--text-faint);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   z-index: 10;
+  text-transform: lowercase;
 }
 
 .slide-number {
   position: absolute;
-  bottom: 48px;
-  right: 64px;
+  bottom: 44px;
+  right: 60px;
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--text-faint);
   z-index: 10;
 }
 
-/* ============================================================
-   Reusable Components
-   ============================================================ */
-
-/* Surface card */
+/* ---- Generic components ---- */
 .surface {
   background: var(--bg-surface);
   border: 1px solid var(--border-default);
@@ -129,403 +97,67 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* Eyebrow label */
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-faint);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-/* Category badge */
 .badge {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  padding: 4px 10px;
+  padding: 3px 10px;
   border-radius: var(--r-full);
   font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
-}
-.badge.coding    { color: var(--cat-coding);   background: var(--cat-coding-bg); }
-.badge.comm      { color: var(--cat-comm);     background: var(--cat-comm-bg); }
-.badge.research  { color: var(--cat-research); background: var(--cat-research-bg); }
-.badge.meetings  { color: var(--cat-meetings); background: var(--cat-meetings-bg); }
-.badge.browsing  { color: var(--cat-browsing); background: var(--cat-browsing-bg); }
-
-/* Metric block */
-.metric-block {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.metric-block .value {
-  font-family: var(--font-mono);
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: -0.02em;
-}
-.metric-block .label {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--text-muted);
+  white-space: nowrap;
 }
 
-/* CTA Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 16px 32px;
+  padding: 15px 30px;
   border-radius: var(--r-md);
   font-family: var(--font-body);
   font-size: 18px;
   font-weight: 600;
   cursor: default;
   white-space: nowrap;
-  transition: background 100ms ease;
 }
-.btn-primary {
-  background: var(--accent-primary);
-  color: #FFFFFF;
-  border: 1.5px solid var(--accent-primary);
-}
-.btn-ghost {
-  background: transparent;
-  color: var(--text-primary);
-  border: 1.5px solid var(--border-default);
-}
+.btn-primary { background: var(--accent-primary); color: #FFF; border: 1.5px solid var(--accent-primary); }
+.btn-ghost   { background: transparent; color: var(--text-primary); border: 1.5px solid var(--border-default); }
 
-/* ============================================================
-   Slide 01 — Hero
-   ============================================================ */
-.slide-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 80px;
-  position: relative;
-}
-
-.slide-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 1400px 600px at 50% 110%, #DBEAFE 0%, transparent 65%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-.slide-hero > * {
-  position: relative;
-  z-index: 1;
-}
-
-.slide-hero .hero-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  color: var(--text-faint);
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.slide-hero .hero-headline {
-  font-family: var(--font-display);
-  font-size: 88px;
-  font-weight: 700;
-  line-height: 1.04;
-  letter-spacing: -0.035em;
-  color: var(--text-primary);
-  max-width: 1000px;
-  margin-bottom: 28px;
-}
-
-.slide-hero .hero-sub {
-  font-family: var(--font-body);
-  font-size: 26px;
-  font-weight: 400;
-  color: var(--text-secondary);
-  max-width: 700px;
-  line-height: 1.5;
-  margin-bottom: 56px;
-}
-
-.slide-hero .hero-ctas {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-/* ============================================================
-   Slide 02 — The Problem
-   ============================================================ */
-.slide-problem {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-  padding: 0;
-}
-
-.slide-problem .prob-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 120px 80px 120px 96px;
-  gap: 0;
-}
-
-.slide-problem .prob-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  color: var(--cat-comm);
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.slide-problem .prob-headline {
-  font-family: var(--font-display);
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  color: var(--text-primary);
-  max-width: 640px;
-  margin-bottom: 40px;
-}
-
-.slide-problem .prob-bullets {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  list-style: none;
-}
-
-.slide-problem .prob-bullets li {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  font-family: var(--font-body);
-  font-size: 22px;
-  color: var(--text-secondary);
-  line-height: 1.45;
-}
-
-.slide-problem .prob-bullets li .bullet-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--border-default);
-  flex-shrink: 0;
-  margin-top: 10px;
-}
-
-/* Right panel */
-.slide-problem .prob-right {
-  background: var(--bg-inset);
-  border-left: 1px solid var(--border-default);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px;
-}
-
-/* Timer app mockup */
-.timer-mockup {
-  width: 100%;
-  max-width: 580px;
-  border-radius: var(--r-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-.timer-mockup .mockup-header {
-  background: var(--bg-surface);
-  border-bottom: 1px solid var(--border-default);
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.timer-mockup .mockup-title {
-  font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.timer-mockup .mockup-new-btn {
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-muted);
-  background: var(--bg-inset);
-  border: 1px solid var(--border-default);
-  border-radius: var(--r-sm);
-  padding: 6px 12px;
-}
-
-.timer-mockup .timer-rows {
-  background: var(--bg-surface);
-  border-bottom: 1px solid var(--border-default);
-}
-
-.timer-row {
-  display: flex;
-  align-items: center;
-  padding: 16px 24px;
-  border-bottom: 1px solid var(--border-subtle);
-  gap: 16px;
-}
-
-.timer-row:last-child {
-  border-bottom: none;
-}
-
-.timer-row .row-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.timer-row .row-indicator.running {
-  background: #22C55E;
-}
-.timer-row .row-indicator.paused {
-  background: var(--border-default);
-}
-
-.timer-row .row-project {
-  flex: 1;
-  font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.timer-row .row-time {
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--text-muted);
-  min-width: 72px;
-  text-align: right;
-}
-
-.timer-row.uncertain .row-time {
-  color: var(--text-faint);
-}
-
-.timer-row .row-stop {
-  width: 28px;
-  height: 28px;
-  border-radius: var(--r-sm);
-  background: var(--bg-inset);
-  border: 1px solid var(--border-default);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timer-row .row-stop-icon {
-  width: 8px;
-  height: 8px;
-  background: var(--text-faint);
-  border-radius: 2px;
-}
-
-.timer-mockup .mockup-footer {
-  background: var(--bg-inset);
-  padding: 12px 24px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--text-faint);
-  border-top: 1px solid var(--border-default);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.mockup-footer .footer-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--cat-comm);
-  opacity: 0.6;
-}
-
-/* ============================================================
-   PDF Download Button
-   ============================================================ */
+/* ---- Download button ---- */
 .download-btn {
   position: fixed;
-  top: 24px;
-  right: 24px;
+  top: 20px;
+  right: 20px;
   z-index: 9999;
   background: var(--accent-primary);
   color: #FAFAFA;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 9px 18px;
   border: none;
   border-radius: var(--r-md);
   cursor: pointer;
   box-shadow: var(--shadow-md);
   letter-spacing: 0.01em;
 }
+.download-btn:hover { background: #333; }
 
-.download-btn:hover {
-  background: #2a2a2a;
-}
-
-/* ============================================================
-   Print
-   ============================================================ */
+/* ---- Print ---- */
 @media print {
-  html, body {
-    background: white;
-    padding: 0;
-    gap: 0;
-    display: block;
-  }
-
-  .download-btn {
-    display: none;
-  }
-
+  html, body { background: white; padding: 0; gap: 0; display: block; }
+  .download-btn { display: none; }
   .slide-wrapper {
-    width: 1920px;
-    height: 1080px;
-    border-radius: 0;
-    box-shadow: none;
-    page-break-after: always;
-    overflow: visible;
+    width: 1920px; height: 1080px;
+    border-radius: 0; box-shadow: none;
+    page-break-after: always; overflow: visible;
   }
-
-  .slide {
-    transform: none !important;
-    position: relative;
-    box-shadow: none;
-  }
-
+  .slide { transform: none !important; position: relative; box-shadow: none; }
   * {
     animation-duration: 0s !important;
     transition-duration: 0s !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
-
-@page {
-  size: 1920px 1080px;
-  margin: 0;
-}
+@page { size: 1920px 1080px; margin: 0; }
