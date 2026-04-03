@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — Docketing Product Deck</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+
+<!-- ============================================================
+     01 — HERO
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-hero">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">01</span>
+
+  <p class="hero-eyebrow">AI Time Tracking for Attorneys</p>
+  <h1 class="hero-headline">Stop losing billable hours<br>to end-of-day guesswork.</h1>
+  <p class="hero-sub">Donna silently tracks your work, generates billing-ready narratives with AI, and keeps client data on-device. Built for attorneys.</p>
+  <div class="hero-badges">
+    <span class="hero-badge">Privacy-first</span>
+    <span class="hero-badge">On-device AI</span>
+    <span class="hero-badge">No data leaves your machine</span>
+  </div>
+  <div class="hero-ctas">
+    <span class="btn btn-primary">Download for macOS</span>
+    <span class="btn btn-ghost">Download for Windows</span>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     02 — THE PROBLEM
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-problem">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">02</span>
+
+  <div class="prob-left">
+    <p class="prob-eyebrow">The Problem</p>
+    <div class="prob-stat">$50,000</div>
+    <p class="prob-stat-label">lost per attorney, per year in unbilled time</p>
+    <p class="prob-body">End-of-day time reconstruction misses 10–40% of billable work. Vague entries like "worked on case" get written down at 7pm. Manual tracking tools go unused because they interrupt the work they're supposed to measure.</p>
+  </div>
+
+  <div class="prob-right">
+    <div class="timesheet-before">
+      <div class="tb-header">
+        <span class="tb-title">Today's Time Entries</span>
+        <span class="tb-date">Mon, Apr 7</span>
+      </div>
+      <div class="tb-entries">
+        <div class="tb-row">
+          <span class="tb-row-desc">Worked on Smith case</span>
+          <span class="tb-row-hours">3.5?</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-row-desc">Reviewed documents</span>
+          <span class="tb-row-hours">2.0?</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-row-desc">Client calls</span>
+          <span class="tb-row-hours">1.0?</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-row-desc">Research — Westlaw</span>
+          <span class="tb-row-hours lost">???</span>
+        </div>
+        <div class="tb-row">
+          <span class="tb-row-desc">Emails &amp; correspondence</span>
+          <span class="tb-row-hours lost">???</span>
+        </div>
+      </div>
+      <div class="tb-warning">
+        <span class="tb-warn-dot"></span>
+        ~$2,450 in potentially unbilled time this week
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     03 — HOW IT WORKS
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-howitworks">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">03</span>
+
+  <div class="hiw-top">
+    <p class="hiw-eyebrow">How It Works</p>
+    <h2 class="hiw-headline">Three steps. Zero effort.</h2>
+  </div>
+
+  <div class="hiw-steps">
+    <div class="hiw-step">
+      <span class="hiw-step-num">01</span>
+      <div class="hiw-step-icon">
+        <div style="width:16px;height:16px;border-radius:50%;background:var(--cat-drafting);"></div>
+      </div>
+      <h3 class="hiw-step-title">Open Donna and work</h3>
+      <p class="hiw-step-body">Donna runs in the background while you draft motions, research case law, and handle client calls. It observes your active window and captures periodic screenshots for AI context.</p>
+    </div>
+
+    <div class="hiw-step">
+      <span class="hiw-step-num">02</span>
+      <div class="hiw-step-icon">
+        <span style="font-family:var(--font-mono);font-size:18px;font-weight:600;color:var(--cat-research);">AI</span>
+      </div>
+      <h3 class="hiw-step-title">AI generates your timesheet</h3>
+      <p class="hiw-step-body">When you stop tracking, Donna sends your activity data to Claude AI, which produces categorized billing entries with professional narratives. All raw data is immediately destroyed.</p>
+    </div>
+
+    <div class="hiw-step">
+      <span class="hiw-step-num">03</span>
+      <div class="hiw-step-icon">
+        <span style="font-family:var(--font-mono);font-size:20px;color:var(--text-muted);">&#8599;</span>
+      </div>
+      <h3 class="hiw-step-title">Review, edit, and export</h3>
+      <p class="hiw-step-body">Review AI-generated entries, adjust narratives if needed, assign to client matters, and export a clean timesheet to CSV. Donna handles the paperwork so you can handle the cases.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     04 — PASSIVE CAPTURE
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-feature">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">04</span>
+
+  <div class="feature-left">
+    <p class="feature-eyebrow research">Passive Capture</p>
+    <h2 class="feature-headline">It tracks your time.<br>You practice law.</h2>
+    <p class="feature-body">Donna monitors your active window every three seconds and captures periodic screenshots in the background. You never click "start" or "stop" — just work.</p>
+    <ul class="feature-bullets">
+      <li>Window title monitoring every 3 seconds</li>
+      <li>Periodic screenshot capture for AI context</li>
+      <li>5 activity categories: Research, Drafting, Communication, Court, Case Review</li>
+      <li>Idle detection with smart resume</li>
+    </ul>
+  </div>
+
+  <div class="feature-right">
+    <div class="donna-window">
+      <div class="donna-window-bar">
+        <div class="traffic-lights">
+          <div class="tl tl-r"></div>
+          <div class="tl tl-y"></div>
+          <div class="tl tl-g"></div>
+        </div>
+        <span class="window-title">Donna — Time Tracking</span>
+        <div class="rec-pill">
+          <span class="rec-dot"></span>
+          01:34:22
+        </div>
+      </div>
+      <div class="donna-window-body">
+        <div class="current-activity">
+          <span class="ca-label">Currently tracking</span>
+          <span class="ca-app">Westlaw</span>
+          <span class="ca-window">Smith v. Johnson — Discovery motion case law</span>
+          <div class="ca-meta">
+            <span class="ca-duration">00:23:14</span>
+            <span class="badge research">Research</span>
+          </div>
+        </div>
+
+        <div class="activity-list">
+          <div class="al-label">Recent activity</div>
+          <div class="al-row">
+            <span class="al-time">09:14</span>
+            <span class="al-app">Mail · Re: Discovery Extension Request</span>
+            <span class="al-dur">8m</span>
+            <span class="badge comm" style="font-size:11px;padding:2px 8px;">Comm.</span>
+          </div>
+          <div class="al-row">
+            <span class="al-time">09:22</span>
+            <span class="al-app">Word · Smith_Discovery_Motion.docx</span>
+            <span class="al-dur">45m</span>
+            <span class="badge drafting" style="font-size:11px;padding:2px 8px;">Drafting</span>
+          </div>
+          <div class="al-row">
+            <span class="al-time">10:07</span>
+            <span class="al-app">Zoom · Johnson Corp — Team Call</span>
+            <span class="al-dur">22m</span>
+            <span class="badge court" style="font-size:11px;padding:2px 8px;">Court</span>
+          </div>
+          <div class="al-row">
+            <span class="al-time">10:29</span>
+            <span class="al-app">Westlaw · Smith v. Johnson</span>
+            <span class="al-dur">23m</span>
+            <span class="badge research" style="font-size:11px;padding:2px 8px;">Research</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     05 — AI NARRATIVES
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-narratives">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">05</span>
+
+  <div class="narr-top">
+    <p class="narr-eyebrow">AI-Powered</p>
+    <h2 class="narr-headline">Billing narratives that survive fee petitions.</h2>
+  </div>
+
+  <div class="narr-panels">
+    <!-- Raw log -->
+    <div class="narr-panel raw">
+      <div class="panel-head">Raw Activity Log</div>
+      <div class="raw-entry">
+        <span class="raw-time">09:14</span>
+        <div class="raw-info">
+          <div class="raw-app">Westlaw</div>
+          <div class="raw-win">Smith v. Johnson — Case Law</div>
+        </div>
+        <span class="raw-dur">22m</span>
+      </div>
+      <div class="raw-entry">
+        <span class="raw-time">09:36</span>
+        <div class="raw-info">
+          <div class="raw-app">Word</div>
+          <div class="raw-win">Smith_Discovery_Motion.docx</div>
+        </div>
+        <span class="raw-dur">45m</span>
+      </div>
+      <div class="raw-entry">
+        <span class="raw-time">10:21</span>
+        <div class="raw-info">
+          <div class="raw-app">Mail</div>
+          <div class="raw-win">Re: Discovery Extension Request</div>
+        </div>
+        <span class="raw-dur">8m</span>
+      </div>
+      <div class="raw-entry">
+        <span class="raw-time">10:29</span>
+        <div class="raw-info">
+          <div class="raw-app">Westlaw</div>
+          <div class="raw-win">Johnson precedents — discovery timeline</div>
+        </div>
+        <span class="raw-dur">31m</span>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="narr-arrow-col">
+      <span class="narr-arrow-glyph">&#8649;</span>
+      <span class="narr-arrow-label">Claude AI</span>
+    </div>
+
+    <!-- AI-generated billing entries -->
+    <div class="narr-panel billing">
+      <div class="panel-head">AI-Generated Billing Entries</div>
+      <div class="billing-entry">
+        <div class="billing-narrative">Researched case law regarding motion to compel discovery in Smith matter; reviewed applicable procedural standards and identified supporting precedent</div>
+        <div class="billing-meta">
+          <span class="billing-hours">0.4h</span>
+          <span class="badge research">Research</span>
+        </div>
+      </div>
+      <div class="billing-entry">
+        <div class="billing-narrative">Drafted motion to compel discovery responses for Smith v. Johnson; incorporated relevant case law citations and procedural arguments</div>
+        <div class="billing-meta">
+          <span class="billing-hours">0.8h</span>
+          <span class="badge drafting">Drafting</span>
+        </div>
+      </div>
+      <div class="billing-entry">
+        <div class="billing-narrative">Corresponded with opposing counsel regarding discovery response timeline and extension request</div>
+        <div class="billing-meta">
+          <span class="billing-hours">0.1h</span>
+          <span class="badge comm">Communication</span>
+        </div>
+      </div>
+      <div class="billing-entry">
+        <div class="billing-narrative">Continued legal research on precedents supporting discovery motion; identified additional authority in Johnson jurisdiction</div>
+        <div class="billing-meta">
+          <span class="billing-hours">0.5h</span>
+          <span class="badge research">Research</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     06 — LEGAL BILLING
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-billing">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">06</span>
+
+  <div class="billing-slide-top">
+    <p class="billing-eyebrow">Legal Billing</p>
+    <h2 class="billing-headline">Client, matter, rate.<br>The hierarchy you already know.</h2>
+  </div>
+
+  <div class="billing-app">
+    <!-- Sidebar: Client/Matter tree -->
+    <div class="matter-sidebar">
+      <div class="ms-header">Clients &amp; Matters</div>
+
+      <div class="ms-client">
+        <div class="ms-client-name">Smith, John</div>
+        <div class="ms-matter active">
+          <span class="ms-matter-name">2024-CV-1234 · Personal Injury</span>
+          <span class="ms-matter-rate">$450/h</span>
+        </div>
+        <div class="ms-matter">
+          <span class="ms-matter-name">2023-CV-5678 · Insurance Claim</span>
+          <span class="ms-matter-rate">$450/h</span>
+        </div>
+      </div>
+
+      <div class="ms-client">
+        <div class="ms-client-name">Johnson Corp.</div>
+        <div class="ms-matter">
+          <span class="ms-matter-name">Labor Dispute</span>
+          <span class="ms-matter-rate">$550/h</span>
+        </div>
+        <div class="ms-matter">
+          <span class="ms-matter-name">Contract Review</span>
+          <span class="ms-matter-rate">$550/h</span>
+        </div>
+      </div>
+
+      <div class="ms-client">
+        <div class="ms-client-name">Estate of Williams</div>
+        <div class="ms-matter">
+          <span class="ms-matter-name">Probate Administration</span>
+          <span class="ms-matter-rate">$400/h</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main: Timesheet table -->
+    <div class="timesheet-main">
+      <div class="ts-header">
+        <span class="ts-matter-label">Smith, John — 2024-CV-1234</span>
+        <span class="ts-matter-meta">Apr 1–7, 2026</span>
+        <span class="ts-export-btn">Export CSV</span>
+      </div>
+
+      <div class="ts-col-row">
+        <span class="ts-col">Date</span>
+        <span class="ts-col">Description</span>
+        <span class="ts-col r">Hours</span>
+        <span class="ts-col r">Rate</span>
+        <span class="ts-col r">Value</span>
+        <span class="ts-col">Category</span>
+      </div>
+
+      <div class="ts-entry">
+        <span class="ts-cell mono muted">Apr 2</span>
+        <span class="ts-cell">Researched case law re: motion to compel discovery</span>
+        <span class="ts-cell mono r">0.4h</span>
+        <span class="ts-cell mono r muted">$450</span>
+        <span class="ts-cell mono r">$180</span>
+        <span class="badge research">Research</span>
+      </div>
+      <div class="ts-entry">
+        <span class="ts-cell mono muted">Apr 2</span>
+        <span class="ts-cell">Drafted motion to compel discovery responses</span>
+        <span class="ts-cell mono r">0.8h</span>
+        <span class="ts-cell mono r muted">$450</span>
+        <span class="ts-cell mono r">$360</span>
+        <span class="badge drafting">Drafting</span>
+      </div>
+      <div class="ts-entry">
+        <span class="ts-cell mono muted">Apr 2</span>
+        <span class="ts-cell">Correspondence re: discovery extension request</span>
+        <span class="ts-cell mono r">0.1h</span>
+        <span class="ts-cell mono r muted">$450</span>
+        <span class="ts-cell mono r">$45</span>
+        <span class="badge comm">Comm.</span>
+      </div>
+      <div class="ts-entry">
+        <span class="ts-cell mono muted">Apr 3</span>
+        <span class="ts-cell">Continued research for motion to compel</span>
+        <span class="ts-cell mono r">0.5h</span>
+        <span class="ts-cell mono r muted">$450</span>
+        <span class="ts-cell mono r">$225</span>
+        <span class="badge research">Research</span>
+      </div>
+      <div class="ts-entry">
+        <span class="ts-cell mono muted">Apr 3</span>
+        <span class="ts-cell">Finalized and reviewed motion to compel draft</span>
+        <span class="ts-cell mono r">1.2h</span>
+        <span class="ts-cell mono r muted">$450</span>
+        <span class="ts-cell mono r">$540</span>
+        <span class="badge drafting">Drafting</span>
+      </div>
+
+      <div class="ts-footer">
+        <span class="ts-footer-info">5 entries · Apr 2–3, 2026</span>
+        <span class="ts-footer-total">3.0h · $1,350.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     07 — REVENUE INTELLIGENCE
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-analytics">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">07</span>
+
+  <div class="analytics-top">
+    <p class="analytics-eyebrow">Revenue Intelligence</p>
+    <h2 class="analytics-headline">Know if you're on pace before the month ends.</h2>
+  </div>
+
+  <div class="analytics-stats">
+    <div class="stat-card">
+      <div class="stat-label">Utilization Rate</div>
+      <div class="stat-value">87%</div>
+      <div class="stat-delta up">+7% above 80% target</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Monthly Forecast</div>
+      <div class="stat-value">$18.4k</div>
+      <div class="stat-delta">on pace for April</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Hours This Month</div>
+      <div class="stat-value">52.4h</div>
+      <div class="stat-delta">of 160h target</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Billed This Month</div>
+      <div class="stat-value">$23.6k</div>
+      <div class="stat-delta up">+12% vs last month</div>
+    </div>
+  </div>
+
+  <div class="analytics-bottom">
+    <!-- Bar chart: daily hours this week -->
+    <div class="chart-panel">
+      <div class="panel-label">Billable Hours — This Week</div>
+      <div class="bar-chart">
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:82%;"></div></div>
+          <span class="bar-col-label">Mon</span>
+        </div>
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:78%;opacity:0.7;"></div></div>
+          <span class="bar-col-label">Tue</span>
+        </div>
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:91%;"></div></div>
+          <span class="bar-col-label">Wed</span>
+        </div>
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:64%;opacity:0.7;"></div></div>
+          <span class="bar-col-label">Thu</span>
+        </div>
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:76%;"></div></div>
+          <span class="bar-col-label">Fri</span>
+        </div>
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:20%;opacity:0.35;"></div></div>
+          <span class="bar-col-label">Sat</span>
+        </div>
+        <div class="bar-col">
+          <div class="bar-fill-wrap"><div class="bar-fill" style="height:4%;opacity:0.2;"></div></div>
+          <span class="bar-col-label">Sun</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top matters -->
+    <div class="matters-panel">
+      <div class="panel-label">Hours by Matter</div>
+      <div class="matter-row">
+        <div class="matter-name">Smith v. Johnson</div>
+        <div class="matter-bar-row">
+          <div class="matter-bar-bg"><div class="matter-bar-fill" style="width:100%;"></div></div>
+          <span class="matter-hrs">18.4h</span>
+        </div>
+      </div>
+      <div class="matter-row">
+        <div class="matter-name">Johnson Corp — Labor</div>
+        <div class="matter-bar-row">
+          <div class="matter-bar-bg"><div class="matter-bar-fill" style="width:77%;"></div></div>
+          <span class="matter-hrs">14.2h</span>
+        </div>
+      </div>
+      <div class="matter-row">
+        <div class="matter-name">Estate of Williams</div>
+        <div class="matter-bar-row">
+          <div class="matter-bar-bg"><div class="matter-bar-fill" style="width:47%;"></div></div>
+          <span class="matter-hrs">8.6h</span>
+        </div>
+      </div>
+      <div class="matter-row">
+        <div class="matter-name">Monroe LLC — Contract</div>
+        <div class="matter-bar-row">
+          <div class="matter-bar-bg"><div class="matter-bar-fill" style="width:28%;"></div></div>
+          <span class="matter-hrs">5.2h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     08 — PRIVACY & SECURITY
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-privacy">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">08</span>
+
+  <p class="privacy-eyebrow">Privacy &amp; Security</p>
+  <h2 class="privacy-headline">Built for attorney-client privilege.</h2>
+  <p class="privacy-sub">ABA Model Rule 1.6 requires reasonable efforts to prevent unauthorized disclosure of client information. Donna's architecture ensures no client data persists beyond the moment of summarization.</p>
+
+  <div class="data-flow">
+    <div class="flow-node">
+      <div class="flow-node-icon">&#8984;</div>
+      <div class="flow-node-title">Your Mac</div>
+      <div class="flow-node-sub">Window titles · Screenshots</div>
+    </div>
+    <div class="flow-edge">
+      <div class="flow-line">
+        <div class="flow-dash"></div><div class="flow-dash"></div><div class="flow-dash"></div>
+        <span class="flow-arrow-glyph">›</span>
+      </div>
+      <span class="flow-edge-label">local only</span>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node-icon" style="font-family:var(--font-body);font-size:16px;font-weight:700;">D</div>
+      <div class="flow-node-title">Donna Agent</div>
+      <div class="flow-node-sub">Structured metadata</div>
+    </div>
+    <div class="flow-edge">
+      <div class="flow-line">
+        <div class="flow-dash"></div><div class="flow-dash"></div><div class="flow-dash"></div>
+        <span class="flow-arrow-glyph">›</span>
+      </div>
+      <span class="flow-edge-label">TLS encrypted</span>
+    </div>
+    <div class="flow-node external">
+      <div class="flow-node-icon" style="font-family:var(--font-mono);font-size:16px;font-weight:600;">AI</div>
+      <div class="flow-node-title">Claude API</div>
+      <div class="flow-node-sub">Ephemeral · No storage</div>
+    </div>
+    <div class="flow-edge">
+      <div class="flow-line">
+        <div class="flow-dash"></div><div class="flow-dash"></div><div class="flow-dash"></div>
+        <span class="flow-arrow-glyph">›</span>
+      </div>
+      <span class="flow-edge-label">narratives only</span>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node-icon">&#8801;</div>
+      <div class="flow-node-title">Your Timesheet</div>
+      <div class="flow-node-sub">Local SQLite · On-device</div>
+    </div>
+  </div>
+
+  <div class="privacy-checks">
+    <div class="privacy-check">
+      <span class="check-mark">&#10003;</span>
+      <div class="check-title">All data on-device</div>
+      <div class="check-body">No cloud database. Everything lives in your local machine.</div>
+    </div>
+    <div class="privacy-check">
+      <span class="check-mark">&#10003;</span>
+      <div class="check-title">Screenshots destroyed</div>
+      <div class="check-body">Deleted permanently after Claude processes the session.</div>
+    </div>
+    <div class="privacy-check">
+      <span class="check-mark">&#10003;</span>
+      <div class="check-title">Encrypted API calls</div>
+      <div class="check-body">TLS for all AI processing. Anthropic never stores your data.</div>
+    </div>
+    <div class="privacy-check">
+      <span class="check-mark">&#10003;</span>
+      <div class="check-title">ABA Rule 1.6</div>
+      <div class="check-body">Designed around reasonable-effort confidentiality requirements.</div>
+    </div>
+    <div class="privacy-check">
+      <span class="check-mark">&#10003;</span>
+      <div class="check-title">SOC 2 standards</div>
+      <div class="check-body">Built to SOC 2 security standards from day one.</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     09 — THE MATH
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-math">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">09</span>
+
+  <p class="math-eyebrow">The Value</p>
+  <h2 class="math-headline">Recover the hours you've already earned.</h2>
+  <p class="math-sub">At $350/hour, capturing just 10 extra minutes a day adds $14,000 to your annual billings. Donna pays for itself before lunch on day one.</p>
+
+  <div class="math-calc">
+    <div class="calc-factor">
+      <span class="calc-value">10 min</span>
+      <span class="calc-label">captured per day</span>
+    </div>
+    <span class="calc-op">&times;</span>
+    <div class="calc-factor">
+      <span class="calc-value">$350</span>
+      <span class="calc-label">your hourly rate</span>
+    </div>
+    <span class="calc-op">&times;</span>
+    <div class="calc-factor">
+      <span class="calc-value">250</span>
+      <span class="calc-label">working days/year</span>
+    </div>
+    <span class="calc-op">=</span>
+    <div class="calc-result">
+      <span class="calc-result-value">$14,583</span>
+      <span class="calc-result-label">added to annual billings</span>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     10 — CTA
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-cta">
+  <span class="slide-wordmark">donna</span>
+  <span class="slide-number">10</span>
+
+  <p class="cta-eyebrow">Get Started</p>
+  <h2 class="cta-headline">Start capturing every minute you've earned.</h2>
+  <p class="cta-sub">Free during early access. No credit card required. Your own Anthropic API key for AI processing.</p>
+  <div class="cta-buttons">
+    <span class="btn btn-primary">Download for macOS</span>
+    <span class="btn btn-ghost">Download for Windows</span>
+  </div>
+  <span class="cta-url">donnaanswers.com</span>
+</section>
+</div>
+
+<!-- PDF Download Button -->
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  function scaleSlides() {
+    const s = Math.min((window.innerWidth - 80) / 1920, 1);
+    document.documentElement.style.setProperty('--slide-scale', s);
+  }
+  window.addEventListener('resize', scaleSlides);
+  scaleSlides();
+</script>
+</body>
+</html>
