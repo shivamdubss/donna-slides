@@ -1,0 +1,206 @@
+/* ============================================================
+   New deck template — copy this folder, rename it, then build.
+   Run /design-review before PDF export.
+
+   Anti-AI-slop defaults are baked in. Read the comments.
+   ============================================================ */
+
+/* ---- Slide 01: Hero ---- */
+
+.slide-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background bloom — RULE: minimum 1600px 640px ellipse, centered below slide.
+   Don't shrink this. A faint bloom looks unintentional. */
+.slide-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* Swap out the color (#BFDBFE / #DBEAFE = soft blue) for your brand color */
+  background: radial-gradient(ellipse 1600px 640px at 50% 108%, #BFDBFE 0%, #DBEAFE 40%, transparent 70%);
+}
+
+.hero-eyebrow {
+  /* RULE: Eyebrow is always Geist Mono, var(--text-faint), uppercase. Min 16px. */
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: 88px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  line-height: 1.05;
+  margin-bottom: 28px;
+  max-width: 1200px;
+  position: relative;
+}
+
+.hero-sub {
+  /* RULE: sub-headline must be visibly smaller and more muted than the headline */
+  font-size: 22px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 700px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+/* ---- Slide 02: Two-column content ---- */
+
+.slide-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 80px;
+  align-items: center;
+}
+
+.content-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.content-headline {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.content-body {
+  font-size: 22px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 40px;
+}
+
+.content-points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-point {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 20px;
+  border-left: 2px solid var(--border-default);
+}
+
+.point-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.point-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.content-visual-placeholder {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- Data viz defaults (anti-AI-slop) ----
+   RULE: Bar charts and data fills use neutral dark, NOT accent colors.
+   Never use #4F46E5 (indigo), category colors, or brand colors in charts.
+   These classes are ready-to-use — don't change the background. */
+
+.bar-fill {
+  background: var(--text-primary);
+  opacity: 0.8;
+  border-radius: 3px 3px 0 0;
+}
+
+.bar-fill-secondary {
+  background: var(--text-primary);
+  opacity: 0.45;
+  border-radius: 3px 3px 0 0;
+}
+
+/* ---- Transformation arrows (anti-AI-slop) ----
+   RULE: Arrows between two states must be ≥32px and include a text label.
+   Copy this pattern for any before→after or raw→polished connection. */
+
+.transform-arrow-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.transform-arrow-glyph {
+  /* RULE: Use ⇉ (U+21C9) or › at ≥32px. Thin arrows disappear at scale. */
+  font-size: 36px;
+  color: var(--border-default);
+  line-height: 1;
+}
+
+.transform-arrow-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+/* ---- Card grid defaults (anti-AI-slop) ----
+   RULE: Add flex: 1 to card body areas so cards fill height uniformly. */
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card-grid .card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  padding: 28px;
+}
+
+.card-grid .card-body {
+  flex: 1; /* RULE: Always include this. Never leave bottom gaps. */
+}

@@ -36,11 +36,11 @@
   background: radial-gradient(ellipse 1600px 640px at 50% 108%, #BFDBFE 0%, #DBEAFE 40%, transparent 70%);
   pointer-events: none;
 }
-.slide-hero > * { position: relative; z-index: 1; }
+.slide-hero > *:not(.slide-wordmark):not(.slide-number) { position: relative; z-index: 1; }
 
 .hero-eyebrow {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.16em;
   color: var(--text-muted);
@@ -72,7 +72,7 @@
 }
 .hero-badge {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-muted);
   background: var(--bg-inset);
   border: 1px solid var(--border-default);
@@ -97,7 +97,7 @@
 }
 .prob-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--cat-comm);
@@ -198,7 +198,7 @@
 .hiw-top { margin-bottom: 52px; }
 .hiw-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--text-faint);
@@ -265,7 +265,7 @@
 }
 .hiw-step-body {
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 18px;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -286,7 +286,7 @@
 }
 .feature-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -320,7 +320,7 @@
   align-items: flex-start;
   gap: 12px;
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 18px;
   color: var(--text-secondary);
   line-height: 1.45;
 }
@@ -401,7 +401,7 @@
 }
 .ca-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -415,7 +415,7 @@
 .activity-list { display: flex; flex-direction: column; }
 .al-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -446,7 +446,7 @@
 .narr-top { margin-bottom: 40px; }
 .narr-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--cat-drafting);
@@ -480,7 +480,7 @@
 
 .panel-head {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -538,16 +538,16 @@
 .billing-entry:last-child { border-bottom: none; }
 .billing-narrative { font-family: var(--font-body); font-size: 14px; color: var(--text-primary); line-height: 1.5; }
 .billing-meta { display: flex; align-items: center; gap: 10px; }
-.billing-hours { font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--text-muted); }
+.billing-hours { font-family: var(--font-mono); font-size: 15px; font-weight: 600; color: var(--text-muted); }
 
 /* ===========================================================
    SLIDE 06 — Legal Billing
    =========================================================== */
 .slide-billing { display: flex; flex-direction: column; height: 100%; }
-.billing-slide-top { padding: 60px 88px 36px; }
+.billing-slide-top { padding: 88px 88px 36px; }
 .billing-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--text-faint);
@@ -582,7 +582,7 @@
 }
 .ms-header {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -618,7 +618,7 @@
   text-overflow: ellipsis;
 }
 .ms-matter.active .ms-matter-name { color: var(--text-primary); font-weight: 600; }
-.ms-matter-rate { font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); }
+.ms-matter-rate { font-family: var(--font-mono); font-size: 13px; color: var(--text-faint); }
 
 .timesheet-main { display: flex; flex-direction: column; overflow: hidden; }
 .ts-header {
@@ -629,8 +629,8 @@
   justify-content: space-between;
   background: var(--bg-surface);
 }
-.ts-matter-label { font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--text-primary); }
-.ts-matter-meta  { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+.ts-matter-label { font-family: var(--font-body); font-size: 16px; font-weight: 600; color: var(--text-primary); }
+.ts-matter-meta  { font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); }
 .ts-export-btn {
   font-family: var(--font-body);
   font-size: 12px;
@@ -650,7 +650,7 @@
 }
 .ts-col {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -665,8 +665,8 @@
   align-items: center;
 }
 .ts-entry:last-child { border-bottom: none; }
-.ts-cell { font-family: var(--font-body); font-size: 13px; color: var(--text-primary); }
-.ts-cell.mono { font-family: var(--font-mono); font-size: 13px; }
+.ts-cell { font-family: var(--font-body); font-size: 14px; color: var(--text-primary); }
+.ts-cell.mono { font-family: var(--font-mono); font-size: 14px; }
 .ts-cell.muted { color: var(--text-muted); }
 .ts-cell.r { text-align: right; }
 .ts-footer {
@@ -684,11 +684,11 @@
 /* ===========================================================
    SLIDE 07 — Revenue Intelligence
    =========================================================== */
-.slide-analytics { display: flex; flex-direction: column; padding: 64px 88px 72px; height: 100%; }
+.slide-analytics { display: flex; flex-direction: column; padding: 88px 88px 72px; height: 100%; }
 .analytics-top { margin-bottom: 40px; }
 .analytics-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--text-faint);
@@ -718,7 +718,7 @@
 }
 .stat-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -734,7 +734,7 @@
   line-height: 1;
   margin-bottom: 6px;
 }
-.stat-delta { font-family: var(--font-body); font-size: 13px; color: var(--text-muted); }
+.stat-delta { font-family: var(--font-body); font-size: 16px; color: var(--text-muted); }
 .stat-delta.up { color: #16A34A; }
 
 .analytics-bottom { flex: 1; display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
@@ -748,7 +748,7 @@
 }
 .panel-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -778,11 +778,11 @@
   background: var(--text-primary);
   opacity: 0.8;
 }
-.bar-col-label { font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); }
+.bar-col-label { font-family: var(--font-mono); font-size: 13px; color: var(--text-faint); }
 
 .matter-row { padding: 10px 0; border-bottom: 1px solid var(--border-subtle); }
 .matter-row:last-child { border-bottom: none; }
-.matter-name { font-family: var(--font-body); font-size: 13px; font-weight: 500; color: var(--text-primary); margin-bottom: 7px; }
+.matter-name { font-family: var(--font-body); font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 7px; }
 .matter-bar-row { display: flex; align-items: center; gap: 10px; }
 .matter-bar-bg { flex: 1; height: 5px; background: var(--bg-inset); border-radius: var(--r-full); overflow: hidden; }
 .matter-bar-fill { height: 100%; background: var(--text-primary); border-radius: var(--r-full); opacity: 0.65; }
@@ -801,7 +801,7 @@
 }
 .privacy-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--text-faint);
@@ -854,8 +854,8 @@
   margin-bottom: 10px;
   line-height: 1;
 }
-.flow-node-title { font-family: var(--font-body); font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
-.flow-node-sub   { font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); }
+.flow-node-title { font-family: var(--font-body); font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+.flow-node-sub   { font-family: var(--font-mono); font-size: 13px; color: var(--text-faint); }
 .flow-edge {
   display: flex;
   flex-direction: column;
@@ -884,7 +884,7 @@
 }
 .flow-edge-label {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-faint);
   white-space: nowrap;
   margin-top: 6px;
@@ -909,14 +909,14 @@
   text-align: left;
 }
 .check-mark {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 700;
+  width: 28px;
+  height: 28px;
   color: #16A34A;
-  margin-bottom: 2px;
+  flex-shrink: 0;
+  margin-bottom: 4px;
 }
-.check-title { font-family: var(--font-body); font-size: 15px; font-weight: 600; color: var(--text-primary); }
-.check-body  { font-family: var(--font-body); font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+.check-title { font-family: var(--font-body); font-size: 16px; font-weight: 600; color: var(--text-primary); }
+.check-body  { font-family: var(--font-body); font-size: 15px; color: var(--text-muted); line-height: 1.5; }
 
 /* ===========================================================
    SLIDE 09 — The Math
@@ -940,7 +940,7 @@
 .slide-math > * { position: relative; z-index: 1; }
 .math-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: var(--text-faint);
@@ -1021,7 +1021,7 @@
 .slide-cta > * { position: relative; z-index: 1; }
 .cta-eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.16em;
   color: var(--text-faint);

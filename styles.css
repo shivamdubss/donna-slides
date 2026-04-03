@@ -66,17 +66,22 @@ body {
 }
 
 /* ---- Persistent chrome ---- */
+/*
+ * Wordmark occupies top: 44px → 68px (height 24px).
+ * --slide-safe-top: minimum padding-top for all slide content containers.
+ * Never set a slide's padding-top below this value.
+ */
+:root { --slide-safe-top: 88px; }
+
 .slide-wordmark {
   position: absolute;
   top: 44px;
-  left: 60px;
-  font-family: var(--font-mono);
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-faint);
-  letter-spacing: 0.1em;
+  right: 60px;
+  height: 24px;
+  width: auto;
   z-index: 10;
-  text-transform: lowercase;
+  opacity: 0.55;
+  display: block;
 }
 
 .slide-number {
@@ -84,7 +89,7 @@ body {
   bottom: 44px;
   right: 60px;
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-faint);
   z-index: 10;
 }
@@ -143,16 +148,62 @@ body {
 }
 .download-btn:hover { background: #333; }
 
+/* ---- Back button ---- */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  background: rgba(255,255,255,0.92);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 18px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-md);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+.back-btn:hover { background: var(--bg-surface-hover); color: var(--text-primary); }
+
+/* ---- 1-Pager scaling ---- */
+.page-wrapper {
+  width: calc(816px * var(--page-scale, 1));
+  height: calc(1056px * var(--page-scale, 1));
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-md);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.06);
+  flex-shrink: 0;
+}
+
+.page {
+  width: 816px;
+  height: 1056px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(var(--page-scale, 1));
+  transform-origin: top left;
+  background: var(--bg-surface);
+  overflow: hidden;
+}
+
 /* ---- Print ---- */
 @media print {
   html, body { background: white; padding: 0; gap: 0; display: block; }
   .download-btn { display: none; }
+  .back-btn { display: none; }
   .slide-wrapper {
     width: 1920px; height: 1080px;
     border-radius: 0; box-shadow: none;
     page-break-after: always; overflow: visible;
   }
   .slide { transform: none !important; position: relative; box-shadow: none; }
+  .page-wrapper { width: 816px; height: 1056px; border-radius: 0; box-shadow: none; }
+  .page { transform: none !important; position: relative; }
   * {
     animation-duration: 0s !important;
     transition-duration: 0s !important;

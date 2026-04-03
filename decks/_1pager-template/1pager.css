@@ -1,0 +1,230 @@
+/* ============================================================
+   Donna 1-Pager Template — base styles for US Letter portrait format
+   816×1056px canvas (8.5×11in at 96dpi)
+
+   Copy this folder, rename it, then build.
+   Anti-AI-slop defaults are baked in. Read the comments.
+   ============================================================ */
+
+/* ---- Override @page for portrait letter (overrides styles.css landscape) ---- */
+@page { size: 8.5in 11in; margin: 0; }
+
+/* ---- Page shell ---- */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 48px;
+  gap: 0;
+  font-family: var(--font-body);
+  background: var(--bg-surface);
+}
+
+/* ---- Header ---- */
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.page-wordmark {
+  height: 20px;
+  width: auto;
+  opacity: 0.7;
+}
+
+.page-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  line-height: 1.4;
+}
+
+.contact-link {
+  /* RULE: Use --cat-comm orange for the URL — warm accent, legible on white */
+  color: #C2410C;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ---- Hero ---- */
+
+.page-hero {
+  margin-bottom: 20px;
+}
+
+.hero-headline {
+  /* RULE: Satoshi, near-black, tight tracking. 28–36px for 816px canvas. */
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.hero-body {
+  /* RULE: Plus Jakarta Sans, --text-secondary, 11px min on 1-pagers */
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+/* ---- Feature sections ---- */
+
+.page-section {
+  margin-bottom: 16px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.section-badge {
+  /* RULE: Geist Mono, uppercase, outlined — category identifier, not decorative */
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 3px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+
+.section-tagline {
+  /* RULE: Italic headline for section — visibly different from card titles */
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* ---- Feature card ---- */
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-page);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+}
+
+.feature-card-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.feature-card-title i {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  flex: 1;
+}
+
+.feature-list li {
+  /* RULE: Bullet dot via ::before. Bold lead-in, muted rest. Min 10px. */
+  font-size: 10.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+  padding-left: 10px;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--text-faint);
+}
+
+.feature-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ---- Footer ---- */
+
+.page-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-integrations {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.integration-pill {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  padding: 2px 8px;
+}
+
+.integration-more {
+  font-size: 10px;
+  color: var(--text-faint);
+  font-weight: 500;
+}
+
+.footer-tagline {
+  font-size: 10px;
+  color: var(--text-faint);
+  font-style: italic;
+}

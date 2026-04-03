@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — 1-Pager Title</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="1pager.css">
+  <!-- Icons: Lucide via CDN. Use <i data-lucide="icon-name"></i> anywhere. -->
+  <!-- Full icon list: lucide.dev/icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<div class="page-wrapper">
+<article class="page">
+
+  <!-- ============================================================
+       HEADER — Logo left, contact info right
+       ============================================================ -->
+  <header class="page-header">
+    <img class="page-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+    <div class="page-contact">
+      <span>email@donnaanswers.com</span>
+      <span>1-480-375-0381</span>
+      <a href="#" class="contact-link">donnaanswers.com</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO — Headline + body copy
+       ============================================================ -->
+  <section class="page-hero">
+    <h1 class="hero-headline">Your compelling headline goes here.</h1>
+    <p class="hero-body">Supporting paragraph one. Describe the core value proposition in 1–2 sentences.</p>
+    <p class="hero-body">Supporting paragraph two. Add context or expand on the workflow.</p>
+  </section>
+
+  <!-- ============================================================
+       SECTION — Repeat this block for each feature section.
+       Badge label → italic headline → 2-col card grid
+       ============================================================ -->
+  <section class="page-section">
+    <div class="section-header">
+      <span class="section-badge">Section Label</span>
+      <span class="section-tagline">Short italic headline for this section</span>
+    </div>
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-card-title">
+          <i data-lucide="upload-cloud" style="width:16px;height:16px;flex-shrink:0;"></i>
+          <span>Card Title</span>
+        </div>
+        <ul class="feature-list">
+          <li><strong>Bold label</strong> with supporting detail</li>
+          <li><strong>Second point</strong> with supporting detail</li>
+          <li><strong>Third point</strong> with supporting detail</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-title">
+          <i data-lucide="help-circle" style="width:16px;height:16px;flex-shrink:0;"></i>
+          <span>Card Title</span>
+        </div>
+        <ul class="feature-list">
+          <li><strong>Bold label</strong> with supporting detail</li>
+          <li><strong>Second point</strong> with supporting detail</li>
+          <li><strong>Third point</strong> with supporting detail</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER — Integrations + tagline
+       ============================================================ -->
+  <footer class="page-footer">
+    <div class="footer-integrations">
+      <span class="footer-label">Works with</span>
+      <span class="integration-pill">Tool A</span>
+      <span class="integration-pill">Tool B</span>
+      <span class="integration-pill">Tool C</span>
+      <span class="integration-more">+ More</span>
+    </div>
+    <span class="footer-tagline">Your AI Teammate for Law Firms</span>
+  </footer>
+
+</article>
+</div>
+
+<a class="back-btn" href="../../">← All Decks</a>
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  lucide.createIcons();
+  function scalePage() {
+    const s = Math.min((window.innerWidth - 80) / 816, 1);
+    document.documentElement.style.setProperty('--page-scale', s);
+  }
+  window.addEventListener('resize', scalePage);
+  scalePage();
+</script>
+</body>
+</html>

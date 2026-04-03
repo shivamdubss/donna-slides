@@ -8,8 +8,10 @@
   <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: #FAFAFA; }
 
     body {
       font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -56,7 +58,7 @@
 
     .section-label {
       font-family: 'Geist Mono', monospace;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.12em;
       color: #A3A3A3;
@@ -88,14 +90,27 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.07);
     }
 
+    .deck-icon {
+      width: 36px;
+      height: 36px;
+      color: #525252;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .deck-icon svg {
+      width: 36px;
+      height: 36px;
+    }
+
     .deck-tag {
       font-family: 'Geist Mono', monospace;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #A3A3A3;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       display: block;
     }
 
@@ -124,19 +139,38 @@
 
     .deck-slides {
       font-family: 'Geist Mono', monospace;
-      font-size: 12px;
+      font-size: 13px;
       color: #A3A3A3;
     }
 
     .deck-arrow {
-      font-size: 18px;
       color: #171717;
+      display: flex;
+      align-items: center;
+    }
+
+    .deck-arrow svg {
+      width: 20px;
+      height: 20px;
     }
 
     .deck-card.coming-soon {
       opacity: 0.45;
       pointer-events: none;
       cursor: default;
+    }
+
+    .format-tag {
+      font-family: 'Geist Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #737373;
+      background: #F0F0F0;
+      border: 1px solid #E5E5E5;
+      border-radius: 4px;
+      padding: 2px 7px;
     }
   </style>
 </head>
@@ -152,36 +186,60 @@
     <div class="deck-grid">
 
       <a href="/decks/product/" class="deck-card">
+        <i data-lucide="presentation" class="deck-icon"></i>
         <span class="deck-tag">Product</span>
         <div class="deck-title">Docketing</div>
         <p class="deck-desc">Product demo deck — AI time tracking for attorneys. Passive capture, billing narratives, privacy-first architecture.</p>
         <div class="deck-footer">
-          <span class="deck-slides">10 slides</span>
-          <span class="deck-arrow">→</span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="deck-slides">10 slides</span>
+            <span class="format-tag">Deck</span>
+          </div>
+          <i data-lucide="arrow-right" class="deck-arrow"></i>
         </div>
       </a>
 
       <a href="/decks/lunch-and-learn/" class="deck-card">
+        <i data-lucide="book-open" class="deck-icon"></i>
         <span class="deck-tag">Lunch &amp; Learn</span>
         <div class="deck-title">The Billable Hour Is Bleeding Out</div>
         <p class="deck-desc">Time tracking, AI, and the pricing crisis in legal. The case for why the hourly model is under pressure — and what comes next.</p>
         <div class="deck-footer">
-          <span class="deck-slides">12 slides</span>
-          <span class="deck-arrow">→</span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="deck-slides">12 slides</span>
+            <span class="format-tag">Deck</span>
+          </div>
+          <i data-lucide="arrow-right" class="deck-arrow"></i>
+        </div>
+      </a>
+
+      <a href="/decks/financial-disclosure/" class="deck-card">
+        <i data-lucide="file-text" class="deck-icon"></i>
+        <span class="deck-tag">Sales · Family Law</span>
+        <div class="deck-title">Financial Disclosure</div>
+        <p class="deck-desc">One-page product overview for financial disclosure workflow — document intake, AI categorization, gap detection, and court-ready form generation.</p>
+        <div class="deck-footer">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="deck-slides">1 page</span>
+            <span class="format-tag">1-Pager</span>
+          </div>
+          <i data-lucide="arrow-right" class="deck-arrow"></i>
         </div>
       </a>
 
       <div class="deck-card coming-soon">
+        <i data-lucide="trending-up" class="deck-icon"></i>
         <span class="deck-tag">Coming soon</span>
         <div class="deck-title">Investor Pitch</div>
         <p class="deck-desc">Fundraising deck for angels and VCs. Market size, traction, team, and ask.</p>
         <div class="deck-footer">
           <span class="deck-slides">— slides</span>
-          <span class="deck-arrow">→</span>
+          <i data-lucide="arrow-right" class="deck-arrow"></i>
         </div>
       </div>
 
     </div>
   </main>
+<script>lucide.createIcons();</script>
 </body>
 </html>

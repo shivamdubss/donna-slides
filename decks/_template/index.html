@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — Deck Title</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="deck.css">
+  <!-- Icons: Lucide via CDN. Use <i data-lucide="icon-name"></i> anywhere. -->
+  <!-- Full icon list: lucide.dev/icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     01 — HERO
+     Eyebrow → big headline (explicit <br> on 2-line heads) → sub → CTAs
+     Background bloom is set in deck.css .slide-hero::before
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-hero">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">01</span>
+
+  <p class="hero-eyebrow">Category · Context</p>
+  <h1 class="hero-headline">Your main headline<br>goes right here.</h1>
+  <p class="hero-sub">Supporting sentence. Keep it to 1–2 lines. Use var(--text-muted) color, smaller than the headline.</p>
+  <div class="hero-ctas">
+    <span class="btn btn-primary">Primary CTA</span>
+    <span class="btn btn-ghost">Secondary CTA</span>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     02 — CONTENT
+     Two-column layout example. Left: copy. Right: mockup or visual.
+     Add more slides by duplicating this block and incrementing the number.
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-content">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">02</span>
+
+  <div class="content-left">
+    <p class="content-eyebrow">Section Label</p>
+    <h2 class="content-headline">Key point or<br>slide headline.</h2>
+    <p class="content-body">Supporting copy goes here. 2–3 sentences max per slide. If you need more, split into another slide.</p>
+
+    <div class="content-points">
+      <!-- Icon example: replace data-lucide value with any icon from lucide.dev/icons -->
+      <div class="content-point">
+        <span class="point-label"><i data-lucide="check-circle" style="width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:8px;color:var(--text-faint);"></i>Point one</span>
+        <span class="point-desc">Brief supporting detail</span>
+      </div>
+      <div class="content-point">
+        <span class="point-label"><i data-lucide="check-circle" style="width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:8px;color:var(--text-faint);"></i>Point two</span>
+        <span class="point-desc">Brief supporting detail</span>
+      </div>
+      <div class="content-point">
+        <span class="point-label"><i data-lucide="check-circle" style="width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:8px;color:var(--text-faint);"></i>Point three</span>
+        <span class="point-desc">Brief supporting detail</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-right">
+    <!-- Replace with your mockup / visual / chart / table -->
+    <div class="surface content-visual-placeholder">
+      <p style="color:var(--text-faint);font-family:var(--font-mono);font-size:13px;text-align:center;">visual / mockup</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- PDF Download Button -->
+<a class="back-btn" href="../../">← All Decks</a>
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  lucide.createIcons();
+  function scaleSlides() {
+    const s = Math.min((window.innerWidth - 80) / 1920, 1);
+    document.documentElement.style.setProperty('--slide-scale', s);
+  }
+  window.addEventListener('resize', scaleSlides);
+  scaleSlides();
+</script>
+</body>
+</html>
