@@ -820,11 +820,11 @@
 }
 .privacy-sub {
   font-family: var(--font-body);
-  font-size: 20px;
-  color: var(--text-secondary);
-  max-width: 800px;
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 760px;
   line-height: 1.55;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .data-flow {
