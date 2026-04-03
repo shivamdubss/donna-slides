@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeTrack — Slides</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================================================
+       Slide 01 — Hero
+       ====================================================== -->
+  <div class="slide-wrapper">
+    <section class="slide slide-hero">
+      <span class="slide-wordmark">TimeTrack</span>
+      <span class="slide-number">01</span>
+
+      <p class="hero-eyebrow">Introducing TimeTrack</p>
+
+      <h1 class="hero-headline">Know exactly where<br>your time goes.</h1>
+
+      <p class="hero-sub">
+        Automatic, private time tracking for macOS —<br>
+        powered by Claude AI.
+      </p>
+
+      <div class="hero-ctas">
+        <span class="btn btn-primary">Download for macOS</span>
+        <span class="btn btn-ghost">Watch demo ↗</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======================================================
+       Slide 02 — The Problem
+       ====================================================== -->
+  <div class="slide-wrapper">
+    <section class="slide slide-problem">
+      <span class="slide-wordmark">TimeTrack</span>
+      <span class="slide-number">02</span>
+
+      <div class="prob-left">
+        <p class="prob-eyebrow">The Problem</p>
+
+        <h2 class="prob-headline">Time tracking is painful enough that most people just skip it.</h2>
+
+        <ul class="prob-bullets">
+          <li>
+            <span class="bullet-dot"></span>
+            Timers you forget to start — and forget to stop
+          </li>
+          <li>
+            <span class="bullet-dot"></span>
+            Retroactive guessing at the end of the week
+          </li>
+          <li>
+            <span class="bullet-dot"></span>
+            Friction that turns into abandoned projects
+          </li>
+        </ul>
+      </div>
+
+      <div class="prob-right">
+        <!-- Fake manual timer app mockup -->
+        <div class="timer-mockup">
+          <div class="mockup-header">
+            <span class="mockup-title">My Timers</span>
+            <span class="mockup-new-btn">+ New</span>
+          </div>
+
+          <div class="timer-rows">
+            <div class="timer-row">
+              <span class="row-indicator running"></span>
+              <span class="row-project">Client Project — Feature Build</span>
+              <span class="row-time">2:14:07</span>
+              <span class="row-stop"><span class="row-stop-icon"></span></span>
+            </div>
+            <div class="timer-row">
+              <span class="row-indicator paused"></span>
+              <span class="row-project">Weekly Report</span>
+              <span class="row-time">0:47:22</span>
+              <span class="row-stop"><span class="row-stop-icon"></span></span>
+            </div>
+            <div class="timer-row uncertain">
+              <span class="row-indicator paused"></span>
+              <span class="row-project">Emails &amp; Admin</span>
+              <span class="row-time">??:??</span>
+              <span class="row-stop"><span class="row-stop-icon"></span></span>
+            </div>
+            <div class="timer-row uncertain">
+              <span class="row-indicator paused"></span>
+              <span class="row-project">Research</span>
+              <span class="row-time">??:??</span>
+              <span class="row-stop"><span class="row-stop-icon"></span></span>
+            </div>
+          </div>
+
+          <div class="mockup-footer">
+            <span class="footer-dot"></span>
+            Last synced 3 days ago
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PDF Download Button -->
+  <button class="download-btn" onclick="window.print()">Download PDF</button>
+
+  <script>
+    function scaleSlides() {
+      const vw = window.innerWidth;
+      // Leave some breathing room for the body padding
+      const scale = Math.min((vw - 80) / 1920, 1);
+      document.documentElement.style.setProperty('--slide-scale', scale);
+    }
+    window.addEventListener('resize', scaleSlides);
+    scaleSlides();
+  </script>
+</body>
+</html>
