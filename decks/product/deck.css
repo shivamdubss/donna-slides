@@ -191,8 +191,9 @@
 .slide-howitworks {
   display: flex;
   flex-direction: column;
-  padding: 80px 96px 80px;
+  padding: 80px 96px;
   height: 100%;
+  box-sizing: border-box;
 }
 .hiw-top { margin-bottom: 52px; }
 .hiw-eyebrow {
@@ -217,6 +218,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 28px;
   flex: 1;
+  min-height: 0;
 }
 .hiw-step {
   background: var(--bg-surface);
