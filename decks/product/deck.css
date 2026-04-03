@@ -865,11 +865,28 @@
 .flow-line {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0;
+  position: relative;
 }
-.flow-dash { width: 28px; height: 1px; background: var(--border-default); }
-.flow-arrow-glyph { font-family: var(--font-mono); font-size: 16px; color: var(--text-faint); line-height: 1; }
-.flow-edge-label { font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); white-space: nowrap; margin-top: 2px; }
+.flow-dash {
+  width: 48px;
+  height: 1px;
+  background: var(--border-default);
+}
+.flow-arrow-glyph {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--text-muted);
+  line-height: 1;
+  margin-left: -2px;
+}
+.flow-edge-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  white-space: nowrap;
+  margin-top: 6px;
+}
 
 .privacy-checks {
   display: grid;
