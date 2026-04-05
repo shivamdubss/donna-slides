@@ -1,0 +1,121 @@
+/* ============================================================
+   Client Engagement 1-Pager
+   Extends ../_1pager-template/1pager.css patterns.
+   ============================================================ */
+
+@page { size: 8.5in 11in; margin: 0; }
+
+/* Amber bottom-right ↔ rose bottom-left, violet top-left whisper */
+.page {
+  background:
+    radial-gradient(ellipse 680px 520px at 112% 112%, rgba(251, 191, 36, 0.48) 0%, rgba(253, 230, 138, 0.22) 45%, transparent 68%),
+    radial-gradient(ellipse 480px 360px at -10% 110%, rgba(251, 113, 133, 0.4) 0%, rgba(253, 164, 175, 0.18) 45%, transparent 65%),
+    radial-gradient(ellipse 300px 220px at -5% -2%, rgba(196, 181, 253, 0.28) 0%, transparent 58%),
+    radial-gradient(ellipse 220px 160px at 110% -1%, rgba(253, 186, 116, 0.24) 0%, transparent 55%),
+    #FFFFFF;
+}
+
+/* ---- Stats row ---- */
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ---- 3-column grid variant ---- */
+
+.feature-grid--3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ---- Icon-above-title card layout ----
+   Overrides the template's inline icon+title flex row. */
+
+.feature-icon-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  margin-bottom: 9px;
+  background: var(--bg-surface);
+}
+
+/* Override template's flex-row title to plain block */
+.feature-card-title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Section color accents ----
+   Icon boxes get a tinted border + colored icon per section.
+   Badges use the same outlined tint pattern as financial-disclosure. */
+
+/* First Contact — amber */
+.page-section--first-contact .section-badge {
+  color: #92400E;
+  background: #FFFBEB;
+  border-color: #FDE68A;
+}
+.page-section--first-contact .feature-icon-box {
+  color: #D97706;
+  border-color: #FDE68A;
+  background: #FFFBEB;
+}
+
+/* Active Case — violet */
+.page-section--active-case .section-badge {
+  color: #5B21B6;
+  background: #F5F3FF;
+  border-color: #DDD6FE;
+}
+.page-section--active-case .feature-icon-box {
+  color: #7C3AED;
+  border-color: #DDD6FE;
+  background: #F5F3FF;
+}
+
+/* Post-Case — emerald */
+.page-section--post-case .section-badge {
+  color: #065F46;
+  background: #ECFDF5;
+  border-color: #A7F3D0;
+}
+.page-section--post-case .feature-icon-box {
+  color: #059669;
+  border-color: #A7F3D0;
+  background: #ECFDF5;
+}

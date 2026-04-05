@@ -31,10 +31,6 @@
     <span class="hero-badge">On-device AI</span>
     <span class="hero-badge">No data leaves your machine</span>
   </div>
-  <div class="hero-ctas">
-    <span class="btn btn-primary"><i data-lucide="download" style="width:20px;height:20px;"></i>Download for macOS</span>
-    <span class="btn btn-ghost"><i data-lucide="download" style="width:20px;height:20px;"></i>Download for Windows</span>
-  </div>
 </section>
 </div>
 
@@ -46,44 +42,132 @@
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
   <span class="slide-number">02</span>
 
-  <div class="prob-left">
+  <div class="prob-top">
     <p class="prob-eyebrow">The Problem</p>
     <div class="prob-stat">$50,000</div>
     <p class="prob-stat-label">lost per attorney, per year in unbilled time</p>
-    <p class="prob-body">End-of-day time reconstruction misses 10–40% of billable work. Vague entries like "worked on case" get written down at 7pm. Manual tracking tools go unused because they interrupt the work they're supposed to measure.</p>
+    <p class="prob-body">End-of-day time reconstruction misses 10–40% of billable work. Vague entries get written at 7pm. Manual timers get abandoned because they interrupt the work they're supposed to measure.</p>
   </div>
 
-  <div class="prob-right">
-    <div class="timesheet-before">
-      <div class="tb-header">
-        <span class="tb-title">Today's Time Entries</span>
-        <span class="tb-date">Mon, Apr 7</span>
+  <div class="prob-cards">
+    <div class="prob-card">
+      <div class="prob-card-stat">10–40%</div>
+      <div class="prob-card-desc">of billable work never gets recorded</div>
+    </div>
+    <div class="prob-card">
+      <div class="prob-card-stat">"Vague entries"</div>
+      <div class="prob-card-desc">"Worked on case" written at 7pm doesn't survive audits</div>
+    </div>
+    <div class="prob-card">
+      <div class="prob-card-stat">Timers fail</div>
+      <div class="prob-card-desc">Attorneys stop using them within a week — they interrupt real work</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     03 — SOLUTION
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-solution">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">03</span>
+
+  <div class="sol-left">
+    <p class="sol-eyebrow">The Solution</p>
+    <h2 class="sol-headline">Donna captures your work.<br>Donna's AI makes it billable.</h2>
+    <p class="sol-body">Donna runs silently in the background, monitoring your active windows. When you stop, Donna's AI converts your activity into categorized billing entries with professional narratives — ready to review and export.</p>
+    <ul class="sol-bullets">
+      <li>
+        <i data-lucide="eye" style="width:22px;height:22px;flex-shrink:0;"></i>
+        <span><strong>Passive capture</strong> — zero interruption to your workflow</span>
+      </li>
+      <li>
+        <i data-lucide="sparkles" style="width:22px;height:22px;flex-shrink:0;"></i>
+        <span><strong>AI narratives</strong> — billing-ready entries from Donna's AI</span>
+      </li>
+      <li>
+        <i data-lucide="file-check" style="width:22px;height:22px;flex-shrink:0;"></i>
+        <span><strong>One-click export</strong> — clean CSV for any billing system</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sol-right">
+    <div class="donna-timeline-window">
+      <div class="dtw-bar">
+        <div class="traffic-lights">
+          <div class="tl tl-r"></div>
+          <div class="tl tl-y"></div>
+          <div class="tl tl-g"></div>
+        </div>
+        <span class="dtw-title">Donna</span>
+        <div class="dtw-controls">
+          <div class="dtw-timer"><span class="rec-dot"></span>00:00:15</div>
+          <div class="dtw-toggle">
+            <div class="dtw-toggle-track on"></div>
+            <span class="dtw-toggle-label">Auto Capture</span>
+          </div>
+        </div>
       </div>
-      <div class="tb-entries">
-        <div class="tb-row">
-          <span class="tb-row-desc">Worked on Smith case</span>
-          <span class="tb-row-hours">3.5?</span>
+      <div class="dtw-stats">
+        <div class="dtw-stat">
+          <div class="dtw-stat-label">Total Hours</div>
+          <div class="dtw-stat-value">4.5</div>
         </div>
-        <div class="tb-row">
-          <span class="tb-row-desc">Reviewed documents</span>
-          <span class="tb-row-hours">2.0?</span>
+        <div class="dtw-stat-divider"></div>
+        <div class="dtw-stat">
+          <div class="dtw-stat-label">Billable</div>
+          <div class="dtw-stat-value">4.0</div>
+          <div class="dtw-stat-sub">$1560</div>
         </div>
-        <div class="tb-row">
-          <span class="tb-row-desc">Client calls</span>
-          <span class="tb-row-hours">1.0?</span>
-        </div>
-        <div class="tb-row">
-          <span class="tb-row-desc">Research — Westlaw</span>
-          <span class="tb-row-hours lost">???</span>
-        </div>
-        <div class="tb-row">
-          <span class="tb-row-desc">Emails &amp; correspondence</span>
-          <span class="tb-row-hours lost">???</span>
+        <div class="dtw-stat-divider"></div>
+        <div class="dtw-stat">
+          <div class="dtw-stat-label">Non-Billable</div>
+          <div class="dtw-stat-value">0.5</div>
         </div>
       </div>
-      <div class="tb-warning">
-        <span class="tb-warn-dot"></span>
-        ~$2,450 in potentially unbilled time this week
+      <div class="dtw-col-row">
+        <span class="dtw-col">Activity</span>
+        <span class="dtw-col r">Hours</span>
+        <span class="dtw-col">Narrative</span>
+      </div>
+      <div class="dtw-entry">
+        <div class="dtw-entry-left">
+          <div class="dtw-time-range">5:00 – 6:00 PM</div>
+          <div class="dtw-bars">
+            <div class="dtw-bar-fill" style="width:58%;background:var(--cat-court);"></div>
+            <div class="dtw-bar-fill" style="width:42%;background:var(--cat-review);opacity:0.6;"></div>
+          </div>
+          <div class="dtw-badges"><span class="badge court" style="font-size:11px;">Court 58%</span><span class="badge review" style="font-size:11px;">Review 42%</span></div>
+        </div>
+        <div class="dtw-hours">1.0</div>
+        <div class="dtw-narrative">Final preparation for Davis DVRO hearing. Rehearsed client testimony and organized witness list.</div>
+      </div>
+      <div class="dtw-entry">
+        <div class="dtw-entry-left">
+          <div class="dtw-time-range">4:00 – 4:45 PM</div>
+          <div class="dtw-bars">
+            <div class="dtw-bar-fill" style="width:67%;background:var(--cat-drafting);"></div>
+            <div class="dtw-bar-fill" style="width:33%;background:var(--cat-review);opacity:0.6;"></div>
+          </div>
+          <div class="dtw-badges"><span class="badge drafting" style="font-size:11px;">Drafting 67%</span><span class="badge review" style="font-size:11px;">Review 33%</span></div>
+        </div>
+        <div class="dtw-hours">0.8</div>
+        <div class="dtw-narrative">Drafted declaration opposing relocation in Thompson matter. Reviewed opposing brief for factual inaccuracies.</div>
+      </div>
+      <div class="dtw-entry">
+        <div class="dtw-entry-left">
+          <div class="dtw-time-range">1:45 – 2:30 PM</div>
+          <div class="dtw-bars">
+            <div class="dtw-bar-fill" style="width:67%;background:var(--cat-comm);"></div>
+            <div class="dtw-bar-fill" style="width:33%;background:var(--cat-drafting);opacity:0.6;"></div>
+          </div>
+          <div class="dtw-badges"><span class="badge comm" style="font-size:11px;">Comms 67%</span><span class="badge drafting" style="font-size:11px;">Drafting 33%</span></div>
+        </div>
+        <div class="dtw-hours">0.8</div>
+        <div class="dtw-narrative">Client meeting with Martinez via Zoom. Emailed revised settlement terms to opposing counsel.</div>
       </div>
     </div>
   </div>
@@ -91,12 +175,12 @@
 </div>
 
 <!-- ============================================================
-     03 — HOW IT WORKS
+     04 — HOW IT WORKS
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-howitworks">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">03</span>
+  <span class="slide-number">04</span>
 
   <div class="hiw-top">
     <p class="hiw-eyebrow">How It Works</p>
@@ -119,7 +203,7 @@
         <i data-lucide="sparkles" style="width:24px;height:24px;color:var(--text-muted);"></i>
       </div>
       <h3 class="hiw-step-title">AI generates your timesheet</h3>
-      <p class="hiw-step-body">When you stop tracking, Donna sends your activity data to Claude AI, which produces categorized billing entries with professional narratives. All raw data is immediately destroyed.</p>
+      <p class="hiw-step-body">When you stop tracking, Donna's AI produces categorized billing entries with professional narratives from your activity data. All raw data is immediately destroyed.</p>
     </div>
 
     <div class="hiw-step">
@@ -135,12 +219,12 @@
 </div>
 
 <!-- ============================================================
-     04 — PASSIVE CAPTURE
+     05 — PASSIVE CAPTURE
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-feature">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">04</span>
+  <span class="slide-number">05</span>
 
   <div class="feature-left">
     <p class="feature-eyebrow research">Passive Capture</p>
@@ -213,12 +297,12 @@
 </div>
 
 <!-- ============================================================
-     05 — AI NARRATIVES
+     06 — AI NARRATIVES
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-narratives">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">05</span>
+  <span class="slide-number">06</span>
 
   <div class="narr-top">
     <p class="narr-eyebrow">AI-Powered</p>
@@ -266,7 +350,7 @@
     <!-- Arrow -->
     <div class="narr-arrow-col">
       <span class="narr-arrow-glyph">&#8649;</span>
-      <span class="narr-arrow-label">Claude AI</span>
+      <span class="narr-arrow-label">Donna's AI</span>
     </div>
 
     <!-- AI-generated billing entries -->
@@ -306,12 +390,12 @@
 </div>
 
 <!-- ============================================================
-     06 — LEGAL BILLING
+     07 — LEGAL BILLING
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-billing">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">06</span>
+  <span class="slide-number">07</span>
 
   <div class="billing-slide-top">
     <p class="billing-eyebrow">Legal Billing</p>
@@ -424,12 +508,12 @@
 </div>
 
 <!-- ============================================================
-     07 — REVENUE INTELLIGENCE
+     08 — REVENUE INTELLIGENCE
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-analytics">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">07</span>
+  <span class="slide-number">08</span>
 
   <div class="analytics-top">
     <p class="analytics-eyebrow">Revenue Intelligence</p>
@@ -532,12 +616,12 @@
 </div>
 
 <!-- ============================================================
-     08 — PRIVACY & SECURITY
+     09 — PRIVACY & SECURITY
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-privacy">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">08</span>
+  <span class="slide-number">09</span>
 
   <p class="privacy-eyebrow">Privacy &amp; Security</p>
   <h2 class="privacy-headline">Built for attorney-client privilege.</h2>
@@ -570,7 +654,7 @@
     </div>
     <div class="flow-node external">
       <div class="flow-node-icon" style="font-family:var(--font-mono);font-size:16px;font-weight:600;">AI</div>
-      <div class="flow-node-title">Claude API</div>
+      <div class="flow-node-title">Donna's AI</div>
       <div class="flow-node-sub">Ephemeral · No storage</div>
     </div>
     <div class="flow-edge">
@@ -596,7 +680,7 @@
     <div class="privacy-check">
       <i data-lucide="trash-2" class="check-mark"></i>
       <div class="check-title">Screenshots destroyed</div>
-      <div class="check-body">Deleted permanently after Claude processes the session.</div>
+      <div class="check-body">Deleted permanently after Donna's AI processes the session.</div>
     </div>
     <div class="privacy-check">
       <i data-lucide="lock" class="check-mark"></i>
@@ -618,12 +702,12 @@
 </div>
 
 <!-- ============================================================
-     09 — THE MATH
+     10 — THE MATH
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-math">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">09</span>
+  <span class="slide-number">10</span>
 
   <p class="math-eyebrow">The Value</p>
   <h2 class="math-headline">Recover the hours<br>you've already earned.</h2>
@@ -654,31 +738,37 @@
 </div>
 
 <!-- ============================================================
-     10 — CTA
+     11 — CTA
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-cta">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">10</span>
+  <span class="slide-number">11</span>
 
   <p class="cta-eyebrow">Get Started</p>
   <h2 class="cta-headline">Start capturing every minute you've earned.</h2>
-  <p class="cta-sub">Free during early access. No credit card required. Your own Anthropic API key for AI processing.</p>
-  <div class="cta-buttons">
-    <span class="btn btn-primary"><i data-lucide="download" style="width:20px;height:20px;"></i>Download for macOS</span>
-    <span class="btn btn-ghost"><i data-lucide="download" style="width:20px;height:20px;"></i>Download for Windows</span>
-  </div>
+  <p class="cta-price">$99 / seat / month</p>
   <span class="cta-url">donnaanswers.com</span>
 </section>
 </div>
 
 <!-- PDF Download Button -->
 <a class="back-btn" href="../../">← All Decks</a>
-<button class="download-btn" onclick="window.print()">Download PDF</button>
+<button class="download-btn" onclick="window.open(location.pathname + '?export', '_blank')">Download PDF</button>
 
 <script>
   lucide.createIcons();
+
+  // Export mode: ?export applies white backgrounds at screen level,
+  // then auto-triggers print — reliably bypasses @media print quirks.
+  if (location.search.includes('export')) {
+    document.documentElement.classList.add('export-mode');
+    document.documentElement.style.setProperty('--slide-scale', '1');
+    document.fonts.ready.then(() => setTimeout(() => window.print(), 500));
+  }
+
   function scaleSlides() {
+    if (location.search.includes('export')) return; // export mode locks scale at 1
     const s = Math.min((window.innerWidth - 80) / 1920, 1);
     document.documentElement.style.setProperty('--slide-scale', s);
   }

@@ -1347,3 +1347,11 @@
   word-break: break-all;
   line-height: 1.4;
 }
+
+/* ===========================================================
+   Print overrides
+   =========================================================== */
+@media print {
+  /* Strip shadows — Chrome PDF renders box-shadow as solid grey rectangles */
+  .before-after-card { box-shadow: none; }
+}

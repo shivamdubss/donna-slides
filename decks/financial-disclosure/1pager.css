@@ -1,6 +1,50 @@
 /* ============================================================
    Financial Disclosure 1-Pager
-   Extends ../../_1pager-template/1pager.css patterns.
+   Extends ../_1pager-template/1pager.css patterns.
    ============================================================ */
 
 @page { size: 8.5in 11in; margin: 0; }
+
+/* Teal bottom-left ↔ pink bottom-right, lavender top-right whisper */
+.page {
+  background:
+    radial-gradient(ellipse 680px 520px at -10% 112%, rgba(45, 212, 191, 0.48) 0%, rgba(153, 246, 228, 0.24) 45%, transparent 68%),
+    radial-gradient(ellipse 480px 360px at 112% 110%, rgba(249, 168, 212, 0.45) 0%, rgba(253, 164, 175, 0.18) 45%, transparent 65%),
+    radial-gradient(ellipse 300px 220px at 112% -2%, rgba(165, 180, 252, 0.28) 0%, transparent 58%),
+    radial-gradient(ellipse 220px 160px at -4% -1%, rgba(94, 234, 212, 0.22) 0%, transparent 55%),
+    #FFFFFF;
+}
+
+/* ---- Section color accents ----
+   Each section gets a tinted badge + matching icon color.
+   Color only touches small elements — body text stays neutral. */
+
+/* Document Intake — teal */
+.page-section--intake .section-badge {
+  color: #0F766E;
+  background: #F0FDFA;
+  border-color: #99F6E4;
+}
+.page-section--intake .feature-card-title i {
+  color: #0F766E;
+}
+
+/* Auto-Categorization — indigo */
+.page-section--categorize .section-badge {
+  color: #4F46E5;
+  background: #EEF2FF;
+  border-color: #C7D2FE;
+}
+.page-section--categorize .feature-card-title i {
+  color: #4F46E5;
+}
+
+/* Auto-Draft Forms — rose */
+.page-section--forms .section-badge {
+  color: #BE123C;
+  background: #FFF1F2;
+  border-color: #FECDD3;
+}
+.page-section--forms .feature-card-title i {
+  color: #BE123C;
+}
