@@ -196,6 +196,7 @@ body {
   html, body { background: white; padding: 0; gap: 0; display: block; }
   .download-btn { display: none; }
   .back-btn { display: none; }
+  .graveyard { display: none; }
   .slide-wrapper {
     width: 1920px; height: 1080px;
     border-radius: 0; box-shadow: none;
@@ -211,4 +212,5 @@ body {
     print-color-adjust: exact;
   }
 }
+.export-mode .graveyard { display: none; }
 @page { size: 1920px 1080px; margin: 0; }
