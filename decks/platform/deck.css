@@ -1,0 +1,946 @@
+/* ============================================================
+   Donna — Full Platform Overview Deck
+   ============================================================ */
+
+/* Legal billing category tokens */
+:root {
+  --cat-research:  #4F46E5; --cat-research-bg:  #EEF2FF;
+  --cat-drafting:  #0F766E; --cat-drafting-bg:  #F0FDFA;
+  --cat-comm:      #C2410C; --cat-comm-bg:      #FFF7ED;
+  --cat-court:     #BE123C; --cat-court-bg:     #FFF1F2;
+  --cat-review:    #475569; --cat-review-bg:    #F8FAFC;
+}
+
+.badge.research { color: var(--cat-research); background: var(--cat-research-bg); }
+.badge.drafting { color: var(--cat-drafting); background: var(--cat-drafting-bg); }
+.badge.comm     { color: var(--cat-comm);     background: var(--cat-comm-bg); }
+.badge.court    { color: var(--cat-court);    background: var(--cat-court-bg); }
+.badge.review   { color: var(--cat-review);   background: var(--cat-review-bg); }
+
+/* ===========================================================
+   SLIDE 01 — Hero / Title
+   =========================================================== */
+.slide-po-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
+  position: relative;
+}
+.slide-po-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 1600px 640px at 50% 108%, #BFDBFE 0%, #DBEAFE 40%, transparent 70%);
+  pointer-events: none;
+}
+.slide-po-hero > *:not(.slide-wordmark):not(.slide-number) { position: relative; z-index: 1; }
+
+.po-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.po-hero-headline {
+  font-family: var(--font-display);
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  max-width: 1100px;
+  margin-bottom: 28px;
+}
+.po-hero-sub {
+  font-family: var(--font-body);
+  font-size: 26px;
+  color: var(--text-secondary);
+  max-width: 760px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+.po-hero-pills {
+  display: flex;
+  gap: 12px;
+}
+.po-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-full);
+  padding: 10px 22px;
+}
+
+/* ===========================================================
+   SLIDE 08 — Thank You / CTA
+   =========================================================== */
+.slide-po-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
+  position: relative;
+}
+.slide-po-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 1600px 640px at 50% 108%, #BFDBFE 0%, #DBEAFE 40%, transparent 70%);
+  pointer-events: none;
+}
+.slide-po-cta > *:not(.slide-wordmark):not(.slide-number) { position: relative; z-index: 1; }
+
+.po-cta-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.po-cta-headline {
+  font-family: var(--font-display);
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.034em;
+  color: var(--text-primary);
+  max-width: 1040px;
+  margin-bottom: 24px;
+}
+.po-cta-sub {
+  font-family: var(--font-body);
+  font-size: 26px;
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.45;
+  margin-bottom: 48px;
+}
+.po-cta-actions {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 64px;
+}
+.po-cta-features {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.po-cta-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--text-muted);
+}
+.po-cta-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border-default);
+}
+
+/* ===========================================================
+   Product Badge — identifies which product each slide covers
+   =========================================================== */
+.po-product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-inset);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-full);
+  padding: 5px 16px;
+  margin-bottom: 20px;
+}
+
+/* ===========================================================
+   SHARED — Problem Slide Layout (slides 01, 03, 05)
+   =========================================================== */
+.slide-po-problem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 120px;
+  gap: 0;
+}
+.po-prob-top {
+  margin-bottom: 48px;
+}
+.po-prob-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--cat-comm);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.po-prob-stat {
+  font-family: var(--font-display);
+  font-size: 110px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.po-prob-stat-label {
+  font-family: var(--font-body);
+  font-size: 22px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.po-prob-source {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--text-faint);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.po-prob-body {
+  font-family: var(--font-body);
+  font-size: 22px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 920px;
+}
+
+/* Problem cards */
+.po-prob-cards {
+  display: flex;
+  gap: 24px;
+}
+.po-prob-card {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.po-prob-card-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  flex-shrink: 0;
+}
+.po-prob-card-stat {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+.po-prob-card-desc {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* ===========================================================
+   SHARED — Solution Slide Layout (slides 02, 04, 06)
+   =========================================================== */
+.slide-po-solution {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  position: relative;
+}
+.po-sol-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 56px 80px 88px;
+}
+.po-sol-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.po-sol-headline {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: -0.028em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+.po-sol-body {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 580px;
+  margin-bottom: 32px;
+}
+.po-sol-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.po-sol-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-family: var(--font-body);
+  font-size: 19px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+.po-sol-bullets li i { color: var(--text-muted); margin-top: 2px; }
+
+.po-sol-right {
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+}
+
+/* Practice area tags */
+.po-sol-areas {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.po-area-tag {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--bg-inset);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-full);
+  padding: 4px 14px;
+}
+
+/* ===========================================================
+   SLIDE 02 — Call Intake Chat Window Mockup
+   =========================================================== */
+.donna-chat-window {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chrome bar */
+.dcw-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-sidebar);
+}
+.dcw-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+  text-align: center;
+}
+.dcw-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: #16A34A;
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  border-radius: var(--r-full);
+  padding: 3px 10px;
+}
+
+/* Chat body */
+.dcw-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px;
+  flex: 1;
+}
+.dcw-msg {
+  max-width: 88%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.45;
+}
+.dcw-msg.donna {
+  align-self: flex-start;
+  background: var(--bg-inset);
+  color: var(--text-primary);
+  border-bottom-left-radius: 4px;
+}
+.dcw-msg.caller {
+  align-self: flex-end;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  border-bottom-right-radius: 4px;
+}
+
+/* Footer metadata */
+.dcw-footer {
+  display: flex;
+  gap: 16px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--border-default);
+  background: var(--bg-sidebar);
+}
+.dcw-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+/* ===========================================================
+   SLIDE 04 — Document Tracker Window Mockup
+   =========================================================== */
+.donna-docs-window {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chrome bar */
+.ddw-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-sidebar);
+}
+.ddw-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+  text-align: center;
+}
+
+/* Stats bar */
+.ddw-stats {
+  display: flex;
+  gap: 0;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-surface);
+}
+.ddw-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 14px;
+}
+.ddw-stat:first-child { padding-left: 0; }
+.ddw-stat-divider {
+  width: 1px;
+  background: var(--border-default);
+  margin: 2px 0;
+}
+.ddw-stat-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.ddw-stat-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.ddw-stat-value.ddw-overdue {
+  color: var(--cat-comm);
+}
+
+/* Column headers */
+.ddw-col-row {
+  display: grid;
+  grid-template-columns: 1fr 160px 180px;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-inset);
+  border-bottom: 1px solid var(--border-default);
+}
+.ddw-col {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Entries */
+.ddw-entry {
+  display: grid;
+  grid-template-columns: 1fr 160px 180px;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  align-items: center;
+}
+.ddw-entry:last-child { border-bottom: none; }
+.ddw-doc-name {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.ddw-source {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.ddw-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+.ddw-status.received { color: #16A34A; }
+.ddw-status.pending  { color: var(--text-muted); }
+.ddw-status.overdue  { color: var(--cat-comm); }
+
+/* ===========================================================
+   SLIDE 06 — Time Tracking Timeline Window Mockup
+   (duplicated from product deck for self-containment)
+   =========================================================== */
+.donna-timeline-window {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  font-family: var(--font-body);
+}
+.dtw-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-sidebar);
+}
+.dtw-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+  text-align: center;
+}
+.dtw-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.dtw-timer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  background: rgba(239,68,68,0.08);
+  border: 1px solid rgba(239,68,68,0.2);
+  border-radius: var(--r-full);
+  padding: 3px 10px;
+}
+.dtw-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dtw-toggle-track {
+  width: 32px;
+  height: 18px;
+  border-radius: var(--r-full);
+  background: var(--border-default);
+}
+.dtw-toggle-track.on { background: #16A34A; }
+.dtw-toggle-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.dtw-stats {
+  display: flex;
+  gap: 0;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-surface);
+}
+.dtw-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 16px;
+}
+.dtw-stat:first-child { padding-left: 0; }
+.dtw-stat-divider {
+  width: 1px;
+  background: var(--border-default);
+  margin: 4px 0;
+}
+.dtw-stat-label {
+  font-size: 12px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.dtw-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+}
+.dtw-stat-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+.dtw-col-row {
+  display: grid;
+  grid-template-columns: 200px 52px 1fr;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-inset);
+  border-bottom: 1px solid var(--border-default);
+}
+.dtw-col {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.dtw-col.r { text-align: right; }
+.dtw-entry {
+  display: grid;
+  grid-template-columns: 200px 52px 1fr;
+  gap: 8px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  align-items: start;
+}
+.dtw-entry:last-child { border-bottom: none; }
+.dtw-entry-left { display: flex; flex-direction: column; gap: 6px; }
+.dtw-time-range { font-size: 12px; color: var(--text-muted); font-family: var(--font-mono); }
+.dtw-bars { display: flex; height: 4px; border-radius: 2px; overflow: hidden; gap: 1px; }
+.dtw-bar-fill { height: 100%; border-radius: 2px; }
+.dtw-badges { display: flex; gap: 4px; flex-wrap: wrap; }
+.dtw-hours { font-family: var(--font-mono); font-size: 14px; color: var(--text-primary); text-align: right; padding-top: 2px; }
+.dtw-narrative { font-size: 13px; color: var(--text-secondary); line-height: 1.45; }
+
+/* ===========================================================
+   SLIDE 09 — Forensic Analysis Dashboard Mockup
+   =========================================================== */
+.donna-forensic-window {
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chrome bar */
+.dfw-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-sidebar);
+}
+.dfw-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+  text-align: center;
+}
+
+/* Stats bar */
+.dfw-stats {
+  display: flex;
+  gap: 0;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-default);
+  background: var(--bg-surface);
+}
+.dfw-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 14px;
+}
+.dfw-stat:first-child { padding-left: 0; }
+.dfw-stat-divider {
+  width: 1px;
+  background: var(--border-default);
+  margin: 2px 0;
+}
+.dfw-stat-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.dfw-stat-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Tab bar */
+.dfw-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border-default);
+}
+.dfw-tab {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  cursor: default;
+}
+.dfw-tab.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--text-primary);
+}
+
+/* Column headers */
+.dfw-col-row {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 140px;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-inset);
+  border-bottom: 1px solid var(--border-default);
+}
+.dfw-col {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.dfw-col.r { text-align: right; }
+
+/* Forensic entries */
+.dfw-entry {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 140px;
+  gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  align-items: center;
+}
+.dfw-entry:last-child { border-bottom: none; }
+.dfw-entry.flagged {
+  background: #FFF5F5;
+}
+.dfw-asset {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dfw-declared,
+.dfw-found {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  color: var(--text-secondary);
+}
+.dfw-finding { display: flex; align-items: center; }
+.dfw-finding-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  white-space: nowrap;
+}
+.dfw-finding-badge.verified {
+  color: #16A34A;
+  background: #F0FDF4;
+}
+.dfw-finding-badge.discrepancy {
+  color: var(--cat-comm);
+  background: var(--cat-comm-bg);
+}
+.dfw-finding-badge.undisclosed {
+  color: var(--cat-court);
+  background: var(--cat-court-bg);
+}
+.dfw-stat-value.dfw-flagged {
+  color: var(--cat-court);
+}
+
+/* Shared macOS chrome elements */
+.traffic-lights { display: flex; gap: 6px; }
+.tl { width: 12px; height: 12px; border-radius: 50%; }
+.tl-r { background: #FF5F57; }
+.tl-y { background: #FFBD2E; }
+.tl-g { background: #28C840; }
+.rec-dot { width: 7px; height: 7px; border-radius: 50%; background: #16A34A; }
+
+/* ===========================================================
+   Print overrides
+   =========================================================== */
+@media print {
+  .donna-chat-window,
+  .donna-docs-window,
+  .donna-timeline-window,
+  .donna-forensic-window,
+  .po-prob-card { box-shadow: none; }
+
+  .dcw-bar,
+  .dcw-footer,
+  .ddw-bar,
+  .ddw-col-row,
+  .ddw-stats,
+  .dtw-bar,
+  .dtw-col-row,
+  .dfw-bar,
+  .dfw-col-row,
+  .dfw-stats,
+  .dfw-tabs { background: var(--bg-surface); }
+
+  .dfw-entry.flagged { background: var(--bg-surface); }
+}
+
+/* ===========================================================
+   Export mode (?export in URL)
+   =========================================================== */
+.export-mode body {
+  background: white;
+  padding: 0;
+  gap: 0;
+  display: block;
+}
+.export-mode .slide-wrapper {
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  break-after: page;
+}
+.export-mode .slide {
+  transform: none;
+  position: relative;
+}
+.export-mode .download-btn,
+.export-mode .back-btn { display: none; }
+
+/* Strip shadows at screen level */
+.export-mode .donna-chat-window,
+.export-mode .donna-docs-window,
+.export-mode .donna-timeline-window,
+.export-mode .donna-forensic-window,
+.export-mode .po-prob-card { box-shadow: none; }
+
+/* Grey backgrounds → white at screen level */
+.export-mode .dcw-bar,
+.export-mode .dcw-footer,
+.export-mode .ddw-bar,
+.export-mode .ddw-col-row,
+.export-mode .ddw-stats,
+.export-mode .dtw-bar,
+.export-mode .dtw-col-row,
+.export-mode .dfw-bar,
+.export-mode .dfw-col-row,
+.export-mode .dfw-stats,
+.export-mode .dfw-tabs { background: #FFFFFF; }
+
+.export-mode .dfw-entry.flagged { background: #FFFFFF; }
