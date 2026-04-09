@@ -1,0 +1,507 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Donna" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Donna" [ref=e5]
+      - generic [ref=e6]:
+        - link "Features" [ref=e7] [cursor=pointer]:
+          - /url: "#features"
+        - link "How It Works" [ref=e8] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Privacy" [ref=e9] [cursor=pointer]:
+          - /url: "#privacy"
+        - link "Sign In" [ref=e10] [cursor=pointer]:
+          - /url: /docketing/app/
+      - link "Open App" [ref=e11] [cursor=pointer]:
+        - /url: /docketing/app/
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - link "AI Phone Intake & Evidence Gathering for Law Firms" [ref=e15] [cursor=pointer]:
+        - /url: /
+        - text: AI Phone Intake & Evidence Gathering for Law Firms
+        - generic [ref=e16]: →
+      - heading "Stop losing billable hours to end-of-day guesswork" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Donna silently tracks your work, generates billing-ready narratives with AI, and keeps every byte of client data on your device. Built for attorneys.
+      - generic [ref=e19]:
+        - link "Download for Windows" [ref=e20] [cursor=pointer]:
+          - /url: https://github.com/donnaanswers/donnatracking-releases/releases/latest/download/DonnaSetup.exe
+          - img [ref=e21]
+          - text: Download for Windows
+        - link "Download for Mac" [ref=e23] [cursor=pointer]:
+          - /url: https://github.com/donnaanswers/donnatracking-releases/releases/latest/download/Donna.dmg
+          - img [ref=e24]
+          - text: Download for Mac
+      - paragraph [ref=e26]: Privacy-first · On-device AI · No data leaves your machine
+      - img "Donna timeline view showing AI-generated billing narratives" [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: Donna
+          - navigation [ref=e35]:
+            - generic [ref=e36]:
+              - img [ref=e37]
+              - text: Timeline
+            - generic [ref=e40]:
+              - img [ref=e41]
+              - text: Timesheet
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - text: Analytics
+            - generic [ref=e46]:
+              - img [ref=e47]
+              - text: Clients
+          - generic [ref=e50]:
+            - img [ref=e51]
+            - text: Settings
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - img [ref=e58]
+              - generic [ref=e60]: Fri, Mar 27
+              - img [ref=e62]
+            - generic [ref=e64]: Auto Capture
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: Total Hours
+              - generic [ref=e70]: "6.5"
+            - generic [ref=e71]:
+              - generic [ref=e72]: Billable
+              - generic [ref=e73]: "4.8"
+              - generic [ref=e74]: $1,083
+            - generic [ref=e75]:
+              - generic [ref=e76]: Non-Billable
+              - generic [ref=e77]: "1.8"
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: Activity
+              - generic [ref=e81]: Hours
+              - generic [ref=e82]: Narrative
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - generic [ref=e85]: 3:15 PM — 4:30 PM
+                - generic [ref=e86]: 3 activities
+                - generic [ref=e91]:
+                  - generic [ref=e92]: Drafting 48%
+                  - generic [ref=e94]: Research 36%
+                  - generic [ref=e96]: Comms 16%
+              - generic [ref=e98]: "1.3"
+              - generic [ref=e99]: End-of-week case review and next week planning.
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]: 2:00 PM — 3:00 PM
+                - generic [ref=e103]: 3 activities
+                - generic [ref=e107]:
+                  - generic [ref=e108]: Research 80%
+                  - generic [ref=e110]: Drafting 20%
+              - generic [ref=e112]: "1.0"
+              - generic [ref=e113]: Weekly billing review and business development planning.
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: 12:00 PM — 1:00 PM
+                - generic [ref=e117]: 2 activities
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Drafting 70%
+                  - generic [ref=e124]: Comms 30%
+              - generic [ref=e126]: "1.0"
+              - generic [ref=e127]: Ramirez stipulated agreement drafting from mediation outcomes.
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - generic [ref=e130]: 9:45 AM — 11:15 AM
+                - generic [ref=e131]: 4 activities
+                - generic [ref=e136]:
+                  - generic [ref=e137]: Drafting 40%
+                  - generic [ref=e139]: Comms 33%
+                  - generic [ref=e141]: Admin 27%
+              - generic [ref=e143]: "1.5"
+              - generic [ref=e144]: Filed Okafor adoption petition and worked on Whitfield QDRO.
+            - generic [ref=e145]:
+              - generic [ref=e146]: 4 sessions · 12 activities
+              - generic [ref=e147]: 6.5 hrs
+    - generic [ref=e149]:
+      - paragraph [ref=e150]: The Problem
+      - heading "The average attorney loses $50,000 a year in unbilled time" [level=2] [ref=e151]
+      - paragraph [ref=e152]: End-of-day time reconstruction misses 10–40% of billable work. Vague entries like "worked on case" get written down at court. And manual tracking tools go unused because they interrupt the work they're supposed to measure.
+    - generic [ref=e154]:
+      - generic [ref=e155]:
+        - paragraph [ref=e156]: Features
+        - heading "Everything your firm needs to bill accurately" [level=2] [ref=e157]
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - generic [ref=e160]: Passive Capture
+          - heading "It tracks your time. You practice law." [level=3] [ref=e161]
+          - paragraph [ref=e162]: Donna monitors your active window every three seconds and captures periodic screenshots in the background. You never click "start" or "stop" — just work. At the end of each session, AI transforms raw activity into structured billing entries.
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - img [ref=e165]
+              - text: Window title monitoring every 3 seconds
+            - listitem [ref=e167]:
+              - img [ref=e168]
+              - text: Periodic screenshot capture for AI context
+            - listitem [ref=e170]:
+              - img [ref=e171]
+              - text: "Activity categories: Research, Drafting, Communication, Court, Case Review"
+            - listitem [ref=e173]:
+              - img [ref=e174]
+              - text: Idle detection with smart resume
+        - img "Expanded session showing individual activities with AI-generated narratives" [ref=e182]:
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e186]: Activity
+              - generic [ref=e187]: Hours
+              - generic [ref=e188]: Narrative
+            - generic [ref=e189]:
+              - generic [ref=e190]:
+                - generic [ref=e191]: 3:15 PM — 4:30 PM
+                - generic [ref=e192]: 3 activities
+              - generic [ref=e197]: "1.3"
+              - generic [ref=e198]: End-of-week case review and next week planning.
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: Wo
+                - generic [ref=e202]:
+                  - generic [ref=e203]: Microsoft Word
+                  - generic [ref=e204]: ramirez_v_whitfield_settlement.docx
+              - generic [ref=e205]: "0.7"
+              - generic [ref=e206]: Revised property settlement agreement incorporating updated asset valuations and client instructions.
+            - generic [ref=e207]:
+              - generic [ref=e208]:
+                - generic [ref=e209]: Ch
+                - generic [ref=e210]:
+                  - generic [ref=e211]: Outlook
+                  - generic [ref=e212]: Ramirez · Opposing Counsel
+              - generic [ref=e213]: "0.3"
+              - generic [ref=e214]: Reviewed opposing counsel's proposed parenting agreement and drafted response to objections.
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - generic [ref=e217]: Ou
+                - generic [ref=e218]:
+                  - generic [ref=e219]: Outlook
+                  - generic [ref=e220]: Client correspondence
+              - generic [ref=e221]: "0.3"
+              - generic [ref=e222]: Sent case update to client regarding settlement timeline and next steps.
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - generic [ref=e225]: 2:00 PM — 3:00 PM
+                - generic [ref=e226]: 3 activities
+              - generic [ref=e230]: "1.0"
+              - generic [ref=e231]: Weekly billing review and business development planning.
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - generic [ref=e234]: 12:00 PM — 1:00 PM
+                - generic [ref=e235]: 2 activities
+              - generic [ref=e239]: "1.0"
+              - generic [ref=e240]: Ramirez stipulated agreement drafting from mediation outcomes.
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]: AI-Powered
+          - heading "Billing narratives that survive fee petitions" [level=3] [ref=e244]
+          - paragraph [ref=e245]: "Donna generates narratives in proper legal billing format: action verb, what was done, for whom. No more \"reviewed documents\" or \"worked on case.\" Every entry is specific enough to withstand review under ABA Rule 1.5."
+          - list [ref=e246]:
+            - listitem [ref=e247]:
+              - img [ref=e248]
+              - text: "Format: \"Researched case law regarding motion to compel discovery\""
+            - listitem [ref=e250]:
+              - img [ref=e251]
+              - text: Block billing detection and warnings
+            - listitem [ref=e253]:
+              - img [ref=e254]
+              - text: Edit any narrative after generation
+            - listitem [ref=e256]:
+              - img [ref=e257]
+              - text: Powered by Claude AI with legal billing expertise
+        - img "Donna timeline with AI-generated billing narratives" [ref=e265]:
+          - generic [ref=e267]:
+            - generic [ref=e268]:
+              - generic [ref=e269]: Activity
+              - generic [ref=e270]: Hours
+              - generic [ref=e271]: Narrative
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e274]: 3:15 PM — 4:30 PM
+                - generic [ref=e275]: 3 activities
+                - generic [ref=e280]:
+                  - generic [ref=e281]: Drafting 48%
+                  - generic [ref=e283]: Research 36%
+              - generic [ref=e285]: "1.3"
+              - generic [ref=e286]: Reviewed and revised property settlement agreement incorporating updated asset valuations and client instructions regarding equitable distribution.
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - generic [ref=e289]: 2:00 PM — 3:00 PM
+                - generic [ref=e290]: 3 activities
+                - generic [ref=e295]: Research 80%
+              - generic [ref=e297]: "1.0"
+              - generic [ref=e298]: Researched case law regarding motion to compel discovery responses in Smith v. Jones matter.
+            - generic [ref=e299]:
+              - generic [ref=e300]:
+                - generic [ref=e301]: 12:00 PM — 1:00 PM
+                - generic [ref=e302]: 2 activities
+                - generic [ref=e307]: Drafting 70%
+              - generic [ref=e309]: "1.0"
+              - generic [ref=e310]: Drafted and revised demand letter to opposing counsel regarding settlement terms and counteroffer parameters.
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - generic [ref=e313]: Legal Billing
+          - heading "Client, matter, rate. The hierarchy you already know." [level=3] [ref=e314]
+          - paragraph [ref=e315]: Donna speaks your language. Organize work by Client and Matter with configurable hourly rates. Time displays in 0.1-hour increments. Export clean timesheets to CSV any time.
+          - list [ref=e316]:
+            - listitem [ref=e317]:
+              - img [ref=e318]
+              - text: Client > Matter hierarchy with active/closed status
+            - listitem [ref=e320]:
+              - img [ref=e321]
+              - text: Per-client and per-matter rate overrides
+            - listitem [ref=e323]:
+              - img [ref=e324]
+              - text: 0.1-hour billing increments
+            - listitem [ref=e326]:
+              - img [ref=e327]
+              - text: One-click CSV timesheet export
+        - img "Client and Matter management with legal billing hierarchy" [ref=e335]:
+          - generic [ref=e336]:
+            - generic [ref=e337]:
+              - generic [ref=e338]: Clients & Matters
+              - generic [ref=e339]:
+                - img [ref=e340]
+                - text: Add Client
+            - generic [ref=e341]:
+              - generic [ref=e342]:
+                - generic [ref=e343]: Firm / InternalINTERNAL
+                - generic [ref=e344]: 4 active matters
+              - generic [ref=e345]:
+                - generic [ref=e346]: Administrative
+                - generic [ref=e347]:
+                  - emphasis [ref=e348]: Non-billable
+                  - text: "Keywords: calendar, billing, expense"
+              - generic [ref=e349]:
+                - generic [ref=e350]: Business Development
+                - generic [ref=e351]:
+                  - emphasis [ref=e352]: Non-billable
+                  - text: "Keywords: marketing, proposal, pitch"
+              - generic [ref=e353]:
+                - generic [ref=e354]: CLE/Training
+                - generic [ref=e355]:
+                  - emphasis [ref=e356]: Non-billable
+                  - text: "Keywords: seminar, webinar, training"
+              - generic [ref=e357]:
+                - generic [ref=e358]: Pro Bono
+                - generic [ref=e359]:
+                  - emphasis [ref=e360]: Non-billable
+                  - text: "Keywords: legal aid, volunteer"
+              - generic [ref=e361]:
+                - img [ref=e362]
+                - text: Add Matter
+              - generic [ref=e363]:
+                - generic [ref=e364]: Anderson & Associates
+                - generic [ref=e365]: 2 active matters · $450/hr
+              - generic [ref=e366]:
+                - generic [ref=e367]: Chen Family Trust
+                - generic [ref=e368]: 1 active matter · $400/hr
+              - generic [ref=e369]:
+                - generic [ref=e370]: Meridian Properties LLC
+                - generic [ref=e371]: 2 active matters · $375/hr
+              - generic [ref=e372]:
+                - generic [ref=e373]: Thompson, Jennifer
+                - generic [ref=e374]: 2 active matters · $350/hr
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - generic [ref=e377]: Revenue Intelligence
+          - heading "Know if you're on pace before the month ends" [level=3] [ref=e378]
+          - paragraph [ref=e379]: Real-time billing analytics show your utilization rate, revenue forecast, hours by matter, and category breakdown. No more end-of-month surprises.
+          - list [ref=e380]:
+            - listitem [ref=e381]:
+              - img [ref=e382]
+              - text: Utilization rate with target comparison
+            - listitem [ref=e384]:
+              - img [ref=e385]
+              - text: Revenue forecast based on current pace
+            - listitem [ref=e387]:
+              - img [ref=e388]
+              - text: Hours ranked by matter and category
+            - listitem [ref=e390]:
+              - img [ref=e391]
+              - text: Billable hour trend with daily target line
+        - img "Revenue analytics showing utilization rate and billing trends" [ref=e399]:
+          - generic [ref=e400]:
+            - generic [ref=e401]:
+              - generic [ref=e402]:
+                - generic [ref=e403]: Billable Hours
+                - generic [ref=e404]: "32.4"
+                - generic [ref=e405]: 38.0 total
+              - generic [ref=e406]:
+                - generic [ref=e407]: Revenue
+                - generic [ref=e408]: $12,960
+                - generic [ref=e409]: $15,200 projected
+              - generic [ref=e410]:
+                - generic [ref=e411]: Utilization Rate
+                - generic [ref=e412]: 85%
+                - generic [ref=e413]: "Target: 80%"
+              - generic [ref=e414]:
+                - generic [ref=e415]: Effective Rate
+                - generic [ref=e416]: $400
+                - generic [ref=e417]: /hr avg
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - generic [ref=e420]: Billable Hour Trend
+                - generic [ref=e421]:
+                  - generic [ref=e424]: Mon
+                  - generic [ref=e427]: Tue
+                  - generic [ref=e430]: Wed
+                  - generic [ref=e433]: Thu
+                  - generic [ref=e436]: Fri
+              - generic [ref=e437]:
+                - generic [ref=e438]: Hours by Category
+                - generic [ref=e444]:
+                  - text: Drafting
+                  - generic [ref=e446]: 12.3 hrs
+                - generic [ref=e447]:
+                  - text: Research
+                  - generic [ref=e449]: 9.1 hrs
+                - generic [ref=e450]:
+                  - text: Communication
+                  - generic [ref=e452]: 6.5 hrs
+                - generic [ref=e453]:
+                  - text: Admin
+                  - generic [ref=e455]: 4.5 hrs
+    - generic [ref=e457]:
+      - generic [ref=e458]:
+        - paragraph [ref=e459]: How It Works
+        - heading "Three steps. Zero effort." [level=2] [ref=e460]
+      - generic [ref=e461]:
+        - generic [ref=e462]:
+          - generic [ref=e463]: "1"
+          - heading "Open Donna and work" [level=3] [ref=e464]
+          - paragraph [ref=e465]: Donna runs in the background while you draft motions, research case law, and handle client calls. It observes your active window and captures screenshots for AI context.
+        - generic [ref=e466]:
+          - generic [ref=e467]: "2"
+          - heading "AI generates your timesheet" [level=3] [ref=e468]
+          - paragraph [ref=e469]: When you stop tracking, Donna sends your activity data to Claude AI, which produces categorized billing entries with professional narratives. All raw data is immediately destroyed.
+        - generic [ref=e470]:
+          - generic [ref=e471]: "3"
+          - heading "Review, edit, export" [level=3] [ref=e472]
+          - paragraph [ref=e473]: Review AI-generated entries, adjust narratives if needed, assign to matters, and export a clean timesheet. Donna handles the paperwork so you can handle the cases.
+    - generic [ref=e475]:
+      - paragraph [ref=e476]: Privacy & Security
+      - heading "Built for attorney-client privilege" [level=2] [ref=e477]
+      - paragraph [ref=e478]: ABA Model Rule 1.6 requires reasonable efforts to prevent unauthorized disclosure of client information. Window titles contain client names. Screenshots capture privileged documents. Donna's architecture ensures none of this data persists beyond the moment of summarization.
+      - generic [ref=e479]:
+        - generic [ref=e480]:
+          - img [ref=e481]
+          - generic [ref=e483]:
+            - paragraph [ref=e484]: All data on your device
+            - paragraph [ref=e485]: Nothing stored in the cloud
+        - generic [ref=e486]:
+          - img [ref=e487]
+          - generic [ref=e489]:
+            - paragraph [ref=e490]: Screenshots destroyed
+            - paragraph [ref=e491]: Deleted after AI processing
+        - generic [ref=e492]:
+          - img [ref=e493]
+          - generic [ref=e495]:
+            - paragraph [ref=e496]: Encrypted API calls
+            - paragraph [ref=e497]: TLS for all AI processing
+        - generic [ref=e498]:
+          - img [ref=e499]
+          - generic [ref=e501]:
+            - paragraph [ref=e502]: SOC 2 compliance
+            - paragraph [ref=e503]: Built to SOC 2 standards
+    - generic [ref=e505]:
+      - heading "Designed for the way lawyers actually work" [level=2] [ref=e506]
+      - generic [ref=e507]:
+        - generic [ref=e508]:
+          - generic [ref=e509]: 0.1hr
+          - heading "Precision Billing" [level=3] [ref=e510]
+          - paragraph [ref=e511]: Every minute tracked. Every increment billed. The same standard your practice has used for decades, now automated.
+        - generic [ref=e512]:
+          - img [ref=e514]
+          - heading "ABA-Compliant Narratives" [level=3] [ref=e516]
+          - paragraph [ref=e517]: AI-generated entries follow the action-verb format required by Rule 1.5 and expected by fee petition reviewers.
+        - generic [ref=e518]:
+          - img [ref=e520]
+          - heading "macOS & Windows" [level=3] [ref=e522]
+          - paragraph [ref=e523]: Desktop-native application that runs locally. No browser tabs. No cloud dependency. No subscription to forget.
+    - generic [ref=e525]:
+      - heading "Recover the hours you've already earned" [level=2] [ref=e526]
+      - paragraph [ref=e527]: At $350/hour, capturing just 10 extra minutes a day adds $14,000 to your annual billings. Donna pays for itself before lunch on day one.
+      - generic [ref=e528]:
+        - link "Download for Windows" [ref=e529] [cursor=pointer]:
+          - /url: https://github.com/donnaanswers/donnatracking-releases/releases/latest/download/DonnaSetup.exe
+          - img [ref=e530]
+          - text: Download for Windows
+        - link "Download for Mac" [ref=e532] [cursor=pointer]:
+          - /url: https://github.com/donnaanswers/donnatracking-releases/releases/latest/download/Donna.dmg
+          - img [ref=e533]
+          - text: Download for Mac
+      - paragraph [ref=e535]: Free during early access. No credit card required.
+    - generic [ref=e537]:
+      - generic [ref=e538]:
+        - paragraph [ref=e539]: FAQ
+        - heading "Frequently asked questions" [level=2] [ref=e540]
+      - generic [ref=e541]:
+        - group [ref=e542]:
+          - generic "What does Donna actually track?" [active] [ref=e543] [cursor=pointer]:
+            - generic [ref=e544]: What does Donna actually track?
+            - img [ref=e545]
+          - generic [ref=e611]: Donna monitors your active window title every 3 seconds and captures periodic screenshots (every 30 seconds by default). Both are used by AI to generate billing narratives, then permanently deleted. Only the AI-generated summaries are kept.
+        - group [ref=e547]:
+          - generic "Is my client data sent to the cloud?" [ref=e548] [cursor=pointer]:
+            - generic [ref=e549]: Is my client data sent to the cloud?
+            - img [ref=e550]
+        - group [ref=e552]:
+          - generic "What AI model does Donna use?" [ref=e553] [cursor=pointer]:
+            - generic [ref=e554]: What AI model does Donna use?
+            - img [ref=e555]
+        - group [ref=e557]:
+          - generic "What platforms does Donna support?" [ref=e558] [cursor=pointer]:
+            - generic [ref=e559]: What platforms does Donna support?
+            - img [ref=e560]
+        - group [ref=e562]:
+          - generic "How does billing work?" [ref=e563] [cursor=pointer]:
+            - generic [ref=e564]: How does billing work?
+            - img [ref=e565]
+        - group [ref=e567]:
+          - generic "Can I edit AI-generated narratives?" [ref=e568] [cursor=pointer]:
+            - generic [ref=e569]: Can I edit AI-generated narratives?
+            - img [ref=e570]
+        - group [ref=e572]:
+          - generic "How do I export my timesheets?" [ref=e573] [cursor=pointer]:
+            - generic [ref=e574]: How do I export my timesheets?
+            - img [ref=e575]
+        - group [ref=e577]:
+          - generic "Is Donna free?" [ref=e578] [cursor=pointer]:
+            - generic [ref=e579]: Is Donna free?
+            - img [ref=e580]
+  - contentinfo [ref=e582]:
+    - generic [ref=e584]:
+      - generic [ref=e585]:
+        - img "Donna" [ref=e586]
+        - paragraph [ref=e587]: AI-powered time tracking for attorneys. Privacy-first, on-device, built for privilege.
+        - paragraph [ref=e588]: © 2026 Donna AI. All rights reserved.
+      - generic [ref=e589]:
+        - heading "Product" [level=4] [ref=e590]
+        - list [ref=e591]:
+          - listitem [ref=e592]:
+            - link "Timeline" [ref=e593] [cursor=pointer]:
+              - /url: "#features"
+          - listitem [ref=e594]:
+            - link "Timesheet" [ref=e595] [cursor=pointer]:
+              - /url: "#features"
+          - listitem [ref=e596]:
+            - link "Analytics" [ref=e597] [cursor=pointer]:
+              - /url: "#features"
+          - listitem [ref=e598]:
+            - link "Clients & Matters" [ref=e599] [cursor=pointer]:
+              - /url: "#features"
+          - listitem [ref=e600]:
+            - link "Changelog" [ref=e601] [cursor=pointer]:
+              - /url: /changelog
+      - generic [ref=e602]:
+        - heading "Legal" [level=4] [ref=e603]
+        - list [ref=e604]:
+          - listitem [ref=e605]:
+            - link "Privacy Policy" [ref=e606] [cursor=pointer]:
+              - /url: "#privacy"
+          - listitem [ref=e607]:
+            - link "Terms of Service" [ref=e608] [cursor=pointer]:
+              - /url: "#privacy"
+          - listitem [ref=e609]:
+            - link "ABA Rule 1.6 Compliance" [ref=e610] [cursor=pointer]:
+              - /url: "#privacy"

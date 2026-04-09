@@ -1,0 +1,290 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - img "donna" [ref=e4]
+    - generic [ref=e5]: "01"
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - text: Call Intake
+      - paragraph [ref=e10]: The Problem
+      - generic [ref=e11]: 35%
+      - paragraph [ref=e12]: of prospective client calls go unanswered at law firms
+      - paragraph [ref=e13]: Paralegals are buried in casework. Phones ring during hearings, after hours, and on weekends. Prospects who reach voicemail call the next firm. Slow intake means lost clients, lost revenue, and a first impression you can't undo.
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - img [ref=e16]
+        - generic [ref=e20]: Missed Calls
+        - generic [ref=e21]: Voicemail is a dead end — prospects call the next firm on the list
+      - generic [ref=e22]:
+        - img [ref=e23]
+        - generic [ref=e25]: No After-Hours
+        - generic [ref=e26]: Evenings and weekends are when clients need help most — and no one answers
+      - generic [ref=e27]:
+        - img [ref=e28]
+        - generic [ref=e31]: Slow Qualification
+        - generic [ref=e32]: Leads sit in voicemail for hours before anyone triages them
+  - generic [ref=e34]:
+    - img "donna" [ref=e35]
+    - generic [ref=e36]: "02"
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - img [ref=e39]
+        - text: Call Intake
+      - paragraph [ref=e41]: The Solution
+      - heading "Donna answers every call. 24/7. Human-like empathy." [level=2] [ref=e42]:
+        - text: Donna answers every call.
+        - text: 24/7. Human-like empathy.
+      - paragraph [ref=e43]: Donna qualifies leads, captures case details, and schedules consultations — all while your team focuses on casework. Every conversation documented, transcribed, and synced to your CMS.
+      - list [ref=e44]:
+        - listitem [ref=e45]:
+          - img [ref=e46]
+          - generic [ref=e50]:
+            - strong [ref=e51]: 24/7 coverage
+            - text: — never miss a prospective client call
+        - listitem [ref=e52]:
+          - img [ref=e53]
+          - generic [ref=e57]:
+            - strong [ref=e58]: Instant qualification
+            - text: — captures case type, urgency, and details
+        - listitem [ref=e59]:
+          - img [ref=e60]
+          - generic [ref=e62]:
+            - strong [ref=e63]: Schedules consultations
+            - text: — books directly into your calendar
+        - listitem [ref=e64]:
+          - img [ref=e65]
+          - generic [ref=e68]:
+            - strong [ref=e69]: Full documentation
+            - text: — transcripts synced to your CMS
+      - generic [ref=e70]:
+        - generic [ref=e71]: Criminal Law
+        - generic [ref=e72]: Personal Injury
+        - generic [ref=e73]: Immigration
+        - generic [ref=e74]: Small Claims
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - generic [ref=e82]: Donna — Call Intake
+        - generic [ref=e83]: Live
+      - generic [ref=e85]:
+        - generic [ref=e86]: I'm calling about a traffic ticket violation. I need a consultation.
+        - generic [ref=e87]: I can help with that. Have you worked with our firm before, or are you a new client?
+        - generic [ref=e88]: New client.
+        - generic [ref=e89]: Great. I'll gather some information to determine if your situation is a good fit. Can you describe the incident that led to the ticket?
+        - generic [ref=e90]: It was a criminal speeding violation, but the officer checked it as civil traffic and said it would only be traffic school and $100. The court said that's not possible.
+        - generic [ref=e91]: I understand — a criminal speeding charge mislabeled as civil. I've noted those details. Let me schedule a consultation with an attorney who handles traffic violations.
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - img [ref=e94]
+          - text: Criminal Traffic
+        - generic [ref=e97]:
+          - img [ref=e98]
+          - text: 4m 12s
+        - generic [ref=e101]:
+          - img [ref=e102]
+          - text: Scheduled
+  - generic [ref=e106]:
+    - img "donna" [ref=e107]
+    - generic [ref=e108]: "03"
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - img [ref=e111]
+        - text: Document Gathering
+      - paragraph [ref=e115]: The Problem
+      - generic [ref=e116]: 23 days
+      - paragraph [ref=e117]: average time to collect critical case documents
+      - paragraph [ref=e118]: Police reports, hospital records, bank statements, and CRA files are buried in records departments or scattered across client emails. Paralegals spend hours on phone tag and paper trails. Follow-ups get forgotten, and discovery deadlines pass unnoticed.
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - img [ref=e121]
+        - generic [ref=e125]: Buried Records
+        - generic [ref=e126]: Documents scattered across agencies, hospitals, courts, and client email threads
+      - generic [ref=e127]:
+        - img [ref=e128]
+        - generic [ref=e133]: Forgotten Follow-ups
+        - generic [ref=e134]: Manual tracking means document requests slip through the cracks
+      - generic [ref=e135]:
+        - img [ref=e136]
+        - generic [ref=e138]: Missed Deadlines
+        - generic [ref=e139]: No automated reminders — discovery deadlines pass before anyone notices
+  - generic [ref=e141]:
+    - img "donna" [ref=e142]
+    - generic [ref=e143]: "04"
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - img [ref=e146]
+        - text: Document Gathering
+      - paragraph [ref=e150]: The Solution
+      - heading "Donna requests, chases, and delivers every document." [level=2] [ref=e151]:
+        - text: Donna requests, chases,
+        - text: and delivers every document.
+      - paragraph [ref=e152]: Whether it's buried in a records department or sitting in your client's email — Donna handles the entire document lifecycle. No follow-up forgotten, no deadline missed.
+      - list [ref=e153]:
+        - listitem [ref=e154]:
+          - img [ref=e155]
+          - generic [ref=e158]:
+            - strong [ref=e159]: Automated requests
+            - text: — sends to agencies, hospitals, and clients
+        - listitem [ref=e160]:
+          - img [ref=e161]
+          - generic [ref=e166]:
+            - strong [ref=e167]: Smart follow-ups
+            - text: — escalates automatically when overdue
+        - listitem [ref=e168]:
+          - img [ref=e169]
+          - generic [ref=e173]:
+            - strong [ref=e174]: Deadline tracking
+            - text: — never miss a discovery deadline
+        - listitem [ref=e175]:
+          - img [ref=e176]
+          - generic [ref=e179]:
+            - strong [ref=e180]: Client portal
+            - text: — drag-and-drop uploads with auto-validation
+      - generic [ref=e181]:
+        - generic [ref=e182]: Criminal Law
+        - generic [ref=e183]: Personal Injury
+    - generic [ref=e185]:
+      - generic [ref=e191]: Donna — Document Tracker
+      - generic [ref=e192]:
+        - generic [ref=e193]:
+          - generic [ref=e194]: Total
+          - generic [ref=e195]: "12"
+        - generic [ref=e197]:
+          - generic [ref=e198]: Received
+          - generic [ref=e199]: "8"
+        - generic [ref=e201]:
+          - generic [ref=e202]: Pending
+          - generic [ref=e203]: "3"
+        - generic [ref=e205]:
+          - generic [ref=e206]: Overdue
+          - generic [ref=e207]: "1"
+      - generic [ref=e208]:
+        - generic [ref=e209]: Document
+        - generic [ref=e210]: Source
+        - generic [ref=e211]: Status
+      - generic [ref=e212]:
+        - generic [ref=e213]: "Police Report #24-1847"
+        - generic [ref=e214]: Phoenix PD Records
+        - generic [ref=e215]:
+          - img [ref=e216]
+          - text: Received
+      - generic [ref=e219]:
+        - generic [ref=e220]: ER Medical Records
+        - generic [ref=e221]: St. Joseph's Hospital
+        - generic [ref=e222]:
+          - img [ref=e223]
+          - text: Received
+      - generic [ref=e226]:
+        - generic [ref=e227]: MRI Results
+        - generic [ref=e228]: Desert Imaging Center
+        - generic [ref=e229]:
+          - img [ref=e230]
+          - text: "Follow-up #2 sent"
+      - generic [ref=e235]:
+        - generic [ref=e236]: Insurance Declaration Page
+        - generic [ref=e237]: Client Upload
+        - generic [ref=e238]:
+          - img [ref=e239]
+          - text: Overdue — 5 days
+      - generic [ref=e241]:
+        - generic [ref=e242]: Witness Statement
+        - generic [ref=e243]: Investigating Officer
+        - generic [ref=e244]:
+          - img [ref=e245]
+          - text: Received
+  - generic [ref=e249]:
+    - img "donna" [ref=e250]
+    - generic [ref=e251]: "05"
+    - generic [ref=e252]:
+      - generic [ref=e253]:
+        - img [ref=e254]
+        - text: Time Tracking
+      - paragraph [ref=e257]: The Problem
+      - generic [ref=e258]: $50,000
+      - paragraph [ref=e259]: lost per attorney, per year in unbilled time
+      - paragraph [ref=e260]: End-of-day time reconstruction misses 10–40% of billable work. Vague entries get written at 7pm. Manual timers get abandoned because they interrupt the work they're supposed to measure.
+    - generic [ref=e261]:
+      - generic [ref=e262]:
+        - img [ref=e263]
+        - generic [ref=e268]: 10–40%
+        - generic [ref=e269]: of billable work never gets recorded — invisible revenue leakage
+      - generic [ref=e270]:
+        - img [ref=e271]
+        - generic [ref=e274]: "\"Vague entries\""
+        - generic [ref=e275]: "\"Worked on case\" written at 7pm doesn't survive fee petition audits"
+      - generic [ref=e276]:
+        - img [ref=e277]
+        - generic [ref=e281]: Timers fail
+        - generic [ref=e282]: Attorneys stop using them within a week — they interrupt real work
+  - generic [ref=e284]:
+    - img "donna" [ref=e285]
+    - generic [ref=e286]: "06"
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - img [ref=e289]
+        - text: Time Tracking
+      - paragraph [ref=e292]: The Solution
+      - heading "Donna captures your work. AI makes it billable." [level=2] [ref=e293]:
+        - text: Donna captures your work.
+        - text: AI makes it billable.
+      - paragraph [ref=e294]: Donna runs silently in the background, monitoring your active windows. When you stop, AI converts your activity into categorized billing entries with professional narratives — ready to review and export.
+      - list [ref=e295]:
+        - listitem [ref=e296]:
+          - img [ref=e297]
+          - generic [ref=e300]:
+            - strong [ref=e301]: Passive capture
+            - text: — zero interruption to your workflow
+        - listitem [ref=e302]:
+          - img [ref=e303]
+          - generic [ref=e306]:
+            - strong [ref=e307]: AI narratives
+            - text: — billing-ready entries that survive fee petitions
+        - listitem [ref=e308]:
+          - img [ref=e309]
+          - generic [ref=e313]:
+            - strong [ref=e314]: One-click export
+            - text: — clean CSV for any billing system
+        - listitem [ref=e315]:
+          - img [ref=e316]
+          - generic [ref=e319]:
+            - strong [ref=e320]: Privacy-first
+            - text: — all data stays on your device
+    - generic [ref=e322]:
+      - generic [ref=e323]:
+        - generic [ref=e328]: Donna
+        - generic [ref=e329]:
+          - generic [ref=e330]: 01:47:22
+          - generic [ref=e334]: Auto Capture
+      - generic [ref=e335]:
+        - generic [ref=e336]:
+          - generic [ref=e337]: Total Hours
+          - generic [ref=e338]: "6.2"
+        - generic [ref=e340]:
+          - generic [ref=e341]: Billable
+          - generic [ref=e342]: "5.8"
+          - generic [ref=e343]: $2,030
+        - generic [ref=e345]:
+          - generic [ref=e346]: Non-Billable
+          - generic [ref=e347]: "0.4"
+      - generic [ref=e348]:
+        - generic [ref=e349]: Activity
+        - generic [ref=e350]: Hours
+        - generic [ref=e351]: Narrative
+      - generic [ref=e352]:
+        - generic [ref=e353]:
+          - generic [ref=e354]: 2:15 – 3:30 PM
+          - generic [ref=e358]:
+            - generic [ref=e359]: Research 70%
+            - generic [ref=e360]: Drafting 30%
+        - generic [ref=e361]: "1.3"
+        - generic [ref=e362]: Researched case law regarding motion to compel discovery in Smith matter; drafted supporting arguments with citations.
+      - generic [ref=e363]:
+        - generic [ref=e364]:
+          - generic [ref=e365]: 1:00 – 2:00 PM
+          - generic [ref=e369]:
+            - generic [ref=e370]: Comms 60%
+            - generic [ref=e371]: Review 40%
+        - generic [ref=e372]: "1.0"
+        - generic [ref=e373]: Client meeting with Martinez via Zoom regarding settlement terms. Reviewed revised offer from opposing counsel.
+  - link "← All Decks" [ref=e374] [cursor=pointer]:
+    - /url: ../../
+  - button "Download PDF" [ref=e375] [cursor=pointer]

@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - paragraph [ref=e3]: donna
+    - heading "Slide Decks" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Select a deck to view or export as PDF.
+  - main [ref=e6]:
+    - paragraph [ref=e7]: Available
+    - generic [ref=e8]:
+      - link "Product · Platform Full Platform Overview All three Donna products in one deck — call intake, document gathering, and time tracking. Problem and solution for each. 6 slides Deck" [ref=e9] [cursor=pointer]:
+        - /url: /decks/platform/
+        - img [ref=e10]
+        - generic [ref=e14]: Product · Platform
+        - generic [ref=e15]: Full Platform Overview
+        - paragraph [ref=e16]: All three Donna products in one deck — call intake, document gathering, and time tracking. Problem and solution for each.
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: 6 slides
+            - generic [ref=e20]: Deck
+          - img [ref=e21]
+      - link "Product Time Tracking Product demo deck — AI time tracking for attorneys. Passive capture, billing narratives, privacy-first architecture. 6 slides Deck" [ref=e23] [cursor=pointer]:
+        - /url: /decks/product/
+        - img [ref=e24]
+        - generic [ref=e27]: Product
+        - generic [ref=e28]: Time Tracking
+        - paragraph [ref=e29]: Product demo deck — AI time tracking for attorneys. Passive capture, billing narratives, privacy-first architecture.
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: 6 slides
+            - generic [ref=e33]: Deck
+          - img [ref=e34]
+      - link "Lunch & Learn The Billable Hour Is Bleeding Out Time tracking, AI, and the pricing crisis in legal. The case for why the hourly model is under pressure — and what comes next. 12 slides Deck" [ref=e36] [cursor=pointer]:
+        - /url: /decks/lunch-and-learn/
+        - img [ref=e37]
+        - generic [ref=e39]: Lunch & Learn
+        - generic [ref=e40]: The Billable Hour Is Bleeding Out
+        - paragraph [ref=e41]: Time tracking, AI, and the pricing crisis in legal. The case for why the hourly model is under pressure — and what comes next.
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: 12 slides
+            - generic [ref=e45]: Deck
+          - img [ref=e46]
+      - link "Sales · Family Law Financial Disclosure One-page product overview for financial disclosure workflow — document intake, AI categorization, gap detection, and court-ready form generation. 1 page 1-Pager" [ref=e48] [cursor=pointer]:
+        - /url: /decks/financial-disclosure/
+        - img [ref=e49]
+        - generic [ref=e52]: Sales · Family Law
+        - generic [ref=e53]: Financial Disclosure
+        - paragraph [ref=e54]: One-page product overview for financial disclosure workflow — document intake, AI categorization, gap detection, and court-ready form generation.
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: 1 page
+            - generic [ref=e58]: 1-Pager
+          - img [ref=e59]
+      - link "Sales · General Client Engagement One-page overview of Donna's client lifecycle automation — lead capture, case updates, two-way messaging, and referral generation. 1 page 1-Pager" [ref=e61] [cursor=pointer]:
+        - /url: /decks/client-engagement/
+        - img [ref=e62]
+        - generic [ref=e67]: Sales · General
+        - generic [ref=e68]: Client Engagement
+        - paragraph [ref=e69]: One-page overview of Donna's client lifecycle automation — lead capture, case updates, two-way messaging, and referral generation.
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: 1 page
+            - generic [ref=e73]: 1-Pager
+          - img [ref=e74]
+      - generic:
+        - img
+        - generic: Coming soon
+        - generic: Investor Pitch
+        - paragraph: Fundraising deck for angels and VCs. Market size, traction, team, and ask.
+        - generic:
+          - generic: — slides
+          - img

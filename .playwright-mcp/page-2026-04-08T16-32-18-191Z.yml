@@ -1,0 +1,150 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - link "Donna" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Donna" [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - button "Solutions" [active] [ref=e13] [cursor=pointer]:
+              - text: Solutions
+              - img [ref=e14]
+            - generic [ref=e140]:
+              - button "Document Gathering" [ref=e141] [cursor=pointer]
+              - button "AI Receptionist" [ref=e142] [cursor=pointer]
+              - button "Financial Disclosures" [ref=e143] [cursor=pointer]
+          - button "Company" [ref=e17] [cursor=pointer]:
+            - text: Company
+            - img [ref=e18]
+          - button "Practice Areas" [ref=e21] [cursor=pointer]:
+            - text: Practice Areas
+            - img [ref=e22]
+          - link "Contact" [ref=e24] [cursor=pointer]:
+            - /url: mailto:saumyabanker1@gmail.com
+        - button "Login" [ref=e26] [cursor=pointer]:
+          - img [ref=e27]
+          - text: Login
+  - generic [ref=e30]:
+    - generic:
+      - generic:
+        - img "Scene"
+    - generic [ref=e32]:
+      - link "Introducing AI Timekeeping, Log Hours Automatically →" [ref=e33] [cursor=pointer]:
+        - /url: /docketing/
+        - text: Introducing AI Timekeeping, Log Hours Automatically
+        - generic [ref=e34]: →
+      - heading "You practice law We'll handle the Admin" [level=1] [ref=e144]:
+        - generic [ref=e36]: You practice law
+        - generic [ref=e37]:
+          - text: We'll handle the
+          - generic [ref=e39]:
+            - generic [ref=e40]: Admin
+            - generic [ref=e146]:
+              - generic [ref=e147]: A
+              - generic [ref=e148]: d
+              - generic [ref=e149]: m
+              - generic [ref=e150]: i
+              - generic [ref=e151]: "n"
+      - paragraph [ref=e48]: Donna answers calls, collects information, chases documents, and generates files while you bill hours.
+      - generic [ref=e49]:
+        - button "Book a Demo" [ref=e50] [cursor=pointer]
+        - button "See how" [ref=e51] [cursor=pointer]
+  - generic [ref=e53]:
+    - heading "Documents and Productions on Autopilot" [level=2] [ref=e54]:
+      - text: Documents and Productions
+      - text: "on"
+      - generic [ref=e55]: Autopilot
+    - generic [ref=e56]:
+      - generic [ref=e57]: Criminal Law
+      - generic [ref=e58]: Personal Injury
+    - generic [ref=e59]:
+      - paragraph [ref=e61]: Police reports. Hospital records. Bank statements. CRA files. Client tax returns. We request, chase, and deliver every document your case needs—whether it's buried in a records department or sitting in your client's email. No follow-up forgotten, no deadline missed.
+      - img "Documents and Productions Automation" [ref=e63]
+  - generic [ref=e66]:
+    - generic [ref=e67]:
+      - heading "A voice receptionist that never misses a client" [level=2] [ref=e68]
+      - generic [ref=e69]:
+        - generic [ref=e70]: Criminal Law
+        - generic [ref=e71]: Personal Injury
+        - generic [ref=e72]: Immigration
+        - generic [ref=e73]: Small Claims
+      - paragraph [ref=e74]: Donna answers every call 24/7 with human-like empathy and professionalism. She qualifies leads, captures case details, and schedules consultations—all while your team focuses on casework. No missed opportunities, no voicemail, no waiting.
+      - paragraph [ref=e75]: Every conversation is documented, transcribed, and synced to your CMS. Your team gets the full context before the first consultation, and clients feel heard from the moment they call.
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - generic [ref=e152]:
+          - generic [ref=e154]: I'm calling to get a consultation about a traffic ticket violation.
+          - img [ref=e156]
+        - generic [ref=e159]:
+          - img "AI Agent" [ref=e161]
+          - generic [ref=e163]: Okay, I can help with that. Have you worked with our firm before or are you a new client?
+        - generic [ref=e164]:
+          - generic [ref=e166]: New client.
+          - img [ref=e168]
+        - generic [ref=e171]:
+          - img "AI Agent" [ref=e178]
+          - generic [ref=e180]: Great, I'm happy to help you. I will now gather some information to h
+      - paragraph [ref=e79]: Real client intake conversation with Donna (Anonymized)
+  - generic [ref=e81]:
+    - heading "Financial Disclosures in minutes" [level=2] [ref=e82]:
+      - text: Financial Disclosures in
+      - generic [ref=e83]: minutes
+    - generic [ref=e85]: Family Law
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - paragraph [ref=e88]: Your client fills out one intake form. Donna generates Form 13.1 or Net Family Property Statements automatically. Already have a completed form? Upload it and we'll take it from there. What used to take your team days now takes minutes.
+        - paragraph [ref=e89]: Automated document requests based on what's disclosed. Smart follow-ups when documents are missing. Cross-referencing to catch gaps before opposing counsel does. Every change tracked, every version saved, every deadline met.
+      - img "Financial Disclosure Admin Dashboard" [ref=e91]
+    - button "Toggle learn more section" [ref=e93] [cursor=pointer]:
+      - text: See how
+      - img [ref=e94]
+    - generic [ref=e96]:
+      - heading "All of this happens in your CMS" [level=3] [ref=e97]
+      - paragraph [ref=e98]: Seamlessly integrated into your existing practice management system. No new platforms to learn, no duplicate data entry, no workflow disruption.
+      - img "CMS Integrations" [ref=e99]
+  - generic [ref=e102]:
+    - heading "Ready to transform your practice?" [level=2] [ref=e103]
+    - paragraph [ref=e104]: See how Donna can help you save time and never miss another client opportunity.
+    - button "Book a Demo" [ref=e105] [cursor=pointer]
+  - contentinfo [ref=e106]:
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - img "Donna" [ref=e110]
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "Company" [level=4] [ref=e113]
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - link "Contact" [ref=e116] [cursor=pointer]:
+                  - /url: mailto:saumyabanker1@gmail.com
+              - listitem [ref=e117]:
+                - link "Contact Us" [ref=e118] [cursor=pointer]:
+                  - /url: /contactus
+              - listitem [ref=e119]:
+                - link "Careers" [ref=e120] [cursor=pointer]:
+                  - /url: /jobs
+              - listitem [ref=e121]:
+                - link "Sign Up" [ref=e122] [cursor=pointer]:
+                  - /url: /signup
+              - listitem [ref=e123]:
+                - link "Admin" [ref=e124] [cursor=pointer]:
+                  - /url: /admin
+          - generic [ref=e125]:
+            - heading "Legal" [level=4] [ref=e126]
+            - list [ref=e127]:
+              - listitem [ref=e128]:
+                - link "Privacy Policy" [ref=e129] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e130]:
+                - link "Terms of Service" [ref=e131] [cursor=pointer]:
+                  - /url: /terms
+          - generic [ref=e132]:
+            - heading "Social" [level=4] [ref=e133]
+            - list [ref=e134]:
+              - listitem [ref=e135]:
+                - link "LinkedIn" [ref=e136] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/donna-answers-ai/posts/?feedView=all
+      - generic [ref=e137]:
+        - paragraph [ref=e138]: © 2025 Donna. All rights reserved.
+        - paragraph [ref=e139]: made with love in toronto

@@ -1,0 +1,117 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - link "Donna" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Donna" [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - button "Solutions" [ref=e13] [cursor=pointer]:
+            - text: Solutions
+            - img [ref=e14]
+          - button "Company" [ref=e17] [cursor=pointer]:
+            - text: Company
+            - img [ref=e18]
+          - button "Practice Areas" [ref=e21] [cursor=pointer]:
+            - text: Practice Areas
+            - img [ref=e22]
+          - link "Contact" [ref=e24] [cursor=pointer]:
+            - /url: mailto:saumyabanker1@gmail.com
+        - button "Login" [ref=e26] [cursor=pointer]:
+          - img [ref=e27]
+          - text: Login
+  - generic [ref=e31]:
+    - heading "Join Us in Transforming Legal Intake" [level=1] [ref=e32]
+    - paragraph [ref=e33]: Help build the future of AI-powered client intake for law firms
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - heading "Our Mission" [level=2] [ref=e37]
+      - paragraph [ref=e38]: Law firms in consumer practice areas (personal injury, family, estate, immigration) often have inefficiencies which prevent them from taking on more clients. Donna AI is aimed to solve this starting with tackling client intake.
+      - paragraph [ref=e39]: Law firms lose prospective clients due to slow and manual intake processes. Paralegals, responsible for complex intake conversations, are frequently overwhelmed with casework, causing delays in follow-ups. This leads to poor client experiences, eroding trust, and measurable revenue loss for the firm. Donna Answers AI aims to change that by streamlining the intake process and improving client experiences.
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: Open Position
+        - heading "Founding Paralegal" [level=2] [ref=e43]
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - img [ref=e46]
+            - text: Full-Time
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - text: Remote
+      - generic [ref=e53]:
+        - heading "Role Description" [level=3] [ref=e54]
+        - paragraph [ref=e55]: This is a full-time remote role for a Founding Paralegal. The Founding Paralegal will be working closely with the CEO and CTO in order to outline the vision and roadmap as we expand into other products, features, and functionality. We need someone who has seen the pain inside law firms, and works with us to co-create the future of the company.
+      - generic [ref=e56]:
+        - heading "Qualifications" [level=3] [ref=e57]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - img [ref=e60]
+            - text: 2+ years of experience in Consumer Law Practices such as personal injury, immigration, family law, civil litigation, or criminal defense is a Must
+          - listitem [ref=e62]:
+            - img [ref=e63]
+            - text: Strong Documentation skills
+          - listitem [ref=e65]:
+            - img [ref=e66]
+            - text: Law and Legal Document Preparation skills
+          - listitem [ref=e68]:
+            - img [ref=e69]
+            - text: Strong Communication and Research skills
+          - listitem [ref=e71]:
+            - img [ref=e72]
+            - text: Experience in Document Review
+          - listitem [ref=e74]:
+            - img [ref=e75]
+            - text: Excellent organizational and time-management skills
+          - listitem [ref=e77]:
+            - img [ref=e78]
+            - text: Ability to work independently and remotely
+          - listitem [ref=e80]:
+            - img [ref=e81]
+            - text: Associate's or bachelor's degree in Paralegal Studies, Law, or related field
+          - listitem [ref=e83]:
+            - img [ref=e84]
+            - text: Strong attention to detail and ability to manage multiple tasks efficiently
+      - link "Apply for This Position" [ref=e87] [cursor=pointer]:
+        - /url: mailto:jakob.solstrozberg@torontomu.ca?subject=Founding%20Paralegal%20Application
+  - contentinfo [ref=e88]:
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - img "Donna" [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - heading "Company" [level=4] [ref=e95]
+            - list [ref=e96]:
+              - listitem [ref=e97]:
+                - link "Contact" [ref=e98] [cursor=pointer]:
+                  - /url: mailto:saumyabanker1@gmail.com
+              - listitem [ref=e99]:
+                - link "Contact Us" [ref=e100] [cursor=pointer]:
+                  - /url: /contactus
+              - listitem [ref=e101]:
+                - link "Careers" [ref=e102] [cursor=pointer]:
+                  - /url: /jobs
+              - listitem [ref=e103]:
+                - link "Sign Up" [ref=e104] [cursor=pointer]:
+                  - /url: /signup
+              - listitem [ref=e105]:
+                - link "Admin" [ref=e106] [cursor=pointer]:
+                  - /url: /admin
+          - generic [ref=e107]:
+            - heading "Legal" [level=4] [ref=e108]
+            - list [ref=e109]:
+              - listitem [ref=e110]:
+                - link "Privacy Policy" [ref=e111] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e112]:
+                - link "Terms of Service" [ref=e113] [cursor=pointer]:
+                  - /url: /terms
+          - generic [ref=e114]:
+            - heading "Social" [level=4] [ref=e115]
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - link "LinkedIn" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/donna-answers-ai/posts/?feedView=all
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: © 2025 Donna. All rights reserved.
+        - paragraph [ref=e121]: made with love in toronto
