@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — Brochure Title</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="brochure.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     OUTSIDE (Side 1 — printed flat)
+     Left = Inside Flap | Center = Back Panel | Right = Front Cover
+     ============================================================ -->
+<p class="side-label">Outside (print side 1)</p>
+<div class="brochure-wrapper">
+<div class="brochure-page">
+
+  <div class="panel panel--flap">
+    <!-- Inside Flap content -->
+  </div>
+
+  <div class="panel panel--back">
+    <!-- Back Panel content -->
+  </div>
+
+  <div class="panel panel--cover">
+    <!-- Front Cover content -->
+  </div>
+
+</div>
+</div>
+
+<!-- ============================================================
+     INSIDE (Side 2 — printed flat)
+     Left | Center | Right — all visible when brochure is open
+     ============================================================ -->
+<p class="side-label">Inside (print side 2)</p>
+<div class="brochure-wrapper">
+<div class="brochure-page">
+
+  <div class="panel panel--left">
+    <!-- Inside Left content -->
+  </div>
+
+  <div class="panel panel--center">
+    <!-- Inside Center content -->
+  </div>
+
+  <div class="panel panel--right">
+    <!-- Inside Right content -->
+  </div>
+
+</div>
+</div>
+
+<a class="back-btn" href="../../">← All Decks</a>
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  lucide.createIcons();
+  function scaleBrochure() {
+    const s = Math.min((window.innerWidth - 80) / 1056, 1);
+    document.documentElement.style.setProperty('--brochure-scale', s);
+  }
+  window.addEventListener('resize', scaleBrochure);
+  scaleBrochure();
+</script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — Platform Brochure</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../_brochure-template/brochure.css">
+  <link rel="stylesheet" href="brochure.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     OUTSIDE (Side 1)
+     Left = Inside Flap | Center = Back Panel | Right = Front Cover
+     ============================================================ -->
+<p class="side-label">Outside (print side 1)</p>
+<div class="brochure-wrapper">
+<div class="brochure-page">
+
+  <!-- INSIDE FLAP — Why Donna? + glass stat cards -->
+  <div class="panel panel--flap">
+    <div>
+      <p class="panel-eyebrow">The Platform at a Glance</p>
+      <p class="panel-headline">Why Donna?</p>
+      <p class="panel-body">Four AI products that work together to automate the busywork across your entire practice.</p>
+    </div>
+
+    <div class="flap-stats">
+      <div class="flap-stat-card flap-stat-card--amber">
+        <div class="flap-stat-value">60%</div>
+        <div class="flap-stat-label">of law firms don't answer calls from prospective clients. Donna does.</div>
+      </div>
+      <div class="flap-stat-card flap-stat-card--violet">
+        <div class="flap-stat-value">+28 min</div>
+        <div class="flap-stat-label">of billable time recovered per attorney, every day.</div>
+      </div>
+      <div class="flap-stat-card flap-stat-card--teal">
+        <div class="flap-stat-value">23 days</div>
+        <div class="flap-stat-label">average document collection time. Fully automated.</div>
+      </div>
+      <div class="flap-stat-card flap-stat-card--rose">
+        <div class="flap-stat-value">$15K+</div>
+        <div class="flap-stat-label">saved per engagement vs. hiring a forensic accountant.</div>
+      </div>
+    </div>
+
+    <p class="flap-cta">Open to learn more about each product &rarr;</p>
+  </div>
+
+  <!-- BACK PANEL — Privacy icon-box cards, integrations, contact -->
+  <div class="panel panel--back">
+    <div>
+      <img class="panel-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+
+      <div class="back-section">
+        <div class="back-section-title">Privacy-First Architecture</div>
+        <div class="privacy-grid">
+          <div class="privacy-card">
+            <div class="privacy-icon-box">
+              <i data-lucide="hard-drive"></i>
+            </div>
+            <div class="privacy-card-title">On-device storage</div>
+            <div class="privacy-card-desc">All data stays in local SQLite, never in the cloud</div>
+          </div>
+          <div class="privacy-card">
+            <div class="privacy-icon-box">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div class="privacy-card-title">ABA Rule 1.6</div>
+            <div class="privacy-card-desc">Attorney-client privilege preserved by design</div>
+          </div>
+          <div class="privacy-card">
+            <div class="privacy-icon-box">
+              <i data-lucide="lock"></i>
+            </div>
+            <div class="privacy-card-title">TLS encryption</div>
+            <div class="privacy-card-desc">All API calls encrypted; AI never stores your data</div>
+          </div>
+          <div class="privacy-card">
+            <div class="privacy-icon-box">
+              <i data-lucide="eye-off"></i>
+            </div>
+            <div class="privacy-card-title">Screenshots destroyed</div>
+            <div class="privacy-card-desc">Permanently deleted after each session processes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-section">
+        <div class="back-section-title">Integrations</div>
+        <div class="panel-integrations">
+          <span class="panel-pill">Clio</span>
+          <span class="panel-pill">MyCase</span>
+          <span class="panel-pill">Filevine</span>
+          <span class="panel-pill">PCLaw</span>
+          <span class="panel-pill-more">+ More</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-contact">
+      <span style="font-family:var(--font-display);font-size:10px;font-weight:700;color:var(--text-primary);margin-bottom:4px;">Get in touch</span>
+      <span>saumya@donnaanswers.com</span>
+      <span>1-480-375-0381</span>
+      <a href="https://donnaanswers.com">donnaanswers.com</a>
+      <span style="margin-top:8px;font-style:italic;color:var(--text-faint);font-size:8px;">Your AI Teammate for Law Firms</span>
+    </div>
+  </div>
+
+  <!-- FRONT COVER — Dark hero with gradient glow -->
+  <div class="panel panel--cover">
+    <img class="cover-logo" src="../../Donna-Logo-No-Background.png" alt="donna">
+
+    <div>
+      <p class="cover-headline">You practice law.<br>Donna handles the rest.</p>
+      <p class="cover-sub">AI-powered practice automation for modern law firms. Four products, one platform — from the first call to the final filing.</p>
+    </div>
+
+    <div class="cover-products">
+      <div class="cover-product">
+        <div class="cover-product-icon">
+          <i data-lucide="phone"></i>
+        </div>
+        <span>Call Intake</span>
+      </div>
+      <div class="cover-product">
+        <div class="cover-product-icon">
+          <i data-lucide="timer"></i>
+        </div>
+        <span>Time Tracking</span>
+      </div>
+      <div class="cover-product">
+        <div class="cover-product-icon">
+          <i data-lucide="folder-search"></i>
+        </div>
+        <span>Document Collection</span>
+      </div>
+      <div class="cover-product">
+        <div class="cover-product-icon">
+          <i data-lucide="search"></i>
+        </div>
+        <span>Forensic Analysis</span>
+      </div>
+    </div>
+
+    <span class="cover-url">donnaanswers.com</span>
+  </div>
+
+</div>
+</div>
+
+<!-- ============================================================
+     INSIDE (Side 2)
+     Left = Call Intake | Center = Time Tracking | Right = Doc Collection + Forensics
+     ============================================================ -->
+<p class="side-label">Inside (print side 2)</p>
+<div class="brochure-wrapper">
+<div class="brochure-page">
+
+  <!-- CALL INTAKE — amber accent -->
+  <div class="panel panel--left">
+    <span class="panel-badge">Call Intake</span>
+    <div class="product-icon">
+      <i data-lucide="phone" style="width:18px;height:18px;"></i>
+    </div>
+    <p class="product-headline">Every call answered.<br>Every lead captured.</p>
+    <p class="product-sub">AI voice receptionist handles calls 24/7, qualifies leads, and onboards clients automatically.</p>
+
+    <ul class="product-features">
+      <li><strong>24/7 AI receptionist</strong> answers calls with human-like empathy</li>
+      <li><strong>Instant lead qualification</strong> — identifies case type, urgency, and fit</li>
+      <li><strong>Branded webchat widget</strong> captures visitors, answers FAQs, syncs to CRM</li>
+      <li><strong>E-forms and e-signatures</strong> with automated delivery and follow-up</li>
+      <li><strong>Full transcription</strong> of every call, synced to your practice management software</li>
+    </ul>
+
+    <div class="product-stat-card">
+      <div class="product-stat-value">$200K+</div>
+      <div class="product-stat-label">lost annually by the average firm to unanswered calls</div>
+    </div>
+  </div>
+
+  <!-- TIME TRACKING — violet accent -->
+  <div class="panel panel--center">
+    <span class="panel-badge">Time Tracking</span>
+    <div class="product-icon">
+      <i data-lucide="timer" style="width:18px;height:18px;"></i>
+    </div>
+    <p class="product-headline">Capture every<br>billable minute.</p>
+    <p class="product-sub">Passive activity capture and AI-generated billing narratives — zero manual timers required.</p>
+
+    <ul class="product-features">
+      <li><strong>Runs silently</strong> in the background, recognizing work across all active windows</li>
+      <li><strong>AI-generated narratives</strong> that survive fee petitions and audits</li>
+      <li><strong>Auto-categorized</strong> by work type: research, drafting, communication, court prep</li>
+      <li><strong>Revenue intelligence dashboard</strong> with utilization rate and monthly forecast</li>
+      <li><strong>One-click CSV export</strong> compatible with any billing system</li>
+    </ul>
+
+    <div class="product-stat-card">
+      <div class="product-stat-value">+28 min/day</div>
+      <div class="product-stat-label">recovered per attorney — $14,583+ annual revenue lift at $350/hr</div>
+    </div>
+  </div>
+
+  <!-- DOC COLLECTION + FORENSICS — split panel -->
+  <div class="panel panel--right" style="gap:0;">
+
+    <div class="split-product split-product--docs">
+      <span class="panel-badge">Document Collection</span>
+      <div class="product-icon">
+        <i data-lucide="folder-search"></i>
+      </div>
+      <p class="product-headline">Automate the chase.</p>
+      <p class="product-sub">Donna requests, follows up, and tracks documents from agencies, hospitals, and clients.</p>
+
+      <ul class="product-features">
+        <li><strong>Automated requests</strong> across police, medical, financial, and government sources</li>
+        <li><strong>Smart follow-ups</strong> that escalate when overdue</li>
+        <li><strong>Deadline tracking</strong> — never miss discovery or filing dates</li>
+      </ul>
+
+      <div class="product-stat-card">
+        <div class="product-stat-value">23 days</div>
+        <div class="product-stat-label">average collection time — fully automated</div>
+      </div>
+    </div>
+
+    <div class="split-product split-product--forensics">
+      <span class="panel-badge">Forensic Analysis</span>
+      <div class="product-icon">
+        <i data-lucide="search"></i>
+      </div>
+      <p class="product-headline">Drag, drop, done.</p>
+      <p class="product-sub">AI-powered financial analysis replaces $15K+ forensic accountant engagements.</p>
+
+      <ul class="product-features">
+        <li><strong>Transaction categorization</strong> and discrepancy detection in minutes</li>
+        <li><strong>Hidden asset discovery</strong> — flags undisclosed accounts and transfers</li>
+        <li><strong>Court-ready reports</strong> with structured workpapers and audit trails</li>
+      </ul>
+
+      <div class="product-stat-card">
+        <div class="product-stat-value">90%</div>
+        <div class="product-stat-label">faster than manual forensic review</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<a class="back-btn" href="../../">&#8592; All Decks</a>
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  lucide.createIcons();
+  function scaleBrochure() {
+    const s = Math.min((window.innerWidth - 80) / 1056, 1);
+    document.documentElement.style.setProperty('--brochure-scale', s);
+  }
+  window.addEventListener('resize', scaleBrochure);
+  scaleBrochure();
+</script>
+</body>
+</html>

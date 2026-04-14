@@ -1,0 +1,512 @@
+/* ============================================================
+   Platform Brochure — tri-fold, all four Donna products
+   Visual language adapted from the document-collection 1-pager:
+   layered gradients, glass cards, icon boxes, accent-coded sections.
+   Extends ../_brochure-template/brochure.css
+   ============================================================ */
+
+@page { size: 11in 8.5in; margin: 0; }
+
+/* Constrain grid row to page height so panels don't overflow */
+.brochure-page {
+  grid-template-rows: 1fr;
+}
+
+.panel {
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ============================================================
+   OUTSIDE — FRONT COVER (dark hero with gradient glow)
+   ============================================================ */
+
+.panel--cover {
+  background:
+    radial-gradient(ellipse 420px 220px at 50% 112%, rgba(45, 212, 191, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 300px 180px at 80% 110%, rgba(124, 58, 237, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 200px 140px at 15% 105%, rgba(251, 191, 36, 0.10) 0%, transparent 55%),
+    #0A0A0A;
+  color: #FFFFFF;
+  justify-content: space-between;
+  border-left: none;
+}
+
+.cover-logo {
+  height: 18px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+.cover-headline {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.cover-sub {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.55;
+}
+
+.cover-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cover-product {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cover-product-icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  flex-shrink: 0;
+}
+
+.cover-product-icon i {
+  width: 15px;
+  height: 15px;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.cover-url {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   OUTSIDE — INSIDE FLAP (stats showcase with glass cards)
+   ============================================================ */
+
+.panel--flap {
+  background:
+    radial-gradient(ellipse 380px 280px at 50% 108%, rgba(251, 191, 36, 0.14) 0%, transparent 68%),
+    radial-gradient(ellipse 220px 180px at -8% -4%, rgba(45, 212, 191, 0.10) 0%, transparent 55%),
+    var(--bg-page);
+  justify-content: space-between;
+}
+
+.flap-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.flap-stat-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 10px 12px;
+  border-left: 2.5px solid var(--border-default);
+}
+
+.flap-stat-card--amber  { border-left-color: #D97706; }
+.flap-stat-card--violet { border-left-color: #7C3AED; }
+.flap-stat-card--teal   { border-left-color: #0F766E; }
+.flap-stat-card--rose   { border-left-color: #BE123C; }
+
+.flap-stat-value {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.flap-stat-label {
+  font-size: 8.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.flap-cta {
+  font-size: 9px;
+  color: var(--text-faint);
+  font-style: italic;
+  margin-top: auto;
+}
+
+/* ============================================================
+   OUTSIDE — BACK PANEL (privacy cards + contact)
+   ============================================================ */
+
+.panel--back {
+  background:
+    radial-gradient(ellipse 380px 280px at 50% 112%, rgba(45, 212, 191, 0.14) 0%, transparent 68%),
+    radial-gradient(ellipse 200px 150px at 105% -5%, rgba(129, 140, 248, 0.10) 0%, transparent 55%),
+    var(--bg-surface);
+  justify-content: space-between;
+}
+
+.back-section {
+  margin-bottom: 14px;
+}
+
+.back-section-title {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.privacy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.privacy-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  padding: 8px 10px;
+}
+
+.privacy-icon-box {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  margin-bottom: 5px;
+}
+
+.privacy-icon-box i {
+  width: 13px;
+  height: 13px;
+}
+
+.privacy-card-title {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+}
+
+.privacy-card-desc {
+  font-size: 8px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   INSIDE PANELS — shared product section styles
+   ============================================================ */
+
+/* Keep badges inline-sized in flex columns */
+.panel-badge {
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.product-icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background: var(--bg-page);
+}
+
+.product-icon i {
+  width: 18px;
+  height: 18px;
+}
+
+.product-headline {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.product-sub {
+  font-size: 10px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.product-features {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-features li {
+  font-size: 9.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+  padding-left: 10px;
+  position: relative;
+}
+
+.product-features li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: var(--text-faint);
+}
+
+.product-features li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ---- Product stat glass cards ---- */
+
+.product-stat-card {
+  margin-top: 16px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  padding: 8px 10px;
+}
+
+.product-stat-value {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.product-stat-label {
+  font-size: 8px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ---- Inside panel bottom accent stripe ---- */
+
+.panel--left::after,
+.panel--center::after,
+.split-product--docs::after,
+.split-product--forensics::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+  right: 28px;
+  height: 2px;
+  border-radius: 1px;
+  opacity: 0.35;
+}
+
+/* ============================================================
+   INSIDE LEFT — Call Intake (amber accent)
+   ============================================================ */
+
+.panel--left {
+  background:
+    radial-gradient(ellipse 340px 260px at 50% 110%, rgba(217, 119, 6, 0.09) 0%, transparent 68%),
+    radial-gradient(ellipse 200px 150px at -10% -5%, rgba(253, 232, 138, 0.14) 0%, transparent 55%),
+    var(--bg-surface);
+}
+
+.panel--left::after { background: #D97706; }
+
+.panel--left .product-icon {
+  color: #D97706;
+  border-color: #FDE68A;
+  background: #FFFBEB;
+}
+
+.panel--left .panel-badge {
+  color: #92400E;
+  background: #FFFBEB;
+  border-color: #FDE68A;
+}
+
+.panel--left .product-stat-card {
+  background: rgba(255, 251, 235, 0.55);
+  border-color: #FDE68A;
+}
+
+/* ============================================================
+   INSIDE CENTER — Time Tracking (violet accent)
+   ============================================================ */
+
+.panel--center {
+  background:
+    radial-gradient(ellipse 340px 260px at 50% 110%, rgba(124, 58, 237, 0.09) 0%, transparent 68%),
+    radial-gradient(ellipse 200px 150px at 110% -5%, rgba(221, 214, 254, 0.14) 0%, transparent 55%),
+    var(--bg-surface);
+}
+
+.panel--center .product-icon {
+  color: #7C3AED;
+  border-color: #DDD6FE;
+  background: #F5F3FF;
+}
+
+.panel--center .panel-badge {
+  color: #5B21B6;
+  background: #F5F3FF;
+  border-color: #DDD6FE;
+}
+
+.panel--center::after { background: #7C3AED; }
+
+.panel--center .product-stat-card {
+  background: rgba(245, 243, 255, 0.55);
+  border-color: #DDD6FE;
+}
+
+/* ============================================================
+   INSIDE RIGHT — split panel for Doc Collection + Forensics
+   ============================================================ */
+
+.panel--right {
+  background:
+    radial-gradient(ellipse 300px 200px at 50% 55%, rgba(45, 212, 191, 0.06) 0%, transparent 65%),
+    radial-gradient(ellipse 280px 200px at 50% 105%, rgba(190, 18, 60, 0.06) 0%, transparent 65%),
+    var(--bg-surface);
+}
+
+.split-product {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.split-product + .split-product {
+  padding-top: 12px;
+  border-top: 1px solid var(--border-default);
+}
+
+.split-product .product-icon {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 8px;
+}
+
+.split-product .product-icon i {
+  width: 14px;
+  height: 14px;
+}
+
+.split-product .product-headline {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.split-product .product-sub {
+  font-size: 9px;
+  margin-bottom: 8px;
+}
+
+.split-product .product-features li {
+  font-size: 8.5px;
+}
+
+.split-product .product-stat-card {
+  padding: 6px 8px;
+}
+
+.split-product .product-stat-value {
+  font-size: 14px;
+}
+
+.split-product .product-stat-label {
+  font-size: 8px;
+}
+
+/* Doc Collection — teal */
+.split-product--docs .product-icon {
+  color: #0F766E;
+  border-color: #99F6E4;
+  background: #F0FDFA;
+}
+
+.split-product--docs .panel-badge {
+  color: #0F766E;
+  background: #F0FDFA;
+  border-color: #99F6E4;
+}
+
+.split-product--docs::after {
+  background: #0F766E;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  display: none; /* divider between splits handles this */
+}
+
+.split-product--docs .product-stat-card {
+  background: rgba(240, 253, 250, 0.55);
+  border-color: #99F6E4;
+}
+
+/* Forensics — rose */
+.split-product--forensics .product-icon {
+  color: #BE123C;
+  border-color: #FECDD3;
+  background: #FFF1F2;
+}
+
+.split-product--forensics .panel-badge {
+  color: #BE123C;
+  background: #FFF1F2;
+  border-color: #FECDD3;
+}
+
+.split-product--forensics .product-stat-card {
+  background: rgba(255, 241, 242, 0.55);
+  border-color: #FECDD3;
+}
+
+/* Right panel bottom accent — only on the full panel, not splits */
+.panel--right::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+  right: 28px;
+  height: 2px;
+  border-radius: 1px;
+  opacity: 0.35;
+  background: linear-gradient(90deg, #0F766E, #BE123C);
+}

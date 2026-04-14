@@ -1,19 +1,18 @@
 /* ============================================================
-   Financial Disclosure 1-Pager — v2 deck-aesthetic approach
-   Product UI mockup as centerpiece, not text cards.
+   Client Intake 1-Pager — deck-aesthetic, UI mockup centerpiece
    ============================================================ */
 
 @page { size: 8.5in 11in; margin: 0; }
 
-/* Amber bottom-left ↔ indigo bottom-right */
+/* Teal bottom-left, rose bottom-right */
 .page {
   background:
-    radial-gradient(ellipse 600px 400px at -8% 108%, rgba(251, 191, 36, 0.28) 0%, transparent 65%),
-    radial-gradient(ellipse 500px 350px at 108% 105%, rgba(129, 140, 248, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 600px 400px at -8% 108%, rgba(45, 212, 191, 0.3) 0%, transparent 65%),
+    radial-gradient(ellipse 500px 350px at 108% 105%, rgba(251, 113, 133, 0.25) 0%, transparent 65%),
     #FFFFFF;
 }
 
-/* ---- Hero overrides ---- */
+/* ---- Hero ---- */
 
 .hero-eyebrow {
   font-family: var(--font-mono);
@@ -78,19 +77,25 @@
   color: var(--text-primary);
 }
 
-.ui-badge {
+.ui-live {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-family: var(--font-mono);
-  font-size: 7px;
+  font-size: 8px;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 2px 6px;
-  border-radius: 3px;
-  background: #ECFDF5;
-  color: #065F46;
+  color: #DC2626;
+  letter-spacing: 0.04em;
 }
 
-/* ---- Summary stats strip ---- */
+.ui-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #DC2626;
+}
+
+/* ---- Stats strip ---- */
 
 .ui-stats {
   display: flex;
@@ -124,82 +129,75 @@
   color: var(--text-faint);
 }
 
-.ui-stat--alert .ui-stat-value { color: #DC2626; }
-.ui-stat--alert .ui-stat-label { color: #991B1B; }
+/* ---- Chat transcript ---- */
 
-/* ---- Document table ---- */
+.chat-body {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-.ui-table { width: 100%; border-collapse: collapse; }
+.chat-msg {
+  max-width: 82%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 9.5px;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
 
-.ui-table th {
+.chat-msg--caller {
+  align-self: flex-end;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-default);
+  border-bottom-right-radius: 3px;
+}
+
+.chat-msg--donna {
+  align-self: flex-start;
+  background: #F0FDFA;
+  border: 1px solid #99F6E4;
+  border-bottom-left-radius: 3px;
+}
+
+.chat-msg-label {
   font-family: var(--font-mono);
   font-size: 7px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-faint);
-  text-align: left;
-  padding: 6px 14px;
+  margin-bottom: 3px;
+}
+
+.chat-msg--donna .chat-msg-label { color: #0F766E; }
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 14px;
+  border-top: 1px solid var(--border-default);
   background: var(--bg-inset);
-  border-bottom: 1px solid var(--border-default);
 }
 
-.ui-table th:last-child { text-align: right; }
-
-.ui-table td {
-  font-size: 9.5px;
-  color: var(--text-primary);
-  padding: 7px 14px;
-  border-bottom: 1px solid var(--border-subtle);
-  vertical-align: middle;
-}
-
-.ui-table td:last-child { text-align: right; }
-.ui-table tr:last-child td { border-bottom: none; }
-
-.ui-source { font-size: 8px; color: var(--text-muted); }
-
-.ui-status {
+.chat-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-family: var(--font-mono);
   font-size: 8px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  padding: 2px 6px;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
-.ui-status--ok { background: #ECFDF5; color: #065F46; }
-.ui-status--pending { background: #FFFBEB; color: #92400E; }
-.ui-status--flagged { background: #FFF1F2; color: #BE123C; }
+.chat-meta i { color: var(--text-faint); }
 
-/* ---- Alerts ---- */
+.chat-meta--ok { color: #065F46; }
+.chat-meta--ok i { color: #059669; }
 
-.ui-alerts {
-  padding: 8px 14px;
-  background: #FFFBEB;
-  border-top: 1px solid #FDE68A;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.ui-alert {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 8.5px;
-  color: #92400E;
-  line-height: 1.3;
-}
-
-.ui-alert-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
-.ui-alert-dot--warn { background: #F59E0B; }
-.ui-alert-dot--danger { background: #EF4444; }
-
-/* ---- Section two — editorial + callouts ---- */
+/* ---- Section two ---- */
 
 .section-two {
   display: grid;
@@ -241,12 +239,7 @@
   padding-top: 2px;
 }
 
-.s2-point {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
+.s2-point { display: flex; align-items: flex-start; gap: 10px; }
 .s2-point > i { margin-top: 1px; }
 
 .s2-point-title {
@@ -266,7 +259,7 @@
   line-height: 1.5;
 }
 
-/* ---- CTA + QR row ---- */
+/* ---- CTA + QR ---- */
 
 .cta-row {
   display: flex;
@@ -278,11 +271,7 @@
   border-radius: var(--r-md);
 }
 
-.cta-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
+.cta-text { display: flex; flex-direction: column; gap: 3px; }
 
 .cta-headline {
   font-family: var(--font-display);
@@ -292,16 +281,8 @@
   letter-spacing: -0.01em;
 }
 
-.cta-body {
-  font-size: 10px;
-  color: var(--text-muted);
-  line-height: 1.4;
-}
-
-.cta-body strong {
-  color: #C2410C;
-  font-weight: 600;
-}
+.cta-body { font-size: 10px; color: var(--text-muted); line-height: 1.4; }
+.cta-body strong { color: #C2410C; font-weight: 600; }
 
 .cta-qr {
   width: 72px;

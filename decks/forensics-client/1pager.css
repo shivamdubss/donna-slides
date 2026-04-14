@@ -1,19 +1,18 @@
 /* ============================================================
-   Financial Disclosure 1-Pager — v2 deck-aesthetic approach
-   Product UI mockup as centerpiece, not text cards.
+   Forensic Analysis 1-Pager (Client-Facing) — "Ask Your Lawyer"
    ============================================================ */
 
 @page { size: 8.5in 11in; margin: 0; }
 
-/* Amber bottom-left ↔ indigo bottom-right */
+/* Indigo bottom-left, emerald bottom-right — trust/calm palette */
 .page {
   background:
-    radial-gradient(ellipse 600px 400px at -8% 108%, rgba(251, 191, 36, 0.28) 0%, transparent 65%),
-    radial-gradient(ellipse 500px 350px at 108% 105%, rgba(129, 140, 248, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 600px 400px at -8% 108%, rgba(99, 102, 241, 0.2) 0%, transparent 65%),
+    radial-gradient(ellipse 500px 350px at 108% 105%, rgba(16, 185, 129, 0.22) 0%, transparent 65%),
     #FFFFFF;
 }
 
-/* ---- Hero overrides ---- */
+/* ---- Hero ---- */
 
 .hero-eyebrow {
   font-family: var(--font-mono);
@@ -50,7 +49,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
-  margin-bottom: 24px;
+  margin-bottom: 0;
   background: var(--bg-surface);
 }
 
@@ -86,11 +85,11 @@
   text-transform: uppercase;
   padding: 2px 6px;
   border-radius: 3px;
-  background: #ECFDF5;
-  color: #065F46;
+  background: #FFF1F2;
+  color: #BE123C;
 }
 
-/* ---- Summary stats strip ---- */
+/* ---- Stats strip ---- */
 
 .ui-stats {
   display: flex;
@@ -127,7 +126,28 @@
 .ui-stat--alert .ui-stat-value { color: #DC2626; }
 .ui-stat--alert .ui-stat-label { color: #991B1B; }
 
-/* ---- Document table ---- */
+/* ---- Asset disclosure table ---- */
+
+.ui-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.ui-tab {
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  border-bottom: 2px solid transparent;
+}
+
+.ui-tab.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--text-primary);
+}
 
 .ui-table { width: 100%; border-collapse: collapse; }
 
@@ -144,7 +164,7 @@
   border-bottom: 1px solid var(--border-default);
 }
 
-.ui-table th:last-child { text-align: right; }
+.ui-table th.r { text-align: right; }
 
 .ui-table td {
   font-size: 9.5px;
@@ -154,52 +174,45 @@
   vertical-align: middle;
 }
 
-.ui-table td:last-child { text-align: right; }
-.ui-table tr:last-child td { border-bottom: none; }
-
-.ui-source { font-size: 8px; color: var(--text-muted); }
-
-.ui-status {
+.ui-table td.r {
+  text-align: right;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 9px;
+  color: var(--text-secondary);
+}
+
+.ui-table tr:last-child td { border-bottom: none; }
+.ui-table tr.flagged td { background: #FFF5F5; }
+
+.ui-table td.muted { color: var(--text-faint); }
+
+.finding-badge {
+  font-family: var(--font-mono);
+  font-size: 7px;
   font-weight: 600;
   letter-spacing: 0.04em;
   padding: 2px 6px;
   border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
+  white-space: nowrap;
 }
 
-.ui-status--ok { background: #ECFDF5; color: #065F46; }
-.ui-status--pending { background: #FFFBEB; color: #92400E; }
-.ui-status--flagged { background: #FFF1F2; color: #BE123C; }
+.finding-badge--ok { background: #ECFDF5; color: #065F46; }
+.finding-badge--warn { background: #FFFBEB; color: #92400E; }
+.finding-badge--danger { background: #FFF1F2; color: #BE123C; }
 
-/* ---- Alerts ---- */
+/* ---- Mockup caption ---- */
 
-.ui-alerts {
-  padding: 8px 14px;
-  background: #FFFBEB;
-  border-top: 1px solid #FDE68A;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.ui-caption {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-style: italic;
+  line-height: 1.4;
 }
 
-.ui-alert {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 8.5px;
-  color: #92400E;
-  line-height: 1.3;
-}
-
-.ui-alert-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
-.ui-alert-dot--warn { background: #F59E0B; }
-.ui-alert-dot--danger { background: #EF4444; }
-
-/* ---- Section two — editorial + callouts ---- */
+/* ---- Section two ---- */
 
 .section-two {
   display: grid;
@@ -241,12 +254,7 @@
   padding-top: 2px;
 }
 
-.s2-point {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
+.s2-point { display: flex; align-items: flex-start; gap: 10px; }
 .s2-point > i { margin-top: 1px; }
 
 .s2-point-title {
@@ -266,7 +274,7 @@
   line-height: 1.5;
 }
 
-/* ---- CTA + QR row ---- */
+/* ---- CTA + QR ---- */
 
 .cta-row {
   display: flex;
@@ -278,11 +286,7 @@
   border-radius: var(--r-md);
 }
 
-.cta-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
+.cta-text { display: flex; flex-direction: column; gap: 3px; }
 
 .cta-headline {
   font-family: var(--font-display);
@@ -292,16 +296,8 @@
   letter-spacing: -0.01em;
 }
 
-.cta-body {
-  font-size: 10px;
-  color: var(--text-muted);
-  line-height: 1.4;
-}
-
-.cta-body strong {
-  color: #C2410C;
-  font-weight: 600;
-}
+.cta-body { font-size: 10px; color: var(--text-muted); line-height: 1.4; }
+.cta-body strong { color: #C2410C; font-weight: 600; }
 
 .cta-qr {
   width: 72px;
@@ -309,4 +305,12 @@
   border-radius: var(--r-sm);
   border: 1px solid var(--border-default);
   flex-shrink: 0;
+}
+
+/* ---- Footer ---- */
+
+.footer-trust {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 500;
 }

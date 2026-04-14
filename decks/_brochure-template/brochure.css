@@ -1,0 +1,224 @@
+/* ============================================================
+   Donna Brochure Template — base styles for tri-fold landscape
+   1056×816px canvas (11×8.5in at 96dpi), 3 panels per side
+
+   Copy the platform-brochure folder, rename it, then build.
+   ============================================================ */
+
+/* ---- Override @page for landscape letter ---- */
+@page { size: 11in 8.5in; margin: 0; }
+
+/* ---- Brochure page shell ---- */
+
+.brochure-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: var(--font-body);
+  background: var(--bg-surface);
+}
+
+/* ---- Panel base ---- */
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 28px;
+  overflow: hidden;
+  position: relative;
+}
+
+.panel + .panel {
+  border-left: 1px solid var(--border-subtle);
+}
+
+/* ---- Panel typography ---- */
+
+.panel-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+
+.panel-headline {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.panel-body {
+  font-size: 9.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+/* ---- Panel feature list ---- */
+
+.panel-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.panel-list li {
+  font-size: 9.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+  padding-left: 10px;
+  position: relative;
+}
+
+.panel-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--text-faint);
+}
+
+.panel-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ---- Panel badge ---- */
+
+.panel-badge {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 3px;
+  padding: 2px 6px;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* ---- Panel stat block ---- */
+
+.panel-stat {
+  margin-bottom: 14px;
+}
+
+.panel-stat-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.panel-stat-label {
+  font-size: 9px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ---- Panel icon ---- */
+
+.panel-icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  background: var(--bg-surface);
+}
+
+/* ---- Panel footer / contact ---- */
+
+.panel-contact {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 9px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.panel-contact a {
+  color: #C2410C;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ---- Integration pills (brochure size) ---- */
+
+.panel-integrations {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.panel-pill {
+  font-family: var(--font-body);
+  font-size: 8px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  padding: 2px 6px;
+}
+
+.panel-pill-more {
+  font-size: 8px;
+  color: var(--text-faint);
+  font-weight: 500;
+}
+
+/* ---- Side labels (screen only) ---- */
+
+.side-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.side-label:first-of-type {
+  margin-top: 0;
+}
+
+/* ---- Brochure wordmark ---- */
+
+.panel-wordmark {
+  height: 16px;
+  width: auto;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+/* ---- Divider within a panel ---- */
+
+.panel-divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 12px 0;
+}
