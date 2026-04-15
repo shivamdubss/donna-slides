@@ -483,6 +483,8 @@
   color: var(--text-primary);
   line-height: 1;
   letter-spacing: -0.02em;
+  text-align: center;
+  width: 100%;
 }
 .x-label {
   font-size: 13px;
@@ -490,6 +492,8 @@
   font-family: var(--font-mono);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
 .traction-metrics {
   display: grid;
@@ -515,6 +519,8 @@
   color: var(--text-primary);
   letter-spacing: -0.02em;
   line-height: 1;
+  text-align: center;
+  width: 100%;
 }
 .metric-label {
   font-size: 13px;
@@ -523,6 +529,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   line-height: 1.4;
+  text-align: center;
+  width: 100%;
 }
 .traction-narr {
   display: grid;
