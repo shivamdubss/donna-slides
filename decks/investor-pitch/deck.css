@@ -929,3 +929,286 @@
 .contact-row .c-icon { width: 26px; height: 26px; color: var(--text-faint); flex-shrink: 0; }
 .contact-row a { color: var(--text-primary); text-decoration: none; }
 .contact-row a:hover { text-decoration: underline; }
+
+/* =============================================================
+   ROUND 2 EDITS — size tweaks, new modifiers, new divider slide
+   ============================================================= */
+
+/* ---- 02 PROBLEM: 6-column grid + feature stat + compact quotes ---- */
+.slide-problem .stat-row.six {
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  flex: 0 0 auto;
+  margin-bottom: 40px;
+}
+.stat-card.stat-feature {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+}
+.stat-card.stat-feature .stat-icon { color: #FFF; opacity: 0.55; }
+.stat-card.stat-feature .stat-value { color: #FFF; }
+.stat-card.stat-feature .stat-label { color: #D4D4D4; }
+
+.slide-problem .stat-row.six .stat-card {
+  padding: 22px 22px 26px;
+}
+.slide-problem .stat-row.six .stat-value {
+  font-size: 34px;
+  letter-spacing: -0.02em;
+}
+.slide-problem .stat-row.six .stat-label {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.stat-card.stat-feature .stat-value { font-size: 32px !important; }
+
+.quote-row.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+}
+.quote-row.compact .quote-card {
+  padding: 26px 36px;
+  gap: 16px;
+}
+.quote-row.compact .quote-body {
+  font-size: 22px;
+  line-height: 1.3;
+}
+.quote-row.compact .quote-attr {
+  font-size: 12px;
+}
+
+/* ---- 03 SOLUTION: larger wedge row ---- */
+.wedge-row {
+  padding: 28px 36px;
+}
+.wedge-title {
+  font-size: 30px;
+}
+.wedge-desc {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ---- 04 TEAM: larger photos + text ---- */
+.team-photo {
+  width: 280px;
+  height: 280px;
+}
+.team-name { font-size: 32px; }
+.team-role { font-size: 14px; }
+.team-bio { font-size: 19px; line-height: 1.5; }
+.team-meta { font-size: 13px; }
+
+/* ---- 05 WHY NOW: compact ---- */
+.triple-card-grid.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+  align-content: start;
+}
+.triple-card-grid.compact .triple-card {
+  padding: 36px 34px 30px;
+  gap: 18px;
+}
+.triple-card-grid.compact .triple-card-title {
+  font-size: 28px;
+}
+.triple-card-grid.compact .triple-card-body {
+  font-size: 19px;
+  line-height: 1.5;
+  flex: 0 0 auto;
+}
+/* push the bottom-callout toward the bottom */
+.slide-why-now .bottom-callout,
+.slide-operate .bottom-callout {
+  margin-top: auto;
+}
+
+/* ---- 06 BUSINESS: compact example cards ---- */
+.example-grid.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+}
+.example-grid.compact .example-card {
+  padding: 26px 32px;
+  gap: 10px;
+}
+.example-grid.compact .example-title {
+  font-size: 24px;
+}
+.example-grid.compact .example-row {
+  font-size: 17px;
+  line-height: 1.55;
+}
+.example-grid.compact .example-total {
+  font-size: 28px;
+  padding-top: 12px;
+}
+.slide-business .blend-note { margin-top: 20px; }
+
+/* ---- 07 TRACTION: center text, shrink narratives, 3-col metrics ---- */
+.slide-traction .traction-top .x-card {
+  align-items: center;
+  text-align: center;
+}
+.slide-traction .traction-metrics.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+.slide-traction .traction-metrics .metric-card {
+  align-items: center;
+  text-align: center;
+}
+.traction-narr.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+}
+.traction-narr.compact .narrative-card {
+  padding: 22px 28px;
+}
+.traction-narr.compact .n-body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.traction-narr.compact .n-label {
+  font-size: 13px;
+}
+
+/* ---- 08 MARKET: bigger bar labels ---- */
+.tsm-label-small {
+  font-size: 15px !important;
+  letter-spacing: 0.12em !important;
+  margin-bottom: 10px !important;
+}
+.slide-market .acv-card .acv-value { font-size: 32px; line-height: 1.1; }
+
+/* ---- 09 COMPETITION: bigger image, bottom callout ---- */
+.comp-image-wrap.large {
+  flex: 1;
+  margin-bottom: 24px;
+}
+.comp-callout.bottom {
+  margin-bottom: 0;
+  margin-top: 0;
+  flex: 0 0 auto;
+}
+
+/* ---- 10 ASK: narrower outcomes, compact use-of-funds ---- */
+.ask-outcomes.narrow {
+  grid-template-columns: 1fr 1fr;
+  max-width: 880px;
+  align-self: center;
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+}
+.ask-outcomes.narrow .outcome-card {
+  padding: 26px 32px;
+}
+.ask-outcomes.narrow .outcome-big {
+  font-size: 48px;
+}
+.ask-outcomes.narrow .outcome-label {
+  font-size: 20px;
+}
+.ask-outcomes.narrow .outcome-desc {
+  font-size: 15px;
+}
+.use-of-funds.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+}
+.use-of-funds.compact .uof-card {
+  padding: 22px 26px;
+}
+.use-of-funds.compact .uof-head {
+  font-size: 14px;
+}
+.use-of-funds.compact .uof-body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ---- 12 DIVIDER (new) ---- */
+.slide-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.slide-divider::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 1800px 720px at 50% 112%, #E6E8EE 0%, #F0F2F6 40%, transparent 72%);
+}
+.slide-divider > *:not(.slide-wordmark):not(.slide-number) {
+  position: relative;
+  z-index: 1;
+}
+.divider-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.divider-title {
+  font-family: var(--font-display);
+  font-size: 200px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--text-primary);
+  margin-bottom: 36px;
+}
+.divider-sub {
+  font-family: var(--font-body);
+  font-size: 26px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  max-width: 1100px;
+}
+
+/* ---- 13 GTM: compact ---- */
+.gtm-grid.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+  align-content: start;
+}
+.gtm-grid.compact .gtm-card {
+  padding: 30px 30px 28px;
+  gap: 14px;
+}
+.gtm-grid.compact .gtm-title {
+  font-size: 24px;
+}
+.gtm-grid.compact .gtm-item {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ---- 14 MOAT: reuses .triple-card-grid.compact above ---- */
+
+/* ---- 15 OPERATE: compact ---- */
+.operate-grid.compact {
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
+  align-content: start;
+}
+.operate-grid.compact .agent-card {
+  padding: 30px 26px 28px;
+  gap: 14px;
+}
+.operate-grid.compact .agent-name {
+  font-size: 24px;
+}
+.operate-grid.compact .agent-body {
+  font-size: 17px;
+  line-height: 1.5;
+}
