@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna — Financial Disclosure Demo</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.bunny.net/css?family=satoshi:400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="deck.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     01 — HERO / HOOK
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-hero">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">01</span>
+
+  <p class="hero-eyebrow">Financial Disclosure · Family Law</p>
+  <h1 class="hero-headline">Most family law files lose 4–6 weeks<br>on financial disclosure.</h1>
+  <p class="hero-sub">I want to show you what happens when your only two actions are "start" and "approve."</p>
+</section>
+</div>
+
+<!-- ============================================================
+     02 — THE CURRENT STATE (BROKEN)
+     Left: email thread pile. Right: half-done expense form.
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-broken">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">02</span>
+
+  <div class="broken-header">
+    <p class="broken-eyebrow">The Current State</p>
+    <h2 class="broken-headline">Every file becomes a scavenger hunt.</h2>
+    <p class="broken-sub">Multiple email threads, dozens of attachments, and a form the client never finishes independently.</p>
+  </div>
+
+  <div class="broken-footer">
+    <div class="broken-metric">
+      <i data-lucide="mail" style="width:18px;height:18px;color:var(--text-faint);"></i>
+      <span class="broken-metric-value">26</span>
+      <span class="broken-metric-label">emails across 4 threads</span>
+    </div>
+    <div class="broken-metric">
+      <i data-lucide="paperclip" style="width:18px;height:18px;color:var(--text-faint);"></i>
+      <span class="broken-metric-value">57</span>
+      <span class="broken-metric-label">attachments, unorganized</span>
+    </div>
+    <div class="broken-metric">
+      <i data-lucide="clock" style="width:18px;height:18px;color:var(--text-faint);"></i>
+      <span class="broken-metric-value">23 days</span>
+      <span class="broken-metric-label">since form was sent</span>
+    </div>
+    <div class="broken-metric">
+      <i data-lucide="alert-triangle" style="width:18px;height:18px;color:var(--text-faint);"></i>
+      <span class="broken-metric-value">38%</span>
+      <span class="broken-metric-label">of fields completed</span>
+    </div>
+  </div>
+
+  <div class="broken-grid">
+
+    <!-- Left panel: email mockup -->
+    <div class="surface mock-panel mock-email">
+      <div class="mock-panel-header">
+        <i data-lucide="inbox" style="width:18px;height:18px;color:var(--text-faint);"></i>
+        <span class="mock-panel-title">Inbox · Client: Rodriguez, M.</span>
+        <span class="mock-panel-meta">26 messages · 57 attachments</span>
+      </div>
+
+      <div class="email-row">
+        <div class="email-avatar rose">M</div>
+        <div class="email-body">
+          <div class="email-top">
+            <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+            <span class="email-from">Lauren Mitchell <span class="email-plus">+ 2 others</span></span>
+            <span class="email-addr"></span>
+            <span class="email-time">2:45 PM</span>
+          </div>
+          <div class="email-subject">Re: Q1 Bank Statements (22)</div>
+          <div class="email-snippet">Please see the attached Q1 bank statements and let me know if you have any questions…</div>
+        </div>
+        <div class="email-attach">22 <i data-lucide="paperclip" style="width:13px;height:13px;"></i></div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-avatar indigo">J</div>
+        <div class="email-body">
+          <div class="email-top">
+            <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+            <span class="email-from">John Spencer <span class="email-plus">+ 1 more</span></span>
+            <span class="email-time">11:10 AM</span>
+          </div>
+          <div class="email-snippet">Here's the updated expense breakdown. Let me know if everything looks good.</div>
+        </div>
+        <div class="email-attach dim"><i data-lucide="paperclip" style="width:13px;height:13px;"></i></div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-avatar rose">M</div>
+        <div class="email-body">
+          <div class="email-top">
+            <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+            <span class="email-from">Lauren Mitchell <span class="email-plus">+ 1 other</span></span>
+            <span class="email-time">9:31 AM</span>
+          </div>
+          <div class="email-snippet">I've updated the balance sheet with the latest figures. Please review and confirm.</div>
+        </div>
+        <div class="email-attach">18 <i data-lucide="paperclip" style="width:13px;height:13px;"></i></div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-avatar rose">M</div>
+        <div class="email-body">
+          <div class="email-top">
+            <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+            <span class="email-from">Lauren Mitchell <span class="email-plus">+ 1 other</span></span>
+            <span class="email-time">Yesterday</span>
+          </div>
+          <div class="email-snippet">I've attached the revised cash flow statement along with a few notes. Please review…</div>
+        </div>
+        <div class="email-attach">12 <i data-lucide="paperclip" style="width:13px;height:13px;"></i></div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-avatar indigo">J</div>
+        <div class="email-body">
+          <div class="email-top">
+            <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+            <span class="email-from">Joanna Wilson <span class="email-plus">+ 1 more</span></span>
+            <span class="email-time">Mon</span>
+          </div>
+          <div class="email-snippet">Attached is the latest investment portfolio report. Please let me know if you have any…</div>
+        </div>
+        <div class="email-attach">9 <i data-lucide="paperclip" style="width:13px;height:13px;"></i></div>
+      </div>
+
+      <div class="email-row">
+        <div class="email-avatar indigo">J</div>
+        <div class="email-body">
+          <div class="email-top">
+            <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+            <span class="email-from">Joanna Wilson <span class="email-plus">+ 1 more</span></span>
+            <span class="email-time">Mon</span>
+          </div>
+          <div class="email-snippet">Attached is the latest investment portfolio report. Please let me know if you have any…</div>
+        </div>
+        <div class="email-attach">9 <i data-lucide="paperclip" style="width:13px;height:13px;"></i></div>
+      </div>
+
+    </div>
+
+    <!-- Right panel: expense form mockup -->
+    <div class="surface mock-panel mock-form">
+      <div class="mock-panel-header">
+        <i data-lucide="file-text" style="width:18px;height:18px;color:var(--text-faint);"></i>
+        <span class="mock-panel-title">Form 13.1 · Financial Statement</span>
+        <span class="mock-panel-meta warn">38% complete · sent 23 days ago</span>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-col">
+          <table class="form-table">
+            <thead>
+              <tr><th>Expense</th><th class="r">Monthly</th></tr>
+            </thead>
+            <tbody>
+              <tr class="form-section"><td colspan="2">Automatic Deductions</td></tr>
+              <tr><td>CPP contributions</td><td class="r empty">—</td></tr>
+              <tr><td>EI premiums</td><td class="r empty">—</td></tr>
+              <tr><td>Income taxes</td><td class="r filled">$1,741.66</td></tr>
+              <tr><td>Employee pension contributions</td><td class="r empty">—</td></tr>
+              <tr><td>Union dues</td><td class="r empty">—</td></tr>
+              <tr class="form-subtotal"><td>Subtotal</td><td class="r filled">$1,741.66</td></tr>
+              <tr class="form-section"><td colspan="2">Housing</td></tr>
+              <tr><td>Rent or mortgage</td><td class="r empty">—</td></tr>
+              <tr><td>Property taxes</td><td class="r empty">—</td></tr>
+              <tr><td>Property insurance</td><td class="r empty">—</td></tr>
+              <tr><td>Condominium fees</td><td class="r empty">—</td></tr>
+              <tr><td>Repairs and maintenance</td><td class="r empty">—</td></tr>
+              <tr class="form-subtotal"><td>Subtotal</td><td class="r empty">—</td></tr>
+              <tr class="form-section"><td colspan="2">Utilities</td></tr>
+              <tr><td>Water</td><td class="r empty">—</td></tr>
+              <tr><td>Heat</td><td class="r empty">—</td></tr>
+              <tr><td>Electricity</td><td class="r empty">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-col">
+          <table class="form-table">
+            <thead>
+              <tr><th>Expense</th><th class="r">Monthly</th></tr>
+            </thead>
+            <tbody>
+              <tr class="form-section"><td colspan="2">Household</td></tr>
+              <tr><td>Household supplies</td><td class="r empty">—</td></tr>
+              <tr><td>Meals outside the home</td><td class="r empty">—</td></tr>
+              <tr><td>Pet care</td><td class="r empty">—</td></tr>
+              <tr><td>Laundry and dry cleaning</td><td class="r empty">—</td></tr>
+              <tr class="form-subtotal"><td>Subtotal</td><td class="r empty">—</td></tr>
+              <tr class="form-section"><td colspan="2">Childcare</td></tr>
+              <tr><td>Daycare expense</td><td class="r empty">—</td></tr>
+              <tr><td>Babysitting costs</td><td class="r empty">—</td></tr>
+              <tr class="form-subtotal"><td>Subtotal</td><td class="r empty">—</td></tr>
+              <tr class="form-section"><td colspan="2">Transportation</td></tr>
+              <tr><td>Public transit, taxis</td><td class="r empty">—</td></tr>
+              <tr><td>Gas and oil</td><td class="r empty">—</td></tr>
+              <tr><td>Car insurance and license</td><td class="r empty">—</td></tr>
+              <tr><td>Repairs and maintenance</td><td class="r empty">—</td></tr>
+              <tr><td>Parking</td><td class="r empty">—</td></tr>
+              <tr><td>Car loan / lease payments</td><td class="r empty">—</td></tr>
+              <tr class="form-subtotal"><td>Subtotal</td><td class="r empty">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+</div>
+
+<!-- ============================================================
+     03 — ACTION 1 OF 2: START
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-action1">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">03</span>
+
+  <div class="a1-left">
+    <div class="actor-row">
+      <span class="actor-pill actor-firm"><i data-lucide="scale" style="width:14px;height:14px;"></i>Law firm</span>
+      <span class="a1-eyebrow">Action 1 of 2 · Start</span>
+    </div>
+    <h2 class="a1-headline">Open Donna. Create a matter.<br>One click sends the intake.</h2>
+    <p class="a1-body">No template hunting. No attaching a blank PDF to an email. Donna generates a structured, case-specific intake request and sends it to the client with one click — then tracks every response as it comes in.</p>
+
+    <div class="a1-steps">
+      <div class="a1-step">
+        <div class="a1-step-num">1</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Create matter</div>
+          <div class="a1-step-desc">New client record with jurisdiction and case type</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">2</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Add document requests</div>
+          <div class="a1-step-desc">Upload a form to auto-generate requests — or start a client intake</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">3</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Send</div>
+          <div class="a1-step-desc">Client gets a secure link. Donna tracks every response.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="a1-right">
+    <div class="donna-window">
+      <div class="dw-bar">
+        <div class="traffic-lights">
+          <div class="tl tl-r"></div>
+          <div class="tl tl-y"></div>
+          <div class="tl tl-g"></div>
+        </div>
+        <span class="dw-title">Donna</span>
+      </div>
+
+      <div class="dw-body">
+        <div class="dw-crumbs">
+          <span class="dw-crumb">Matters</span>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;color:var(--text-faint);"></i>
+          <span class="dw-crumb active">Rodriguez, M.</span>
+          <span class="dw-chip">Family Law · Disclosure</span>
+        </div>
+
+        <h3 class="dw-section-title">Add Document Requests</h3>
+        <p class="dw-section-sub">Generate a list of requests by uploading a document or starting a client intake form.</p>
+
+        <div class="dw-actions">
+          <div class="dw-action-card">
+            <div class="dw-action-icon">
+              <i data-lucide="file-up" style="width:36px;height:36px;color:var(--text-secondary);"></i>
+            </div>
+            <div class="dw-action-label">Upload Document</div>
+          </div>
+
+          <div class="dw-action-card featured">
+            <div class="dw-action-icon">
+              <i data-lucide="clipboard-list" style="width:36px;height:36px;color:var(--cat-drafting);"></i>
+            </div>
+            <div class="dw-action-label">Do Client Intake</div>
+            <div class="dw-action-tag">One click</div>
+          </div>
+        </div>
+
+        <div class="dw-send">
+          <div class="dw-send-row">
+            <span class="dw-send-to">To</span>
+            <span class="dw-send-val">maria.rodriguez@email.com</span>
+          </div>
+          <div class="dw-send-row">
+            <span class="dw-send-to">Form</span>
+            <span class="dw-send-val">Form 13.1 — Financial Statement · 84 fields</span>
+          </div>
+          <button class="dw-send-btn">
+            <i data-lucide="send" style="width:16px;height:16px;"></i>
+            Send intake
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     04 — CLIENT SIDE: GUIDED INTAKE
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-client">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">04</span>
+
+  <div class="cl-left">
+    <div class="actor-row">
+      <span class="actor-pill actor-client"><i data-lucide="user" style="width:14px;height:14px;"></i>Client</span>
+      <span class="a1-eyebrow">In between · Guided intake</span>
+    </div>
+    <h2 class="a1-headline">The client gets a secure link<br>and a form that teaches itself.</h2>
+    <p class="a1-body">Plain-language questions. Skip-if-it-doesn't-apply sections. Hover hints that explain every line item in the client's own words. They answer what they know, save progress, and come back.</p>
+
+    <div class="a1-steps">
+      <div class="a1-step">
+        <div class="a1-step-num">1</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Secure email link</div>
+          <div class="a1-step-desc">No account to create, no PDF to print, sign, scan, or email back</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">2</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Plain-language sections</div>
+          <div class="a1-step-desc">Employment, income, property &amp; assets, debts — one step at a time</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">3</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Guidance on every field</div>
+          <div class="a1-step-desc">"What counts as self-employment income?" answered inline, in human English</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cl-right">
+    <!-- Stacked mocks: email at top-left, form beneath with tooltip overlay -->
+    <div class="cl-email-card">
+      <div class="cl-email-chrome">
+        <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+        <span class="cl-email-from">Donna &lt;no-reply@donna.legal&gt;</span>
+        <span class="cl-email-time">Today</span>
+      </div>
+      <div class="cl-email-body">
+        <p class="cl-email-line">Dear Maria,</p>
+        <p class="cl-email-line">To prepare your matter properly, we need some background information. Please complete the secure intake form at the link below:</p>
+        <button class="cl-email-btn">Complete Intake Form</button>
+      </div>
+    </div>
+
+    <div class="cl-form-card">
+      <div class="mock-panel-header">
+        <i data-lucide="clipboard-list" style="width:18px;height:18px;color:var(--text-faint);"></i>
+        <span class="mock-panel-title">Client Intake · Financial Disclosure</span>
+        <span class="mock-panel-meta">Saved 2 min ago</span>
+      </div>
+
+      <div class="cl-form-body">
+        <div class="cl-form-section-title">Monthly Income</div>
+
+        <div class="cl-fields-grid">
+          <div class="cl-field">
+            <label>Employment Income (before deductions) <i data-lucide="help-circle" style="width:14px;height:14px;vertical-align:-2px;color:var(--text-faint);"></i></label>
+            <input type="text" value="" placeholder="0">
+          </div>
+          <div class="cl-field">
+            <label>Commissions / Tips / Bonuses <i data-lucide="help-circle" style="width:14px;height:14px;vertical-align:-2px;color:var(--text-faint);"></i></label>
+            <input type="text" value="" placeholder="0">
+          </div>
+          <div class="cl-field highlighted">
+            <label>Self-Employment Income (before expenses) <i data-lucide="help-circle" style="width:14px;height:14px;vertical-align:-2px;color:var(--text-faint);"></i></label>
+            <input type="text" value="" placeholder="0">
+          </div>
+          <div class="cl-field">
+            <label>Employment Income Benefits <i data-lucide="help-circle" style="width:14px;height:14px;vertical-align:-2px;color:var(--text-faint);"></i></label>
+            <input type="text" value="" placeholder="0">
+          </div>
+          <div class="cl-field">
+            <label>Workers' Compensation <i data-lucide="help-circle" style="width:14px;height:14px;vertical-align:-2px;color:var(--text-faint);"></i></label>
+            <input type="text" value="" placeholder="0">
+          </div>
+          <div class="cl-field">
+            <label>Interest &amp; Investment Income <i data-lucide="help-circle" style="width:14px;height:14px;vertical-align:-2px;color:var(--text-faint);"></i></label>
+            <input type="text" value="" placeholder="0">
+          </div>
+        </div>
+
+        <!-- Floating hint bubble -->
+        <div class="cl-tooltip">
+          <div class="cl-tooltip-arrow"></div>
+          Your total business income before deducting business expenses. If you own or operate a business, freelance, or work through a corporation, include the gross income earned from that business.
+        </div>
+
+        <div class="cl-form-section-title" style="margin-top:24px;">Property &amp; Assets</div>
+
+        <div class="cl-assets">
+          <div class="cl-asset-row">
+            <span class="cl-asset-q">Do you own any land or real estate?</span>
+            <div class="cl-yn">
+              <span class="cl-yn-btn">Yes</span>
+              <span class="cl-yn-btn active">No</span>
+            </div>
+          </div>
+          <div class="cl-asset-row">
+            <span class="cl-asset-q">Household items, vehicles, or personal property?</span>
+            <div class="cl-yn">
+              <span class="cl-yn-btn active">Yes</span>
+              <span class="cl-yn-btn">No</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     05 — DONNA DRAFTS THE FORM
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-draft">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">05</span>
+
+  <div class="dr-left">
+    <div class="actor-row">
+      <span class="actor-pill actor-firm"><i data-lucide="scale" style="width:14px;height:14px;"></i>Law firm</span>
+      <span class="a1-eyebrow">2 days later · Donna dashboard</span>
+    </div>
+    <h2 class="a1-headline">Client submitted. Donna<br>pre-drafted the form.</h2>
+    <p class="a1-body">You open Donna two days later. The client's intake is complete. Donna has already mapped every answer to the court form — 90% populated, ready for your review.</p>
+
+    <div class="dr-quote">
+      <div class="dr-quote-mark">"</div>
+      <p class="dr-quote-text">That form would have taken your assistant 3 hours.<br>It took Donna 3 minutes after she submitted.</p>
+    </div>
+
+    <div class="dr-metrics">
+      <div class="dr-metric">
+        <span class="dr-metric-val">3 min</span>
+        <span class="dr-metric-label">Donna's processing time</span>
+      </div>
+      <div class="dr-metric">
+        <span class="dr-metric-val">90%</span>
+        <span class="dr-metric-label">of form pre-populated</span>
+      </div>
+      <div class="dr-metric">
+        <span class="dr-metric-val">0</span>
+        <span class="dr-metric-label">hours of staff time</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dr-right">
+    <div class="donna-window">
+      <div class="dw-bar">
+        <div class="traffic-lights">
+          <div class="tl tl-r"></div>
+          <div class="tl tl-y"></div>
+          <div class="tl tl-g"></div>
+        </div>
+        <span class="dw-title">Donna — Form Preview</span>
+      </div>
+
+      <div class="dw-body" style="padding:24px 28px;">
+        <div class="dw-crumbs" style="margin-bottom:20px;">
+          <span class="dw-crumb">Matters</span>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;color:var(--text-faint);"></i>
+          <span class="dw-crumb active">Rodriguez, M.</span>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;color:var(--text-faint);"></i>
+          <span class="dw-crumb active">Form 13.1</span>
+          <span class="dw-chip" style="background:#DCFCE7;color:#166534;border-color:#BBF7D0;">90% complete</span>
+        </div>
+
+        <!-- Document Actions -->
+        <div class="dr-doc-actions">
+          <div class="dr-doc-actions-title">Document Actions</div>
+          <button class="dr-doc-btn">Open Document</button>
+          <button class="dr-doc-btn">Generate Requests</button>
+        </div>
+
+        <!-- Form sections preview -->
+        <div class="dr-form-preview">
+          <div class="dr-section-bar">9. Property &amp; Assets</div>
+
+          <div class="dr-subsection">Household Items, Vehicles &amp; Personal Property</div>
+          <table class="dr-table">
+            <thead>
+              <tr><th>Item</th><th>Description</th><th class="r">Value at Marriage</th><th class="r">Valuation Date</th><th class="r">Value Today</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Car</td><td>Toyota Corolla</td><td class="r">$0.00</td><td class="r">$20,000.00</td><td class="r">$18,000.00</td></tr>
+            </tbody>
+          </table>
+
+          <div class="dr-subsection">Bank Accounts, Investments &amp; Pensions</div>
+          <table class="dr-table">
+            <thead>
+              <tr><th>Category</th><th>Institution</th><th>Acct #</th><th class="r">At Marriage</th><th class="r">Valuation Date</th><th class="r">Today</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Chequing</td><td>TD</td><td>1234</td><td class="r">$2,000</td><td class="r">$50,000</td><td class="r">$50,000</td></tr>
+              <tr><td>RRSP</td><td>Equitable Bank</td><td>5478</td><td class="r">$5,000</td><td class="r">$25,000</td><td class="r">$25,000</td></tr>
+            </tbody>
+          </table>
+
+          <div class="dr-total-row">
+            <span>Total Property Value (Valuation Date):</span>
+            <span class="dr-total-val">$93,000.00</span>
+          </div>
+
+          <div class="dr-section-bar debts">10. Debts &amp; Net Family Property</div>
+          <table class="dr-table debts">
+            <thead>
+              <tr><th>Category</th><th>Details</th><th class="r">At Marriage</th><th class="r">Valuation Date</th><th class="r">Today</th><th class="r">Monthly</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Credit Card</td><td>5242</td><td class="r">$0.00</td><td class="r">$5,000</td><td class="r">$4,000</td><td class="r">$500</td></tr>
+            </tbody>
+          </table>
+
+          <div class="dr-total-row">
+            <span>Total Debts:</span>
+            <span class="dr-total-val">$4,000.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     06 — ACTION 2 OF 2: APPROVE
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-approve">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">06</span>
+
+  <div class="ap-header">
+    <div class="actor-row">
+      <span class="actor-pill actor-firm"><i data-lucide="scale" style="width:14px;height:14px;"></i>Law firm</span>
+      <span class="a1-eyebrow">Action 2 of 2 · Approve</span>
+    </div>
+    <h2 class="ap-headline">One click. Every supporting<br>document request fires.</h2>
+    <p class="ap-sub">Lawyer reviews, clicks one button, and all supporting document requests — bank statements, T4s, credit card statements, property docs — go out to the client in an organized sequence.</p>
+  </div>
+
+  <div class="ap-grid">
+    <!-- Left: the approve action card -->
+    <div class="ap-action-card">
+      <div class="ap-action-top">
+        <div class="ap-action-icon">
+          <i data-lucide="check-circle-2" style="width:48px;height:48px;color:#166534;"></i>
+        </div>
+        <div class="ap-action-title">Review &amp; Approve</div>
+        <div class="ap-action-desc">Scan the pre-drafted form. One click sends all document requests.</div>
+      </div>
+
+      <div class="ap-action-timer">
+        <i data-lucide="timer" style="width:16px;height:16px;color:var(--text-faint);"></i>
+        <span class="ap-timer-val">~20 seconds</span>
+      </div>
+    </div>
+
+    <!-- Right: document requests that fire -->
+    <div class="ap-requests">
+      <div class="ap-req-header">
+        <i data-lucide="send" style="width:16px;height:16px;color:var(--text-faint);"></i>
+        <span>Document requests sent automatically</span>
+      </div>
+      <div class="ap-req-list">
+        <div class="ap-req sent">
+          <i data-lucide="check" style="width:16px;height:16px;color:#166534;"></i>
+          <span>Bank Statements (last 12 months)</span>
+          <span class="ap-req-to">→ TD, Equitable Bank</span>
+        </div>
+        <div class="ap-req sent">
+          <i data-lucide="check" style="width:16px;height:16px;color:#166534;"></i>
+          <span>T4 / Employment Income Slips</span>
+          <span class="ap-req-to">→ Client</span>
+        </div>
+        <div class="ap-req sent">
+          <i data-lucide="check" style="width:16px;height:16px;color:#166534;"></i>
+          <span>Credit Card Statements</span>
+          <span class="ap-req-to">→ Card ending 5242</span>
+        </div>
+        <div class="ap-req sent">
+          <i data-lucide="check" style="width:16px;height:16px;color:#166534;"></i>
+          <span>Property Assessment / Title</span>
+          <span class="ap-req-to">→ Client</span>
+        </div>
+        <div class="ap-req sent">
+          <i data-lucide="check" style="width:16px;height:16px;color:#166534;"></i>
+          <span>Vehicle Registration &amp; Lien Check</span>
+          <span class="ap-req-to">→ Toyota Corolla</span>
+        </div>
+        <div class="ap-req sent">
+          <i data-lucide="check" style="width:16px;height:16px;color:#166534;"></i>
+          <span>RRSP Statements</span>
+          <span class="ap-req-to">→ Equitable Bank</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ap-footer">
+    <div class="ap-footer-quote">That was action two. Everything else happens without you.</div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     07 — CLIENT UPLOADS WITH REAL-TIME VALIDATION
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-upload">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">07</span>
+
+  <div class="ul-left">
+    <div class="actor-row">
+      <span class="actor-pill actor-client"><i data-lucide="user" style="width:14px;height:14px;"></i>Client</span>
+      <span class="a1-eyebrow">Document upload · Guided</span>
+    </div>
+    <h2 class="a1-headline">Client uploads.<br>Donna checks in real time.</h2>
+    <p class="a1-body">The client gets one friendly email listing every requested item. They upload through a secure portal — or just reply to the email. Every file is instantly validated before it's accepted.</p>
+
+    <div class="a1-steps">
+      <div class="a1-step">
+        <div class="a1-step-num">1</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Clear request email</div>
+          <div class="a1-step-desc">Branded with the firm's name, one link, running checklist of what's outstanding</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">2</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Two ways to send</div>
+          <div class="a1-step-desc">Secure portal upload, or reply to the email with attachments — client's choice</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">3</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Instant validation</div>
+          <div class="a1-step-desc">Wrong document? Wrong date range? Donna catches it before it hits your queue.</div>
+        </div>
+      </div>
+      <div class="a1-step">
+        <div class="a1-step-num">4</div>
+        <div class="a1-step-body">
+          <div class="a1-step-title">Stuck? Donna walks them through it.</div>
+          <div class="a1-step-desc">"Where do I find my Notice of Assessment?" → step-by-step instructions for CRA, My Service Canada, banking portals — no back-and-forth with your office.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ul-right">
+    <!-- Request email mockup -->
+    <div class="cl-email-card ul-email">
+      <div class="cl-email-chrome">
+        <i data-lucide="mail" style="width:14px;height:14px;color:var(--text-faint);"></i>
+        <span class="cl-email-from">Saumya Firm LLP &lt;documents@donna.legal&gt;</span>
+        <span class="cl-email-time">Today</span>
+      </div>
+      <div class="cl-email-body">
+        <p class="cl-email-line">Dear Maria,</p>
+        <p class="cl-email-line">Thank you for choosing Saumya Firm LLP to represent you. To open your file and give you the best possible service, we require the following few key documents.</p>
+
+        <p class="ul-email-label">Requested items</p>
+        <ul class="ul-email-list">
+          <li>TD Chequing · statements for last 12 months</li>
+          <li>Notices of Assessment / Reassessment (past 3 years)</li>
+          <li>Credit Card statements · ending 5242</li>
+        </ul>
+
+        <p class="ul-email-label">How to send them securely</p>
+        <div class="ul-email-methods">
+          <div class="ul-email-method">
+            <span class="ul-method-num">1.</span>
+            <div>
+              <div class="ul-method-title">Upload through our encrypted portal</div>
+              <div class="ul-method-link">donnaanswers.com/portal/upload?id=…G4lv</div>
+            </div>
+          </div>
+          <div class="ul-email-method">
+            <span class="ul-method-num">2.</span>
+            <div>
+              <div class="ul-method-title">Reply to this email</div>
+              <div class="ul-method-desc">Attach the documents directly — Donna will confirm receipt.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upload portal with validation modal -->
+    <div class="ul-portal">
+      <div class="mock-panel-header">
+        <i data-lucide="upload-cloud" style="width:18px;height:18px;color:var(--text-faint);"></i>
+        <span class="mock-panel-title">Document Portal · Rodriguez, M.</span>
+        <span class="mock-panel-meta">3 of 6 uploaded</span>
+      </div>
+
+      <div class="ul-portal-body">
+        <div class="ul-req-card">
+          <div class="ul-req-title">Notices of Assessment / Reassessment (Past 3 Years)</div>
+          <div class="ul-req-desc">A copy of your NOAs from CRA for the past three taxation years.</div>
+          <div class="ul-req-actions">
+            <button class="ul-choose">Choose File</button>
+            <button class="ul-help-link"><i data-lucide="help-circle" style="width:14px;height:14px;"></i>I'm not sure where to find this</button>
+            <span class="ul-req-state pending">Pending</span>
+          </div>
+        </div>
+
+        <div class="ul-req-card">
+          <div class="ul-req-title">Property &amp; Asset Valuation</div>
+          <div class="ul-req-desc">Independent appraisal or MPAC assessment as of your date of marriage and today.</div>
+          <div class="ul-req-actions">
+            <button class="ul-choose">Choose File</button>
+            <button class="ul-help-link"><i data-lucide="help-circle" style="width:14px;height:14px;"></i>I'm not sure where to find this</button>
+            <span class="ul-req-state pending">Pending</span>
+          </div>
+        </div>
+
+        <!-- Donna guidance chat overlay -->
+        <div class="ul-guide">
+          <div class="ul-guide-header">
+            <div class="ul-guide-avatar"><i data-lucide="sparkles" style="width:14px;height:14px;color:#FFFFFF;"></i></div>
+            <div class="ul-guide-who">Donna</div>
+            <div class="ul-guide-sub">Guide · Notice of Assessment</div>
+          </div>
+
+          <div class="ul-guide-q">Where do I find my Notice of Assessment?</div>
+
+          <div class="ul-guide-a">
+            <p class="ul-guide-a-intro">No problem — you can get it in three ways:</p>
+            <ol class="ul-guide-steps">
+              <li><strong>CRA My Account</strong> → Tax returns → Notices of assessment. Download PDF.</li>
+              <li><strong>Paper copy</strong> — check any envelopes from CRA titled "Notice of Assessment."</li>
+              <li><strong>Don't have a CRA account?</strong> I can send you the sign-up instructions.</li>
+            </ol>
+            <div class="ul-guide-actions">
+              <button class="ul-guide-btn primary">Open CRA My Account</button>
+              <button class="ul-guide-btn ghost">Send me CRA sign-up steps</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ============================================================
+     08 — AUTO-PILOT: DONNA HANDLES FOLLOW-UP
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-autopilot">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">08</span>
+
+  <div class="ap2-header">
+    <div class="actor-row">
+      <span class="actor-pill actor-donna"><i data-lucide="sparkles" style="width:14px;height:14px;"></i>Donna · Auto-pilot</span>
+      <span class="a1-eyebrow">While you're in court · Hands off</span>
+    </div>
+    <h2 class="ap2-headline">Red → yellow → green<br>without a single reply from you.</h2>
+    <p class="ap2-sub">Donna chases the client, validates every upload, answers questions in plain language, and escalates only what actually needs you.</p>
+  </div>
+
+  <div class="ap2-grid">
+
+    <!-- Progress by category -->
+    <div class="ap2-panel">
+      <div class="ap2-panel-header">
+        <i data-lucide="layout-dashboard" style="width:16px;height:16px;color:var(--text-faint);"></i>
+        <span>Collection Progress · Rodriguez, M.</span>
+        <span class="ap2-panel-meta">Updated 2 min ago</span>
+      </div>
+      <div class="ap2-progress-body">
+
+        <div class="ap2-cat">
+          <div class="ap2-cat-row">
+            <span class="ap2-cat-name">Bank Statements</span>
+            <span class="ap2-cat-state green">Complete</span>
+          </div>
+          <div class="ap2-bar"><div class="ap2-bar-fill green" style="width:100%;"></div></div>
+          <div class="ap2-cat-sub">TD · Equitable Bank · 12 months received</div>
+        </div>
+
+        <div class="ap2-cat">
+          <div class="ap2-cat-row">
+            <span class="ap2-cat-name">T4 / Employment Slips</span>
+            <span class="ap2-cat-state green">Complete</span>
+          </div>
+          <div class="ap2-bar"><div class="ap2-bar-fill green" style="width:100%;"></div></div>
+          <div class="ap2-cat-sub">Follow-up sent at 48h — client responded within the hour</div>
+        </div>
+
+        <div class="ap2-cat">
+          <div class="ap2-cat-row">
+            <span class="ap2-cat-name">Credit Card Statements</span>
+            <span class="ap2-cat-state yellow">In review</span>
+          </div>
+          <div class="ap2-bar"><div class="ap2-bar-fill yellow" style="width:68%;"></div></div>
+          <div class="ap2-cat-sub">Re-upload requested · wrong date range on last file</div>
+        </div>
+
+        <div class="ap2-cat">
+          <div class="ap2-cat-row">
+            <span class="ap2-cat-name">Property Assessment</span>
+            <span class="ap2-cat-state yellow">Waiting</span>
+          </div>
+          <div class="ap2-bar"><div class="ap2-bar-fill yellow" style="width:40%;"></div></div>
+          <div class="ap2-cat-sub">Client asked about HELOC — Donna answered, no escalation</div>
+        </div>
+
+        <div class="ap2-cat">
+          <div class="ap2-cat-row">
+            <span class="ap2-cat-name">RRSP Statements</span>
+            <span class="ap2-cat-state red">Outstanding</span>
+          </div>
+          <div class="ap2-bar"><div class="ap2-bar-fill red" style="width:12%;"></div></div>
+          <div class="ap2-cat-sub">1st follow-up scheduled in 6h</div>
+        </div>
+
+        <div class="ap2-summary">
+          <div class="ap2-summary-val">78%</div>
+          <div class="ap2-summary-label">overall complete · 0 hours of your time</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live activity log -->
+    <div class="ap2-panel">
+      <div class="ap2-panel-header">
+        <i data-lucide="activity" style="width:16px;height:16px;color:var(--text-faint);"></i>
+        <span>Live Activity · Donna</span>
+        <span class="ap2-panel-meta live"><span class="live-dot"></span>Live</span>
+      </div>
+      <div class="ap2-log">
+
+        <div class="ap2-log-entry">
+          <div class="ap2-log-time">2:04 PM</div>
+          <div class="ap2-log-body">
+            <div class="ap2-log-icon green"><i data-lucide="check" style="width:14px;height:14px;"></i></div>
+            <div class="ap2-log-text">
+              <strong>RBC statement validated.</strong> Client re-uploaded the Nov–Dec range after Donna flagged the wrong period on the first upload.
+            </div>
+          </div>
+        </div>
+
+        <div class="ap2-log-entry">
+          <div class="ap2-log-time">1:37 PM</div>
+          <div class="ap2-log-body">
+            <div class="ap2-log-icon yellow"><i data-lucide="message-circle" style="width:14px;height:14px;"></i></div>
+            <div class="ap2-log-text">
+              <strong>Client asked about HELOC.</strong> Donna answered in plain English using the matter context — no escalation needed.
+            </div>
+          </div>
+        </div>
+
+        <div class="ap2-log-entry">
+          <div class="ap2-log-time">12:55 PM</div>
+          <div class="ap2-log-body">
+            <div class="ap2-log-icon red"><i data-lucide="alert-circle" style="width:14px;height:14px;"></i></div>
+            <div class="ap2-log-text">
+              <strong>Document mismatch rejected.</strong> Client uploaded a headshot in the Notice of Assessment slot — Donna asked for a re-upload before accepting.
+            </div>
+          </div>
+        </div>
+
+        <div class="ap2-log-entry">
+          <div class="ap2-log-time">11:12 AM</div>
+          <div class="ap2-log-body">
+            <div class="ap2-log-icon yellow"><i data-lucide="send" style="width:14px;height:14px;"></i></div>
+            <div class="ap2-log-text">
+              <strong>48-hour follow-up sent for T4.</strong> Auto-generated reminder with secure upload link and checklist of outstanding items.
+            </div>
+          </div>
+        </div>
+
+        <div class="ap2-log-entry">
+          <div class="ap2-log-time">9:30 AM</div>
+          <div class="ap2-log-body">
+            <div class="ap2-log-icon green"><i data-lucide="check" style="width:14px;height:14px;"></i></div>
+            <div class="ap2-log-text">
+              <strong>TD bank statements ingested.</strong> 12 months · auto-categorized · flagged 3 transactions for later review.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="ap2-footer-quote">Everything you just saw happened while you were in court.</div>
+</section>
+</div>
+
+<!-- ============================================================
+     09 — OPPOSING PARTY FORENSICS
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-forensics">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">09</span>
+
+  <div class="fx-header">
+    <div class="actor-row">
+      <span class="actor-pill actor-donna"><i data-lucide="search" style="width:14px;height:14px;"></i>Donna · Forensics</span>
+      <span class="a1-eyebrow">Opposing party served</span>
+    </div>
+    <h2 class="fx-headline">Opposing counsel just served<br>their forms. Donna flagged three things.</h2>
+    <p class="fx-sub">Page and line citations. Source snippet. Draft discovery question, ready to send. You click into whichever finding you want to pursue first.</p>
+  </div>
+
+  <div class="fx-grid">
+
+    <!-- Left: list of flagged findings -->
+    <div class="fx-findings">
+      <div class="mock-panel-header">
+        <i data-lucide="flag" style="width:16px;height:16px;color:var(--text-faint);"></i>
+        <span class="mock-panel-title">Flagged · Anderson, M. · Form 13.1</span>
+        <span class="mock-panel-meta">3 findings</span>
+      </div>
+
+      <div class="fx-finding selected">
+        <div class="fx-finding-top">
+          <span class="fx-sev high">High</span>
+          <span class="fx-finding-ref">p.4, line 17</span>
+        </div>
+        <div class="fx-finding-title">$47,000 transfer to an unnamed third party</div>
+        <div class="fx-finding-desc">Outbound wire from TD chequing listed as "gift" — recipient not disclosed on the 13.1.</div>
+      </div>
+
+      <div class="fx-finding">
+        <div class="fx-finding-top">
+          <span class="fx-sev high">High</span>
+          <span class="fx-finding-ref">p.2, line 8 ↔ T1 line 10100</span>
+        </div>
+        <div class="fx-finding-title">Pay stub and T1 income disagree</div>
+        <div class="fx-finding-desc">Declared $104,200 on Form 13.1; T1 reports $128,850 for same year. $24,650 unaccounted.</div>
+      </div>
+
+      <div class="fx-finding">
+        <div class="fx-finding-top">
+          <span class="fx-sev med">Medium</span>
+          <span class="fx-finding-ref">p.7, Schedule D</span>
+        </div>
+        <div class="fx-finding-title">Credit card not listed on debts schedule</div>
+        <div class="fx-finding-desc">RBC Visa ending 9021 appears in three bank statements — omitted from Section 10.</div>
+      </div>
+    </div>
+
+    <!-- Right: drill-down on selected finding -->
+    <div class="fx-drill">
+      <div class="mock-panel-header">
+        <i data-lucide="file-search" style="width:16px;height:16px;color:var(--text-faint);"></i>
+        <span class="mock-panel-title">Finding · $47,000 transfer</span>
+        <span class="mock-panel-meta">p.4, line 17</span>
+      </div>
+
+      <div class="fx-drill-body">
+        <div class="fx-section-label">Source evidence</div>
+        <div class="fx-source">
+          <div class="fx-source-header">TD Chequing · statement 2025-06 · line 142</div>
+          <table class="fx-source-table">
+            <thead>
+              <tr><th>Date</th><th>Description</th><th class="r">Debit</th><th class="r">Balance</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jun 14, 2025</td>
+                <td>Grocery — Loblaws</td>
+                <td class="r">$184.22</td>
+                <td class="r">$62,410.18</td>
+              </tr>
+              <tr class="fx-highlight">
+                <td>Jun 17, 2025</td>
+                <td>E-TRF to *********871 "gift"</td>
+                <td class="r">$47,000.00</td>
+                <td class="r">$15,410.18</td>
+              </tr>
+              <tr>
+                <td>Jun 18, 2025</td>
+                <td>Payroll — Anderson Inc.</td>
+                <td class="r">—</td>
+                <td class="r">$19,410.18</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="fx-section-label">Cross-reference</div>
+        <div class="fx-cross">
+          <i data-lucide="link-2" style="width:16px;height:16px;color:var(--text-faint);"></i>
+          <span><strong>Form 13.1, p.6 §Gifts/Transfers:</strong> declared $0.00 in outbound transfers over $5,000 during the past 24 months.</span>
+        </div>
+
+        <div class="fx-section-label">Draft discovery question</div>
+        <div class="fx-discovery">
+          <div class="fx-discovery-q">
+            "Please identify the recipient of the $47,000 e-transfer described as a 'gift' on the TD Chequing statement dated June 17, 2025 (p.4, line 17), and produce all documents evidencing the relationship between the recipient and the respondent, and the purpose of the transfer."
+          </div>
+          <div class="fx-discovery-actions">
+            <button class="fx-btn primary"><i data-lucide="check" style="width:14px;height:14px;"></i>Accept &amp; add to demand</button>
+            <button class="fx-btn ghost">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fx-footer-quote">Your clerk might find the first one in a day. They wouldn't find the other two.</div>
+</section>
+</div>
+
+<!-- ============================================================
+     10 — CLOSING: TWO ACTIONS, EVERYTHING ELSE
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-close">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">10</span>
+
+  <div class="cl2-header">
+    <p class="a1-eyebrow">The entire workflow</p>
+    <h2 class="cl2-headline">Two clicks. ~40 seconds<br>of your time. Every file, every time.</h2>
+  </div>
+
+  <div class="cl2-flow">
+    <!-- Step 1: Law firm — Start -->
+    <div class="cl2-step cl2-action">
+      <div class="cl2-step-ord">01</div>
+      <div class="cl2-action-pill">
+        <i data-lucide="scale" style="width:14px;height:14px;"></i>
+        <span>Law firm</span>
+      </div>
+      <div class="cl2-action-num">Action 1</div>
+      <div class="cl2-action-title">Start</div>
+      <div class="cl2-action-desc">Create the matter. One click sends the intake.</div>
+      <div class="cl2-action-time">
+        <i data-lucide="timer" style="width:14px;height:14px;color:var(--text-faint);"></i>
+        <span>~20 seconds</span>
+      </div>
+    </div>
+
+    <!-- Step 2: Donna — before approve -->
+    <div class="cl2-step cl2-donna">
+      <div class="cl2-step-ord">02</div>
+      <div class="cl2-donna-header">
+        <div class="actor-pill actor-donna"><i data-lucide="sparkles" style="width:14px;height:14px;"></i>Donna</div>
+      </div>
+      <div class="cl2-donna-items">
+        <div class="cl2-donna-item"><i data-lucide="mail" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Secure intake email to client</span></div>
+        <div class="cl2-donna-item"><i data-lucide="clipboard-list" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Guided form with inline hints</span></div>
+        <div class="cl2-donna-item"><i data-lucide="life-buoy" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Step-by-step help when client is stuck</span></div>
+        <div class="cl2-donna-item"><i data-lucide="file-check" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Form 13.1 pre-drafted to 90%</span></div>
+      </div>
+    </div>
+
+    <!-- Step 3: Law firm — Approve -->
+    <div class="cl2-step cl2-action">
+      <div class="cl2-step-ord">03</div>
+      <div class="cl2-action-pill">
+        <i data-lucide="scale" style="width:14px;height:14px;"></i>
+        <span>Law firm</span>
+      </div>
+      <div class="cl2-action-num">Action 2</div>
+      <div class="cl2-action-title">Approve</div>
+      <div class="cl2-action-desc">Review the pre-draft. One click fires every document request.</div>
+      <div class="cl2-action-time">
+        <i data-lucide="timer" style="width:14px;height:14px;color:var(--text-faint);"></i>
+        <span>~20 seconds</span>
+      </div>
+    </div>
+
+    <!-- Step 4: Donna — after approve -->
+    <div class="cl2-step cl2-donna">
+      <div class="cl2-step-ord">04</div>
+      <div class="cl2-donna-header">
+        <div class="actor-pill actor-donna"><i data-lucide="sparkles" style="width:14px;height:14px;"></i>Donna</div>
+      </div>
+      <div class="cl2-donna-items">
+        <div class="cl2-donna-item"><i data-lucide="shield-check" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Real-time upload validation</span></div>
+        <div class="cl2-donna-item"><i data-lucide="send" style="width:16px;height:16px;color:var(--text-faint);"></i><span>48-hour follow-ups &amp; reminders</span></div>
+        <div class="cl2-donna-item"><i data-lucide="message-circle" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Client Q&amp;A, escalates only what needs you</span></div>
+        <div class="cl2-donna-item"><i data-lucide="search" style="width:16px;height:16px;color:var(--text-faint);"></i><span>Opposing-party forensics with citations</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cl2-footer">
+    <div class="cl2-footer-stats">
+      <div class="cl2-stat">
+        <span class="cl2-stat-val">2</span>
+        <span class="cl2-stat-label">clicks from you</span>
+      </div>
+      <div class="cl2-stat">
+        <span class="cl2-stat-val">~40s</span>
+        <span class="cl2-stat-label">of your time</span>
+      </div>
+      <div class="cl2-stat">
+        <span class="cl2-stat-val">4–6 wk</span>
+        <span class="cl2-stat-label">recovered per file</span>
+      </div>
+    </div>
+    <div class="cl2-cta">
+      <span class="cl2-cta-text">Try it on your next file.</span>
+      <button class="cl2-cta-btn">
+        Start a matter
+        <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </button>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- PDF Download Button -->
+<a class="back-btn" href="../../">← All Decks</a>
+<button class="download-btn" onclick="window.print()">Download PDF</button>
+
+<script>
+  lucide.createIcons();
+  function scaleSlides() {
+    const s = Math.min((window.innerWidth - 80) / 1920, 1);
+    document.documentElement.style.setProperty('--slide-scale', s);
+  }
+  window.addEventListener('resize', scaleSlides);
+  scaleSlides();
+</script>
+</body>
+</html>
