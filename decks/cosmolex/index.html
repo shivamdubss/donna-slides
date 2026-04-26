@@ -24,19 +24,83 @@
   <span class="slide-number">01</span>
 
   <p class="hero-eyebrow">Integration · CosmoLex</p>
-  <h1 class="hero-headline">Your time, flowing<br>into CosmoLex.</h1>
-  <p class="hero-sub">CosmoLex stays your source of truth. Donna captures the day and hands off clean timecards — no double entry, no copy-paste.</p>
-  <p class="hero-teaser">Two paths · Simple today · Seamless tomorrow</p>
+  <h1 class="hero-headline">CosmoLex Integration<br>Overview</h1>
 </section>
 </div>
 
 <!-- ============================================================
-     02 — DURING THE PILOT: Export to CosmoLex
+     02 — SECTION DIVIDER: Phase 01 · Pilot
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-divider">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">02</span>
+
+  <p class="divider-eyebrow">Phase 01</p>
+  <h2 class="divider-title">Pilot</h2>
+  <p class="divider-sub">Export today. Upload weekly. No integration required.</p>
+</section>
+</div>
+
+<!-- ============================================================
+     03 — PILOT: One-time setup
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-setup">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">03</span>
+
+  <div class="setup-head">
+    <p class="setup-eyebrow">During the Pilot · Setup</p>
+    <h2 class="setup-headline">Two things we set up once.<br>Then every export just works.</h2>
+    <p class="setup-sub">Both take minutes, not hours. Required before the first upload.</p>
+  </div>
+
+  <div class="setup-grid">
+    <div class="setup-card">
+      <span class="setup-card-num">01</span>
+      <span class="setup-card-icon"><i data-lucide="database"></i></span>
+      <h3 class="setup-card-title">Matter list</h3>
+      <p class="setup-card-body">Donna needs your firm's full matter list with the Matter ID# so it can populate the Matter-Key column on every entry. Without it, every row fails on import.</p>
+
+      <div class="setup-paths">
+        <div class="setup-path">
+          <p class="setup-path-tag">Recommended for pilot</p>
+          <h4 class="setup-path-title">Manual CSV upload</h4>
+          <p class="setup-path-body">Export from CosmoLex (Matters → Export → Custom Export → CSV), upload to Donna. ~5 minutes. No integration. Re-run when new matters are opened, or hit "Refresh matters."</p>
+        </div>
+        <div class="setup-path">
+          <p class="setup-path-tag">Post-pilot option</p>
+          <h4 class="setup-path-title">Zapier sync</h4>
+          <p class="setup-path-body">Auto-pulls matters from CosmoLex's API and stays in sync. Fancier — adds a dependency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="setup-card">
+      <span class="setup-card-num">02</span>
+      <span class="setup-card-icon"><i data-lucide="users"></i></span>
+      <h3 class="setup-card-title">Timekeeper mapping</h3>
+      <p class="setup-card-body">Each Donna user maps to their CosmoLex timekeeper identifier. The XLSX template requires this field, and it must match an existing CosmoLex timekeeper exactly — otherwise the row fails on import.</p>
+
+      <div class="setup-detail">
+        <p class="setup-detail-line">Dropdown selection during user onboarding.</p>
+        <p class="setup-detail-line">~5 seconds per user. 8 lawyers = 8 mappings.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="setup-footer">5–10 minute setup · No integration required for pilot</p>
+</section>
+</div>
+
+<!-- ============================================================
+     04 — DURING THE PILOT: Export to CosmoLex
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-flow">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">02</span>
+  <span class="slide-number">04</span>
 
   <div class="flow-head">
     <p class="flow-eyebrow">During the Pilot</p>
@@ -82,15 +146,29 @@
 </div>
 
 <!-- ============================================================
-     03 — POST PILOT: Automatic sync
+     05 — SECTION DIVIDER: Phase 02 · Full Integration
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-divider">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">05</span>
+
+  <p class="divider-eyebrow">Phase 02</p>
+  <h2 class="divider-title">Full Integration</h2>
+  <p class="divider-sub">Live sync via Zapier. Validated on release.</p>
+</section>
+</div>
+
+<!-- ============================================================
+     06 — FULL INTEGRATION: Automatic sync
      ============================================================ -->
 <div class="slide-wrapper">
 <section class="slide slide-flow">
   <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
-  <span class="slide-number">03</span>
+  <span class="slide-number">06</span>
 
   <div class="flow-head">
-    <p class="flow-eyebrow">Post Pilot</p>
+    <p class="flow-eyebrow">Full Integration</p>
     <h2 class="flow-headline">Set it up once.<br>Entries sync on release.</h2>
     <p class="flow-sub">Once we're past pilot, the export button is replaced by a live connection. You review, you hit Release, and timecards land in CosmoLex — validated and attributed.</p>
   </div>
@@ -129,6 +207,96 @@
   </div>
 
   <p class="flow-footer">~15-min setup · Secure sync via Zapier · OAuth both sides · No on-prem software</p>
+</section>
+</div>
+
+<!-- ============================================================
+     07 — FULL INTEGRATION: How it works (architecture)
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-setup slide-setup--equal">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">07</span>
+
+  <div class="setup-head">
+    <p class="setup-eyebrow">Full Integration · How it works</p>
+    <h2 class="setup-headline">Two Zaps run<br>in the background.</h2>
+    <p class="setup-sub">Donna sets up and manages the Zapier connection on the firm's behalf. The firm only ever sees Donna and CosmoLex.</p>
+  </div>
+
+  <div class="setup-grid setup-grid--equal">
+    <div class="setup-card">
+      <span class="setup-card-num">Zap 01</span>
+      <span class="setup-card-icon"><i data-lucide="arrow-down-left"></i></span>
+      <h3 class="setup-card-title">CosmoLex → Donna</h3>
+      <p class="setup-card-body">New and updated matters flow into Donna automatically. The matter list stays in sync — no CSV refreshes, no manual upkeep.</p>
+    </div>
+
+    <div class="setup-card">
+      <span class="setup-card-num">Zap 02</span>
+      <span class="setup-card-icon"><i data-lucide="arrow-up-right"></i></span>
+      <h3 class="setup-card-title">Donna → CosmoLex</h3>
+      <p class="setup-card-body">Released timecards post to CosmoLex with matter, timekeeper, and billing type already mapped. No double entry, no copy-paste.</p>
+    </div>
+  </div>
+
+  <p class="setup-footer">No Zapier UI · No separate bill · No second vendor relationship</p>
+</section>
+</div>
+
+<!-- ============================================================
+     08 — FULL INTEGRATION: Onboarding walkthrough
+     ============================================================ -->
+<div class="slide-wrapper">
+<section class="slide slide-onboard">
+  <img class="slide-wordmark" src="../../Donna-Logo-No-Background.png" alt="donna">
+  <span class="slide-number">08</span>
+
+  <div class="onboard-head">
+    <p class="onboard-eyebrow">Full Integration · Onboarding</p>
+    <h2 class="onboard-headline">One 30-minute call.<br>Then it just runs.</h2>
+    <p class="onboard-sub">A guided screenshare. Donna does the heavy lifting — the firm admin's actual clicking time is about 10 minutes.</p>
+  </div>
+
+  <ol class="onboard-list">
+    <li class="onboard-row">
+      <span class="onboard-num">01</span>
+      <div class="onboard-content">
+        <h3 class="onboard-title">Generate CosmoLex API credentials</h3>
+        <p class="onboard-body">Firm admin pulls API credentials from CosmoLex's settings.</p>
+      </div>
+    </li>
+    <li class="onboard-row">
+      <span class="onboard-num">02</span>
+      <div class="onboard-content">
+        <h3 class="onboard-title">Authorize Donna</h3>
+        <p class="onboard-body">One-click OAuth connects the firm's Donna workspace to CosmoLex.</p>
+      </div>
+    </li>
+    <li class="onboard-row">
+      <span class="onboard-num">03</span>
+      <div class="onboard-content">
+        <h3 class="onboard-title">Run a test entry</h3>
+        <p class="onboard-body">One timecard end-to-end — confirm it lands on the right matter, timekeeper, and billing type.</p>
+      </div>
+    </li>
+    <li class="onboard-row">
+      <span class="onboard-num">04</span>
+      <div class="onboard-content">
+        <h3 class="onboard-title">Map timekeepers</h3>
+        <p class="onboard-body">Match each Donna user to their CosmoLex timekeeper. About five seconds per person.</p>
+      </div>
+    </li>
+    <li class="onboard-row">
+      <span class="onboard-num">05</span>
+      <div class="onboard-content">
+        <h3 class="onboard-title">Walk through the daily flow</h3>
+        <p class="onboard-body">Capture → review → release. The first real entry runs together, on the call.</p>
+      </div>
+    </li>
+  </ol>
+
+  <p class="onboard-footer">Setup handled by Donna · No additional subscriptions · Cancel anytime</p>
 </section>
 </div>
 

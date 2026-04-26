@@ -198,3 +198,332 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+/* ---- Section dividers (Phase 01 / Phase 02) ---- */
+
+.slide-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-divider::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 1800px 720px at 50% 112%, #BFDBFE 0%, #DBEAFE 40%, transparent 72%);
+}
+
+.slide-divider > *:not(.slide-wordmark):not(.slide-number) {
+  position: relative;
+  z-index: 1;
+}
+
+.divider-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.divider-title {
+  font-family: var(--font-display);
+  font-size: 200px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--text-primary);
+  margin-bottom: 36px;
+}
+
+.divider-sub {
+  font-family: var(--font-body);
+  font-size: 26px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  max-width: 1100px;
+}
+
+/* ---- One-time setup slide ---- */
+
+.slide-setup {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  position: relative;
+}
+
+.setup-head {
+  margin-bottom: 48px;
+  max-width: 1200px;
+}
+
+.setup-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.setup-headline {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+
+.setup-sub {
+  font-size: 22px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 960px;
+}
+
+.setup-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.setup-grid--equal {
+  grid-template-columns: 1fr 1fr;
+}
+
+.setup-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-lg);
+  padding: 40px;
+  gap: 18px;
+}
+
+.setup-card-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.setup-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r-md);
+  background: var(--bg-inset);
+  color: var(--text-primary);
+}
+
+.setup-card-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.setup-card-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.setup-card-body {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.setup-paths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.setup-path {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 22px;
+}
+
+.setup-path-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.setup-path-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.setup-path-body {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.setup-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+  padding: 22px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+}
+
+.setup-detail-line {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.setup-footer {
+  margin-top: 48px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ---- Onboarding walkthrough slide ---- */
+
+.slide-onboard {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  position: relative;
+}
+
+.onboard-head {
+  margin-bottom: 40px;
+  max-width: 1200px;
+}
+
+.onboard-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.onboard-headline {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+
+.onboard-sub {
+  font-size: 22px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 1000px;
+}
+
+.onboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.onboard-row {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 32px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-default);
+  align-items: baseline;
+}
+
+.onboard-row:last-child {
+  border-bottom: 1px solid var(--border-default);
+}
+
+.onboard-num {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.14em;
+}
+
+.onboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.onboard-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.onboard-body {
+  font-size: 18px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.onboard-footer {
+  margin-top: 40px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
