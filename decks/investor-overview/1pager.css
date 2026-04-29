@@ -1,0 +1,272 @@
+/* ============================================================
+   Investor Overview 1-Pager
+   Extends ../_1pager-template/1pager.css
+   ============================================================ */
+
+@page { size: 8.5in 11in; margin: 0; }
+
+/* Subtle multi-radial bloom — investor-grade, not festive */
+.page {
+  background:
+    radial-gradient(ellipse 720px 480px at 110% 110%, rgba(196, 181, 253, 0.30) 0%, rgba(221, 214, 254, 0.12) 45%, transparent 68%),
+    radial-gradient(ellipse 480px 360px at -8% 108%, rgba(125, 211, 252, 0.28) 0%, rgba(186, 230, 253, 0.12) 45%, transparent 65%),
+    radial-gradient(ellipse 280px 200px at 105% -5%, rgba(253, 186, 116, 0.20) 0%, transparent 58%),
+    #FFFFFF;
+}
+
+/* ---- Hero ---- */
+
+.page-hero {
+  margin-bottom: 18px;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.hero-headline {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.hero-body {
+  font-size: 11px;
+  max-width: 640px;
+}
+
+/* ---- Problem strip ---- */
+
+.problem-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.problem-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 11px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-value {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.problem-desc {
+  font-size: 10px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  flex: 1;
+  margin-bottom: 8px;
+}
+
+.problem-source {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ---- Solution band ---- */
+
+.solution-band {
+  margin-bottom: 12px;
+}
+
+.solution-band .section-header {
+  margin-bottom: 9px;
+}
+
+.solution-band .section-tagline {
+  font-size: 15px;
+}
+
+.pillar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pillar-pill {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-full);
+  padding: 3px 10px;
+}
+
+.pillar-pill--growth  { color: #92400E; background: #FFFBEB; border-color: #FDE68A; }
+.pillar-pill--ops     { color: #334155; background: #F8FAFC; border-color: #CBD5E1; }
+.pillar-pill--billing { color: #115E59; background: #F0FDFA; border-color: #99F6E4; }
+
+.pillar-divider {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  opacity: 0.5;
+}
+
+/* ---- Product grid ---- */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.product-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  padding: 13px 14px 14px;
+}
+
+.pillar-tag {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 3px;
+  padding: 2px 6px;
+}
+
+.feature-icon-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  margin-bottom: 9px;
+  background: var(--bg-surface);
+}
+
+.product-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 2px;
+}
+
+.product-hook {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: -0.005em;
+  margin-bottom: 8px;
+}
+
+.product-card .feature-list {
+  margin-top: 0;
+}
+
+/* Per-product accents — category color tokens, on icon box + pillar tag only.
+   Never on data viz, per CLAUDE.md design rules. */
+
+/* Client Intake — comm orange */
+.product-card--intake .feature-icon-box {
+  color: #C2410C;
+  border-color: #FED7AA;
+  background: #FFF7ED;
+}
+.product-card--intake .pillar-tag {
+  color: #92400E;
+  background: #FFFBEB;
+  border-color: #FDE68A;
+}
+
+/* Document Gathering — review slate */
+.product-card--docs .feature-icon-box {
+  color: #475569;
+  border-color: #CBD5E1;
+  background: #F8FAFC;
+}
+.product-card--docs .pillar-tag {
+  color: #334155;
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+/* Forensic Analysis — research indigo */
+.product-card--forensics .feature-icon-box {
+  color: #4F46E5;
+  border-color: #C7D2FE;
+  background: #EEF2FF;
+}
+.product-card--forensics .pillar-tag {
+  color: #3730A3;
+  background: #EEF2FF;
+  border-color: #C7D2FE;
+}
+
+/* Time Tracking — drafting teal */
+.product-card--time .feature-icon-box {
+  color: #0F766E;
+  border-color: #99F6E4;
+  background: #F0FDFA;
+}
+.product-card--time .pillar-tag {
+  color: #115E59;
+  background: #F0FDFA;
+  border-color: #99F6E4;
+}
+
+/* ---- Footer (replace integrations with practice areas) ---- */
+
+.practice-areas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.practice-pill {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-sm);
+  padding: 2px 8px;
+}
